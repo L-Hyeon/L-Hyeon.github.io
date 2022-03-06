@@ -1,0 +1,127 @@
+I"�<h3 id="컴퓨터-알고리즘이란">컴퓨터 알고리즘이란?</h3>
+
+<ul>
+  <li>유한시간 내에 문제를 해결할 수 있는 단계별 절차</li>
+</ul>
+
+<h3 id="문제해결-기법">문제해결 기법</h3>
+
+<ol>
+  <li>문제 정의
+    <ul>
+      <li>인풋, 아웃풋으로 구분</li>
+    </ul>
+  </li>
+  <li>해결 전략 세우기</li>
+  <li>알고리즘 구성
+    <ul>
+      <li>인풋: 파라미터</li>
+      <li>아웃풋: 리턴값</li>
+      <li>Step: 인풋을 아웃풋으로 변환하는 과정</li>
+    </ul>
+  </li>
+  <li>알고리즘 분석
+    <ul>
+      <li>정확성</li>
+      <li>시간, 공간 복잡도</li>
+      <li>최적성: 문제 해결에 가장 적합한지 판단</li>
+    </ul>
+  </li>
+  <li>구현</li>
+  <li>검증</li>
+</ol>
+
+<h4 id="예제-정렬되지-않은-배열에서의-검색">예제) 정렬되지 않은 배열에서의 검색</h4>
+
+<h5 id="문제">문제</h5>
+
+<blockquote>
+  <p>N개의 요소를 가지고 정렬되지 않은 배열 E
+특정한 값 K를 가진 인덱스를 찾고 있으면 인덱스 반환
+없으면 -1 반환</p>
+</blockquote>
+
+<h5 id="전략">전략</h5>
+
+<ul>
+  <li>배열의 각 요소와 K를 비교</li>
+  <li>K가 없으면 -1 반환</li>
+</ul>
+
+<h5 id="알고리즘-정의">알고리즘 정의</h5>
+
+<p>input: 배열 E, 요소의 수 n, 찾아야 하는 값 K
+output: E에서 K의 위치 또는 -1</p>
+
+<p>** 알고리즘 사용 시 0-based index, 1-based index 사용, 유의할 것</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="nf">seqSearch</span><span class="p">(</span><span class="kt">int</span><span class="p">[]</span> <span class="n">E</span><span class="p">,</span> <span class="kt">int</span> <span class="n">n</span><span class="p">,</span> <span class="kt">int</span> <span class="n">K</span><span class="p">){</span>
+  <span class="kt">int</span> <span class="n">ans</span><span class="p">,</span> <span class="n">idx</span><span class="p">;</span>
+  <span class="n">ans</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span> <span class="c1">// 실패 가정</span>
+  <span class="k">for</span> <span class="p">(</span><span class="n">idx</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">idx</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">;</span> <span class="n">idx</span><span class="o">++</span><span class="p">){</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">E</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span> <span class="o">==</span> <span class="n">K</span><span class="p">){</span>
+      <span class="n">ans</span> <span class="o">=</span> <span class="n">idx</span><span class="p">;</span> <span class="c1">// 성공</span>
+      <span class="k">break</span><span class="p">;</span> <span class="c1">// 종료</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="n">ans</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>수행시간: W(n) = n
+K가 존재하지 않거나 마지막 요소에 있는 경우 n번 비교 연산을 해야 함</p>
+
+<h3 id="알고리즘-분석">알고리즘 분석</h3>
+
+<ul>
+  <li>실험적 분석
+    <ul>
+      <li>알고리즘 구현 필수적</li>
+      <li>구현하는 사람의 실력이 동일해야 함</li>
+      <li>작동하는 SW, HW가 동일해야 함</li>
+      <li>실험에 포함되지 않는 input에 대해서는 측정 불가</li>
+    </ul>
+  </li>
+  <li>이론적 분석
+    <ul>
+      <li>직접 구현할 필요 없이, 의사코드로도 분석 가능</li>
+      <li>인풋크기 n에 대한 함수로 표현 – big O notation</li>
+      <li>모든 가능성에 대해서 분석 가능 – worst case, best case</li>
+      <li>SW, HW 환경에 관계없이 알고리즘 분석 가능</li>
+    </ul>
+  </li>
+</ul>
+
+<h5 id="알고리즘이-수행하는-일의-양을-측정해-알고리즘-분석">알고리즘이 수행하는 일의 양을 측정해 알고리즘 분석</h5>
+
+<ul>
+  <li>기본 연산: 알고리즘에서 가장 기본이 되는 연산</li>
+  <li>기본 연산의 수를 세어 알고리즘이 수행하는 일의 양 계산</li>
+</ul>
+
+<h5 id="worst-case">Worst-Case</h5>
+
+<ul>
+  <li>W(n): 인풋 크기 n에 대해서 알고리즘이 수행하는 최대 기본 연산의 개수
+    <ul>
+      <li>기본 연산을 가장 많이 사용하는 경우</li>
+    </ul>
+  </li>
+  <li>가장 기본이 되는 분석 방법</li>
+</ul>
+
+<h5 id="average-behavior">Average-Behavior</h5>
+
+<ul>
+  <li>새로운 알고리즘 개발 시 장점을 찾기 위해 분석</li>
+  <li>W(n)은 같아도 평균치에서 빠르면 좋은 알고리즘</li>
+</ul>
+
+<h5 id="correctness">Correctness</h5>
+
+<h5 id="optimality">Optimality</h5>
+
+<h3 id="수학-기본-지식">수학 기본 지식</h3>
+
+<p>$if\,A\,then\,B = not A \cup B$</p>
+:ET

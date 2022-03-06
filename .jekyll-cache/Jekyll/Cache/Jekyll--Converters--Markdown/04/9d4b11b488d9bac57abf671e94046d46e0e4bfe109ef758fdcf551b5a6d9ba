@@ -1,0 +1,116 @@
+I"*<h3 id="db">DB?</h3>
+
+<ul>
+  <li>DBMS(Database Management System)</li>
+  <li>Available for Multiple User</li>
+</ul>
+
+<h3 id="db-사용-이전">DB 사용 이전</h3>
+
+<ul>
+  <li>파일 시스템에서 직접 프로그래밍</li>
+  <li>중복된 데이터가 발생하고 데이터의 일관성이 떨어짐</li>
+  <li>데이터 접근, 처리가 어려움(DB와 달리 명령어를 직접 작성해야 함)</li>
+  <li>여러 파일과 포맷이 나타남</li>
+  <li>제약 조건을 추가하거나 변경이 어려움</li>
+  <li>동시 접근 불가</li>
+  <li>작업 도중 에러 발생 시 에러 처리 어려움</li>
+</ul>
+
+<h3 id="db의-목적">DB의 목적</h3>
+
+<ul>
+  <li>데이터 중복 방지, 일관성 유지</li>
+  <li>데이터 접근을 쉽게</li>
+  <li>데이터 조건 변경을 쉽게</li>
+  <li>수정의 원자성(작업 도중 에러 발생 시 에러 처리)</li>
+  <li>동시 접근</li>
+  <li>보안성</li>
+</ul>
+
+<h3 id="데이터-모델">데이터 모델</h3>
+
+<ul>
+  <li>관계형 모델</li>
+  <li>객체지향형 모델</li>
+  <li>네트워크 모델</li>
+  <li>상속형 모델</li>
+  <li>etc.</li>
+</ul>
+
+<h3 id="관계형-모델">관계형 모델</h3>
+
+<ul>
+  <li>테이블을 이용해서 데이터 저장</li>
+</ul>
+
+<h3 id="추상화-수준">추상화 수준</h3>
+
+<ul>
+  <li>Physical Level: 어떻게 레코드가 저장되는지</li>
+  <li>Logical Level: 데이터가 저장되어 있는 형태(관계)</li>
+  <li>View Level: 세부 데이터는 숨긴 채 보여지는 부분</li>
+</ul>
+
+<h3 id="스키마">스키마</h3>
+
+<p><em>스키마: 테이블 이름, 인덱스 이름</em></p>
+
+<ul>
+  <li>Logical Schema: 모든 테이블</li>
+  <li>Physical Schema: 물리적인 구조(파일 구조)</li>
+  <li>Instance: 입력된 데이터</li>
+</ul>
+
+<h3 id="physical-data-independence">Physical Data Independence</h3>
+
+<ul>
+  <li>물리적인 스키마를 바꿔도 프로그램에는 영향을 주지 않음</li>
+  <li>데이터를 추가하거나 변경해도 프로그램에는 영향을 주지 않는다</li>
+</ul>
+
+<h3 id="ddl-data-definition-language">DDL (Data Definition Language)</h3>
+
+<ul>
+  <li>스키마를 정의하는 명령어</li>
+  <li>create table</li>
+  <li>DDL 컴파일러가 Data Dictionary에 해당 테이블(스키마)에 대한 메타데이터(db스키마 – 구조, 고유번호, 접근권한 등) 저장</li>
+</ul>
+
+<h3 id="dml-data-manipulation-language">DML (Data manipulation Language)</h3>
+
+<ul>
+  <li>데이터에 직접 접근하거나 수정하는 명령어</li>
+  <li>aka 쿼리문</li>
+  <li><strong>Procedural DML</strong> - 어떻게 데이터 가져올 것인지 명시해야 함</li>
+  <li><strong>Declarative DML</strong> - 데이터 획득 방법 명시 없음
+    <ul>
+      <li>ex. SELECT x FROM t WHERE x &gt; 100</li>
+    </ul>
+  </li>
+  <li>선언적 형태가 더 쉬움</li>
+</ul>
+
+<h3 id="sql-query-language">SQL Query Language</h3>
+
+<ul>
+  <li>non-procedual한 언어</li>
+  <li>SELECT name FROM table WHERE condition</li>
+  <li>일반 프로그래밍 언어는 아님</li>
+</ul>
+
+<h3 id="db-디자인">DB 디자인</h3>
+
+<ul>
+  <li>Logical Design - 필요한 필드를 설계</li>
+  <li>physical Design - 물리적 구조를 결정</li>
+</ul>
+
+<h3 id="db-엔진">DB 엔진</h3>
+
+<ul>
+  <li>storage manager</li>
+  <li>query processor</li>
+  <li>transaction management</li>
+</ul>
+:ET
