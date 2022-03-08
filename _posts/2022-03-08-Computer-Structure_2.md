@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 컴퓨터 구조 - 1
+title: 컴퓨터 구조 - 2
 categories: Structure
 tags: [CS, Computer Structure, 컴퓨터 구조론]
 ---
