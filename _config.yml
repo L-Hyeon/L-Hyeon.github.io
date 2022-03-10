@@ -1,27 +1,19 @@
-title: I'm L-Hyun
-author: L-Hyun
-email: dkh1001@outlook.kr
-description: This is L-Hyun. I'm just a developer
-show_excerpts: true
-baseurl: ""
+# Site settings
+title: Nice Blog
+name: Nice Blog # your name
+email: youremail@example.com # your email address
+description: >
+    A Simple Jekyll Blog Theme. # this means to ignore newlines until "baseurl:"
+baseurl: "/Nice_Blog" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
+twitter_username: # your Twitter username
+github_username: # your Github username
+disqus_username: # your disqus username
 
-sass:
-  sass_dir: _sass
+google-analytics: # add it if you have one
 
-permalink: /posts/:title/
-texture:
-  title: I Am L-Hyun
-  tagline: Developer. Designer
-  date_format: "%b %-d, %Y"
-  style: black
-  showNav: false
-  showPicker: true
+skillstree: true # turn on or off the skills tree in about page
 
-  social_links:
-    twitter: thelehhman
-    github: thelehhman
-    linkedIn: in/thelehhman
-    rss: rss
-
-plugins:
-  - jekyll-seo-tag
+# Build settings
+permalink: none
+markdown: kramdown

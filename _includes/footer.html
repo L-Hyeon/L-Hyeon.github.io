@@ -1,35 +1,30 @@
-{%- if site.texture.analytics_id -%}
-<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.texture.analytics_id }}"></script>
-<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag() { dataLayer.push(arguments); }
-	gtag('js', new Date());
+<footer class="site-footer">
 
-	gtag('config', '{{ site.texture.analytics_id }}');
-</script>
-{%- endif -%}
+  <div class="wrapper">
 
-{%- if site.texture.showPicker -%}
-<div id="texture-picker">
-	<div style="display:flex;justify-content: space-between">
-		<p>Select Texture</p>
-		<p><a id="hidePicker" href="#">Hide</a></p>
-	</div>
-	<div class="texture-colors">
-		<div id="black"></div>
-		<div id="blue"></div>	
-		<div id="red"></div>	
-		<div id="purple"></div>		
-		<div id="green"></div>
-	</div>
-	<p class="info">You can use the <b>showPicker</b> property in _config.yml to hide this picker permanently.</p>
-	<p class="info">You can use the <b>texture</b> property in _config.yml to apply a texture permanently.</p>
-</div>
-<script src="{{ "/assets/js/picker.js" | relative_url }}"></script>
-{%- endif -%}
+    <center>
+        
+		<p><a class="link" href="{{ site.baseurl }}/archive/">Archive</a> /
+		<a class="link" href="{{ site.baseurl }}/category/">Category</a> / 
+		<a class="link" href="{{ site.baseurl }}/tags/">Tags</a> / 
+		<a class="link" href="{{ site.baseurl }}/about/">About</a> /
+		<a class="link" href="{{ site.baseurl }}/contact/">Contact</a>
+        </p>
 
-{%- if site.texture.useMathJax -%}
-<script type="text/javascript"
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-{%- endif -%}
+        <span><script>document.write(new Date().getFullYear());</script></span>
+        <span>&copy;</span>
+        
+		<a class="link" href="{{ site.baseurl }}">{{ site.name }}</a>
+		<br>
+		<span>Theme &copy; <a class="link" href="https://gabriel-chen.github.io" target="_blank"> Gabriel</a> | </span>
+				<iframe
+			style="margin-left: 2px; margin-bottom:-5px;"
+			frameborder="0" scrolling="0" width="91px" height="20px"
+			src="https://ghbtns.com/github-btn.html?user=itisbenjamin&repo=Nice_Blog&type=star&count=true" >
+		</iframe>
+
+    </center>
+    
+  </div>
+
+</footer>
