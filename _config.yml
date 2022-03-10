@@ -1,19 +1,39 @@
-# Site settings
-title: Nice Blog
-name: Nice Blog # your name
-email: youremail@example.com # your email address
-description: >
-    A Simple Jekyll Blog Theme. # this means to ignore newlines until "baseurl:"
-baseurl: "/Nice_Blog" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site
-twitter_username: # your Twitter username
-github_username: # your Github username
-disqus_username: # your disqus username
+title: I'm L-Hyun
+author: L-Hyun
+email: dkh1001@outlook.kr
+description: > # this means to ignore newlines until "show_exerpts:"
+  L-Hyun's CS Blog
+show_excerpts: true # set to true to show excerpts on the homepage
+baseurl: ""
 
-google-analytics: # add it if you have one
+sass:
+  sass_dir: _sass
 
-skillstree: true # turn on or off the skills tree in about page
+permalink: /posts/:title/
+texture:
+  title: Lee Seok-Hyun
+  tagline: Developer. Designer
+  date_format: "%b %-d, %Y"
+  style: black
+  showNav: true
+  showPicker: false
+
+  # generate social links in footer
+  social_links:
+    twitter: 
+    github:  L-Hyun
+    linkedIn: in/seok-hyun-lee-0705b317b/
+    rss: rss
+ 
+
+# If you want to link only specific pages in your header, uncomment
+# this and add the path to the pages in order as they should show up
+#header_pages:
+# - about.md
 
 # Build settings
-permalink: none
-markdown: kramdown
+# theme: texture
+
+plugins:
+  - jekyll-seo-tag
+#  - jekyll-feed

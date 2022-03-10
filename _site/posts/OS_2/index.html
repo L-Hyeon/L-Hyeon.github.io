@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css">
+<title>운영체제 - 2</title>
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>운영체제 - 2 | I’m L-Hyun</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="운영체제 - 2" />
+<meta name="author" content="L-Hyun" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="OS의 구조" />
+<meta property="og:description" content="OS의 구조" />
+<link rel="canonical" href="http://localhost:4000/posts/OS_2/" />
+<meta property="og:url" content="http://localhost:4000/posts/OS_2/" />
+<meta property="og:site_name" content="I’m L-Hyun" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-03-07T00:00:00+09:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="운영체제 - 2" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"L-Hyun"},"dateModified":"2022-03-07T00:00:00+09:00","datePublished":"2022-03-07T00:00:00+09:00","description":"OS의 구조","headline":"운영체제 - 2","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/OS_2/"},"url":"http://localhost:4000/posts/OS_2/"}</script>
+<!-- End Jekyll SEO tag -->
+</head>
+<body>
+  <header class="texture-black">
+    <div class="container"><div class="navbar">
+	<ul>
+		
+	</ul>
+</div></div><div class="container">
+	<h1>운영체제 - 2</h1>
+	<h4 class="post-description"></h4>
+	<div class="post-date" style="margin-top:20px">
+		Published on Mar 7, 2022
+	</div>
+	<ul class="post-tags"><li>OS</li></ul>
+</div>
+</header>
+  <main>
+    <div class="container">
+      <div class="post-container">
+          <h3 id="os의-구조">OS의 구조</h3>
+
+<ul>
+  <li>User Interfaces
+    <ul>
+      <li>GUI, batch, command line</li>
+    </ul>
+  </li>
+  <li>System Calls</li>
+  <li>Kernal
+    <ul>
+      <li>program execution, I/O operations, file systems, communication, resource allocation, accounting, error detections, protection and secuirty</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="computer-hardware">Computer Hardware</h3>
+
+<ul>
+  <li>System Bus</li>
+  <li>CPU</li>
+  <li>Disk Controller</li>
+  <li>USB Controller</li>
+  <li>Graphics Adapter</li>
+  <li>Memory</li>
+</ul>
+
+<h5 id="system-bus">System Bus</h5>
+
+<ul>
+  <li>각 요소들 연결</li>
+  <li>종류
+    <ul>
+      <li>Data Bus - 데이터 전송</li>
+      <li>Command/Address Bus - 명령어(Read, Write)와 주소 전달</li>
+    </ul>
+  </li>
+  <li>요소
+    <ul>
+      <li>Bus Arbiter(관리자) - 충돌 방지</li>
+      <li>Bus Master - bus transaction을 요청하는 부류
+        <ul>
+          <li>CPU, DMA controller(다이렉트 메모리 엑세스)</li>
+        </ul>
+      </li>
+      <li>Bus Slave - bus master로부터 요청을 받는 부류
+        <ul>
+          <li>상황에 따라 모든 요소 포함</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h5 id="io-operations">I/O Operations</h5>
+
+<ul>
+  <li>I/O 컨트롤러가 CPU 요청에 따라 각각의 I/O operation 실행</li>
+  <li>I/O 컨트롤러 레지스터
+    <ul>
+      <li>데이터 레지스터</li>
+      <li>컨트롤 레지스터 - 대기열</li>
+    </ul>
+  </li>
+  <li>
+    <p>작동 방식</p>
+
+    <ol>
+      <li><strong>Read</strong> status register of the I/O controller - 가용 상태인지 확인</li>
+      <li><strong>Write</strong> data to I/O Controller</li>
+    </ol>
+
+    <ul>
+      <li>사용 불가능한 경우 지속적으로 Read</li>
+    </ul>
+  </li>
+  <li>Polling &amp; Interrput-driven
+    <ul>
+      <li>I/O status를 어떻게 확인할 것인지</li>
+      <li>Polling - CPU가 I/O status를 지속적으로 확인</li>
+      <li>Interrupt-Driven - I/O 컨트롤러가 작업 가능을 CPU에 얄려줌</li>
+    </ul>
+  </li>
+  <li>Memory-mapped &amp; Port-mapped
+    <ul>
+      <li>I/O 레지스터 접근을 어떻게 할 것인지</li>
+      <li>Memory-mapped - 메모리에 I/O 주소를 사용</li>
+      <li>Port-mapped - 별개의 포트로 I/O 주소 사용</li>
+    </ul>
+  </li>
+</ul>
+
+<h5 id="interrupts-mechanism">Interrupts Mechanism</h5>
+
+<p><em><strong>CPU 외부에서</strong> CPU에게 이벤트 발생을 알려 CPU의 흐름을 방해</em></p>
+
+<ul>
+  <li>ISR(Interrupt Service Routine) - 인터럽트가 오면 어떻게 대응할 것인지 미리 정의되어 있는 함수, 인터럽트 벡터에 존재</li>
+  <li>Trap, Exception - Software-Generated Interrupt, CPU 내부에서 발생시키는 인터럽트</li>
+  <li>OS is <strong>Interrupt-Driven</strong></li>
+</ul>
+
+<h5 id="interrupt-handling">Interrupt Handling</h5>
+
+<ol>
+  <li>작업 중인 명령까지 수행하고 작업(레지스터값, PC값 등)을 저장</li>
+  <li>인터럽트 벡터와 IRQ를 통해 ISR의 주소를 알아냄</li>
+  <li>ISR 실행</li>
+  <li>작업을 불러와서 재개</li>
+</ol>
+
+<h2 id="os-design-and-implementaion">OS Design and Implementaion</h2>
+
+<h5 id="os-design">OS Design</h5>
+
+<p><em>Not Solvable, 정답은 없음</em></p>
+
+<ol>
+  <li>목표, 세부사항 설정</li>
+  <li>하드웨어와 시스템 선택</li>
+</ol>
+
+<ul>
+  <li>Policy(무엇을 해야 하는 가), Mechanism(어떻게 할 것인가)을 구분
+    <ul>
+      <li>프로젝트를 유연하게 만들어줌</li>
+    </ul>
+  </li>
+</ul>
+
+<h5 id="os-implementation">OS Implementation</h5>
+
+<ul>
+  <li>주로 C, C++, 몇몇 부분은 기계어, 어셈블리어, 스크립트, 파이썬 등등
+    <ul>
+      <li>여러가지 언어의 혼합</li>
+    </ul>
+  </li>
+  <li>High-Level은 여러 하드웨어에 포트 쉬움, 빠르고 간결한 코드, 디버깅 쉬움
+    <ul>
+      <li>BUT, 느림</li>
+    </ul>
+  </li>
+  <li>핵심적인 기능 이외에는 알고리즘의 속도가 더 중요해서 High-Level 주로 사용</li>
+</ul>
+
+<h3 id="os-structure">OS Structure</h3>
+
+<ul>
+  <li>Decomposition(모듈화)</li>
+  <li>Abstraction(추상화)</li>
+</ul>
+
+<h5 id="simple-structure-ms-dos">Simple-Structure (MS-DOS)</h5>
+
+<ul>
+  <li>비모듈화</li>
+  <li>프로그램 -&gt; 커널 -&gt; 완료해야 다시 프로그램으로 돌아감</li>
+  <li>Single Program</li>
+</ul>
+
+<h5 id="more-complex-initial-unix">More Complex (Initial UNIX)</h5>
+
+<ul>
+  <li>시스템 프로그램과 커널로 모듈화</li>
+</ul>
+
+<h5 id="layered-approach">Layered Approach</h5>
+
+<ul>
+  <li>몇 개의 레이어로 모듈화</li>
+  <li>각 레이어는 바로 밑 레이어로 소통 가능</li>
+</ul>
+
+<h5 id="micro-kernal">Micro Kernal</h5>
+
+<ul>
+  <li>커널의 경량화, 필수적인 부분만 남기고 나머지는 user-level program으로</li>
+  <li>message passing으로 유저 모듈간 통신
+    <ul>
+      <li>메모리 복사 발생 == 오버헤드 발생</li>
+    </ul>
+  </li>
+  <li>커널 업데이트가 굉장히 쉬움 - 커널이 작아서</li>
+  <li>새로운 아키텍쳐에 적용하기가 쉬움 - 커널이 작아서</li>
+  <li>안정성 - 커널에서 작동하는 코드가 줄어듦</li>
+  <li>보안성</li>
+</ul>
+
+<p>#####</p>
+
+      </div>
+
+        <!-- Configure Disqus --></div>
+  </main></body>
+</html>

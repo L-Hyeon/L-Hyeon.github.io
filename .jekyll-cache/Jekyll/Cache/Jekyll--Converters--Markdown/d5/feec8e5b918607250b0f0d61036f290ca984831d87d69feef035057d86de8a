@@ -1,0 +1,168 @@
+I";<style type="text/css">
+  @font-face {
+    font-family: 'Cafe24SsurroundAir';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  .article {
+    font-family: 'Cafe24SsurroundAir';
+  }
+  .contentsItems { color: black; }
+  .contentsItems:hover {
+    color: black;
+    text-decoration: underline;
+  }
+  .title {
+    font-size: 30px;
+    border-bottom: 3px solid #6667ab;
+    border-left: 20px solid #6667ab;
+    padding-left: 5px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+  }
+  .subtitle {
+    margin-top: 20px;
+	  font-size: 25px;
+	  color: #5e5e7d;
+  }
+  .subsub {
+    font-size: 17px;
+    color: #13356b;
+  }
+  .section {
+    padding-left: 15px;
+  }
+  .define{
+    font-weight: bold;
+  }
+  .red{
+    display: inline;
+    color: #a12d27;
+  }
+  .disabled {
+    display: inline;
+    color: #777777;
+  }
+</style>
+
+<div class="article">
+
+<div class="title">Contents</div>
+
+- <a href="#Introduction" class="contentsItems">Introdcution</a>
+- <a href="#MathBackground" class="contentsItems">Mathematical Background</a>
+- <div class="disabled">Analyzing Algorithms and Problems</div>
+- <div class="disabled">Classifying Functions by Their Asymptotic Growth Rates</div>
+- <div class="disabled">Searching an Ordered Array</div>
+
+<div id="Introduction" class="title">Introduction</div>
+<div class="subtitle">What is a Computer Algorithm?</div>
+<section class="section">
+  <div class="define">컴퓨터를 이용해 유한 시간 내 문제를 해결하기 위한 단계별 절차</div>
+</section>
+
+<div class="subtitle">Sequece of Problem Solving</div>
+
+1. Problem define
+   - Input
+   - Output
+2. Strategy
+3. Algorithm
+   - Input, Output
+   - Steps
+4. Analysis
+   - Correctness (정확성)
+   - Time &amp; Space Complexity (시,공간 복잡도)
+   - Optimality (최적성)
+5. Implementation (구현)
+6. Verification (검증)
+
+<div class="subtitle">Ex. Search in an Unordered Array</div>
+<section class="section">
+  <div class="subsub">Problem</div>
+  <p class="p">
+    Unordered Array E sized N
+    Find index of specified key K, if K in E
+    return -1 if K not in E
+  </p>
+  <div class="subsub">Strategy</div>
+  <p class="p">
+    Compare K with e for e in E
+    If K not in E return -1
+  </p>
+
+  <div class="subsub">Pseudo Code</div>
+
+```c
+int seqSearch(int[] E, int n, int K){
+  int ans, idx;
+  ans = -1; // 실패 가정
+  for (idx = 0; idx &lt; n; idx++){
+    if (E[idx] == K){
+      ans = idx; // 성공
+      break; // 종료
+    }
+  }
+  return ans;
+}
+```
+
+</section>
+
+<div class="subtitle">Analysis of the Algorithm</div>
+
+- 실험적 분석
+  - 구현 필수적
+  - 모든 환경이 동일해야 함 == <div class="red">한계점</div>
+- 이론적 분석
+
+  - 의사코드로 분석 가능
+  - 환경에 관계없이 분석 가능
+  - 모든 input 가능성 분석 가능
+
+<section class="section">
+  <div class="subsub">Basic Operation</div>
+  <div class="define">알고리즘에서 Basic Operation의 작동 횟수</div>
+
+  <div class="subsub">Worst-Case Analysis</div>
+
+W(n), 인풋 크기 n에 대해서 알고리즘이 수행하는 <span class="red">최대 기본 연산</span>의 개수
+
+  <div class="subsub">More Analysis</div>
+
+- Average-Behavior Analysis
+- Optimality
+- Correctness
+
+</section>
+
+<div id="MathBackground" class="title">Mathematical Background</div>
+<section class="section">
+
+$\displaystyle\sum_{i=1}^{n}{i} = {\frac{n(n+1)}{2}}$
+
+$\displaystyle\sum_{i=1}^{n}{(i)^k} = {\frac{n^{k+1}}{k+1}}$
+
+$\displaystyle\sum_{i=0}^{n}{(a)^r} = {\frac{a(r^n-1)}{r-1}}$
+
+$\displaystyle\sum_{i=0}^{k}{i(2)^i} = {(k-1)2^{k+1}+2}$
+
+$if\,A\,then\,B = not A \cup B$
+
+&lt;/seciton&gt;
+
+<div class="subsub">명제의 증명</div>
+
+- Counterexample(반례)
+- Contraposition(대우)
+  - $if\,A\,then\,B = if\,not\,B\,then\,not\,A $
+- Contradiction(모순법, 귀류법)
+  - 결론을 일단 부정하고, 이에 대한 모순을 찾아 증명
+- Mathematical Induction(수학적 귀납법)
+  - 기본적인(i = 0 or i = 1) 과정에서 참임을 증명
+  - 이후 i = k인 경유 참임을 증명
+
+&lt;/div&gt;
+</section></div>
+:ET

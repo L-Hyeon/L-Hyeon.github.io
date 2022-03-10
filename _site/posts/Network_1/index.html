@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css">
+<title>네트워크 - 1</title>
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>네트워크 - 1 | I’m L-Hyun</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="네트워크 - 1" />
+<meta name="author" content="L-Hyun" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="인터넷" />
+<meta property="og:description" content="인터넷" />
+<link rel="canonical" href="http://localhost:4000/posts/Network_1/" />
+<meta property="og:url" content="http://localhost:4000/posts/Network_1/" />
+<meta property="og:site_name" content="I’m L-Hyun" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-03-03T00:00:00+09:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="네트워크 - 1" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"L-Hyun"},"dateModified":"2022-03-03T00:00:00+09:00","datePublished":"2022-03-03T00:00:00+09:00","description":"인터넷","headline":"네트워크 - 1","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/Network_1/"},"url":"http://localhost:4000/posts/Network_1/"}</script>
+<!-- End Jekyll SEO tag -->
+</head>
+<body>
+  <header class="texture-black">
+    <div class="container"><div class="navbar">
+	<ul>
+		
+	</ul>
+</div></div><div class="container">
+	<h1>네트워크 - 1</h1>
+	<h4 class="post-description"></h4>
+	<div class="post-date" style="margin-top:20px">
+		Published on Mar 3, 2022
+	</div>
+	<ul class="post-tags"><li>Network</li></ul>
+</div>
+</header>
+  <main>
+    <div class="container">
+      <div class="post-container">
+          <h3 id="인터넷">인터넷</h3>
+
+<p><em>컴퓨터로 연결하여 <span style="color:red">TCP/IP</span> 프로토콜을 통해 정부를 주고 받는 컴퓨터 네트워크</em></p>
+
+<h3 id="osi-7계층">OSI 7계층</h3>
+
+<p><em>ISO에서 제인한 통신 모델</em></p>
+
+<ol>
+  <li>Physical
+    <ul>
+      <li>비트들을 전송 매체애 실어 보냄</li>
+    </ul>
+  </li>
+  <li>Data Link
+    <ul>
+      <li>비트들을 프레임으로 재구성, Hop-to-Hop 전송</li>
+    </ul>
+  </li>
+  <li>NetWork
+    <ul>
+      <li>source에서 destination까지의 전달</li>
+    </ul>
+  </li>
+  <li>Transport
+    <ul>
+      <li>신뢰성 보장 테이터 전송, 프로세스-to-프로세스 전송</li>
+    </ul>
+  </li>
+  <li>Session</li>
+  <li>Presentation</li>
+  <li>Application</li>
+</ol>
+
+<p>각 계층별로 필요한 헤더를 추가(캡슐화)</p>
+
+<h3 id="네트워크-연결-방식">네트워크 연결 방식</h3>
+
+<ul>
+  <li>Circuit Switching Network - 중앙제어 전달 방식
+    <ul>
+      <li>중앙에서 전달 제어, 차량/교통 시스템에 사용</li>
+    </ul>
+  </li>
+  <li>Packet Switching Network - 목적지 주소 전달 방식
+    <ul>
+      <li>인터넷에서 사용</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="tcpip-5계층">TCP/IP 5계층</h3>
+
+<p><em>OSI 7계층을 사용하는 다른 프토토콜들이 대부분 사라짐</em></p>
+
+<ol>
+  <li>Physical</li>
+  <li>Data Link</li>
+  <li>Network</li>
+  <li>Transport</li>
+  <li>Application</li>
+</ol>
+
+<h3 id="physical">Physical</h3>
+
+<p><em>비트들을 전송매체에 전기신호로 변환해서 보냄</em>
+<em>비트 전송 방법이 정의되어 있음</em></p>
+
+<h3 id="data-link">Data Link</h3>
+
+<p><em>Hop-to-Hop Delivery관련 작업(노드간 통신)</em>
+<em>MAC주소 사용</em>
+<em>프레임이라는 데이터 단위 사용</em></p>
+
+<h3 id="network">Network</h3>
+
+<p><em>Source-to-Destination</em>
+<em>IP주소 사용</em>
+<em>헤더에 목적지 IP를 붙여 목적지 명시</em>
+<em>데이터그램이라는 데이터 단위 사용</em></p>
+
+<h3 id="transport">Transport</h3>
+
+<p><em>Process-to-Process</em>
+<em>Port번호 사용</em>
+<em>신뢰성 보장, 모든 패킷을 다 받았는지 확인</em>
+<em>세그먼트(TCP)/유저 데이터그램(UDP)라는 데이터 단위 사용</em></p>
+
+<h4 id="application">Application</h4>
+
+<p><em>메시지라는 데이터 단위 사용</em></p>
+
+      </div>
+
+        <!-- Configure Disqus --></div>
+  </main></body>
+</html>

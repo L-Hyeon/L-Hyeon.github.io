@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css">
+<title>데이터베이스 - 1</title>
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>데이터베이스 - 1 | I’m L-Hyun</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="데이터베이스 - 1" />
+<meta name="author" content="L-Hyun" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="L-Hyun’s CS Blog" />
+<meta property="og:description" content="L-Hyun’s CS Blog" />
+<link rel="canonical" href="http://localhost:4000/posts/DB_1/" />
+<meta property="og:url" content="http://localhost:4000/posts/DB_1/" />
+<meta property="og:site_name" content="I’m L-Hyun" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-03-03T00:00:00+09:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="데이터베이스 - 1" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"L-Hyun"},"dateModified":"2022-03-03T00:00:00+09:00","datePublished":"2022-03-03T00:00:00+09:00","description":"L-Hyun’s CS Blog","headline":"데이터베이스 - 1","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/DB_1/"},"url":"http://localhost:4000/posts/DB_1/"}</script>
+<!-- End Jekyll SEO tag -->
+</head>
+<body>
+  <header class="texture-black">
+    <div class="container"><div class="navbar">
+	<ul>
+		
+	</ul>
+</div></div><div class="container">
+	<h1>데이터베이스 - 1</h1>
+	<h4 class="post-description"></h4>
+	<div class="post-date" style="margin-top:20px">
+		Published on Mar 3, 2022
+	</div>
+	<ul class="post-tags"><li>DB</li></ul>
+</div>
+</header>
+  <main>
+    <div class="container">
+      <div class="post-container">
+          <style type="text/css">
+  @font-face {
+    font-family: 'Cafe24SsurroundAir';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  .article {
+    font-family: 'Cafe24SsurroundAir';
+  }
+  .contentsItems { color: black; }
+  .contentsItems:hover {
+    color: black;
+    text-decoration: underline;
+  }
+  .title {
+    font-size: 30px;
+    border-bottom: 3px solid #6667ab;
+    border-left: 20px solid #6667ab;
+    padding-left: 5px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+  }
+  .subtitle {
+    margin-top: 20px;
+	  font-size: 25px;
+	  color: #5e5e7d;
+  }
+  .subsub {
+    font-size: 17px;
+    color: #13356b;
+  }
+  .section {
+    padding-left: 15px;
+  }
+  .define{
+    font-weight: bold;
+    padding-left: 15px;
+  }
+  .red{
+    display: inline;
+    color: #a12d27;
+  }
+  .disabled {
+    display: inline;
+    color: #777777;
+  }
+</style>
+
+<div class="article">
+
+<div class="title">Introdution</div>
+
+- <a href="#System" class="contentsItems">Database-System</a>
+- <a href="#Purpose" class="contentsItems">Purpose of Database Systems</a>
+- <a href="#Model" class="contentsItems">Data Model</a>
+- <a href="#Languages" class="contentsItems">Database Languages</a>
+- <a href="#Design" class="contentsItems">Database Design</a>
+- <a href="#Engine" class="contentsItems">Database Engine</a>
+- <a href="#Architecture" class="contentsItems">Database Architecture</a>
+- <a href="#User" class="contentsItems">Database Users and Administrators</a>
+- <a href="#History" class="contentsItems">History of DB Systems</a>
+
+<div id="System" class="title">Database System</div>
+<div class="subtitle">DBMS</div>
+
+- Database Management System
+- 데이터 베이스를 관리, 조작하는 별도의 SW
+
+<div id="Purpose" class="title">Purpose of DB</div>
+<div class="subtitle">Before DB, File System</div>
+
+- 각 파일마다 필요한 데이터를 따로 저장하기 때문에 중복된 데이터 발생, 데이터 일관성 저하
+- 데이터 접근, 처리가 어려움(DB와 달리 명령어를 직접 작성해야 함)
+- 여러 파일과 포맷이 나타남
+- 제약 조건을 추가하거나 변경이 어려움
+- 동시 접근 불가
+- 작업 도중 에러 발생 시 에러 처리 어려움
+
+<div class="subtitle">With DB</div>
+
+- 데이터 중복을 없애 일관성 유지
+- 명령어를 통한 빠른 접근
+- 동시 접근 가능
+- 작업 중 에러 처리 (Atomicity of updates)
+- 조건 변경 쉬움
+- 보안
+
+<div id="Model" class="title">Data Models</div>
+- Relational Model
+- Entity-Relationship data Model
+- Object-based data Model
+- Semi-structured data Model
+- Network Modal, Hiearchical Modal
+
+<div class="subtitle">Relational Model</div>
+
+- 2차원 테이블 형태의 데이터
+- 행과 열로 구성
+- Attribute(속성)
+  - 열(Column)의 이름
+  - 순서가 없음
+  - 속성의 값은 하나의 값만을 가짐(Atomic)
+- Tuple
+  - 실제 데이터, 행(Row)
+  - 순서가 없음
+  - 각 튜플은 유일해야 함
+
+<div class="subtitle">Levels of Abstraction</div>
+
+- Physical Level: 어떻게 레코드가 저장되는지
+- Logical Level: 데이터가 저장되어 있는 형태(관계)
+- View Level: 세부 데이터는 숨긴 채 보여지는 부분
+
+<div class="subtitle">Schema, 구조</div>
+<div class="define">DB의 구조와 제약조건에 관해 전반적인 정보</div>
+
+- 속성, 개체, 관계, 제약조건을 기술
+- Logical Schema: 테이블의 정보
+- Physical Schema: 물리적인 구조(파일 구조)
+- Instance: 입력된 데이터
+- ex) table (ID, name, dept_name, salary)
+
+<div class="subtitle">Instance</div>
+
+- 스키마에 대한 실제 데이터, 테이블의 각 행(row)
+- DB 수정에 따라 변경
+- 인스턴스의 집합 = DB의 상태(state)
+
+<div class="subtitle">Physical Data Independence</div>
+
+- 물리적인 구조(스키마)를 변경해도 논리적 구조(스키마)에는 영향을 주지 않음
+- 물리적 추상화 레벨에서 변경이 일어나도, 논리적 추상화 레벨은 알지 못 함
+
+<div id="Languages" class="title">Database Languages</div>
+<div class="subtitle">DDL</div>
+
+- Data Definition Language
+- 테이블의 스키마를 정의하는 명령어
+- ex) CREATE, ALTER
+- DDL 컴파일러가 Data Dictionary에 해당 테이블에 대한 메타데이터(db스키마 -- 구조, 고유번호, 접근권한 등) 저장
+
+<div class="section">
+  <div class="subsub">Metadata</div>
+
+- 데이터에 대한 데이터(정보)
+- 다른 데이터를 설명해주는 정보
+
+</div>
+
+<div class="subtitle">DML</div>
+
+- Data Manipulation Language
+- 데이터에 직접 접근하거나 수정하는 명령어
+- aka 쿼리문
+- <div class="red">Procedural DML</div> - 어떻게 데이터 가져올 것인지 명시해야 함
+- <div class="red">Declarative DML</div> - 데이터 획득 방법 명시 없음
+  - ex) SELECT x FROM t WHERE x &gt; 100
+
+<div class="subtitle">SQL</div>
+
+- Structured Query Language
+- non-procedual한 언어 == <div class="red">Declarative DML</div>
+- ex) SELECT name FROM table WHERE condition
+- 일반 프로그래밍 언어는 아님
+- 일반 프로그래밍 언어에서 Embedded SQL 이용
+
+<div id="Design" class="title">DB Design</div>
+
+- Logical Design
+  - 필요한 속성(Attributes) 정의
+  - 속성간의 관계 고려
+- Physical Design
+  - 물리적인 자료 구조 정의
+
+<div class="title">DB Engine</div>
+_학기 범위 아님_
+
+- Storage Manager
+- Query Processor Component
+- Transaction Management Component
+
+<div id="Architecture" class="title">DB Architecture</div>
+
+- Centralized DB
+- Client-Server
+- Parrallel DB
+- Distributed DB
+
+<div class="subtitle">Application</div>
+<div class="section">
+  <div class="subsub">Two-Tier</div>
+  - 서버에 DB만 존재
+  - 클라이언트에 모든 프로그램 존재
+
+  <div class="subsub">Three-Tier</div>
+  - 서버에도 앱이 존재
+  - 클라이언트 프로그램이 가벼워짐
+
+</div>
+
+<div id="User" class="title">Database Users and Administrators</div>
+
+- Naive User, 실제 사용자
+- App Programmer, 개발자
+- Analysts, 분석가
+- Administrator, 관리자
+
+<div class="subtitle">DB Administrator</div>
+
+- 조직에서 DB를 관리하는 인물
+- 스키마 정의 (테이블 정의)
+- 저장매체 구조, 접근 방법 정의
+- 스키마와 물리적 구조 수정
+- 데이터 접근 권한 관리
+- 유지/보수
+- 백업
+- 저장장치 용량 관리
+- DB 모니터
+
+<div id="History" class="title">History of DB</div>
+
+<div class="subtitle">50s ~ early 60s</div>
+- File System
+- Punch card, Magnetic Tape
+
+<div class="subtitle">late 60s ~ 70s</div>
+- Tedd Codd Define Relational Data Model
+- Network, Hierarchical Model
+- Hard disk
+
+<div class="subtitle">80s</div>
+- SQL becomes Standard
+- Parallel, Distributed, Object-oriented Model
+
+<div class="subtitle">90s</div>
+- Data-Mining
+- Data warehouses
+
+<div class="subtitle">00s</div>
+- Big Data, NoSQL
+
+<div class="subtitle">10s</div>
+- SQL for Big Data
+- Massive Parallel DB
+- Main Memory as Storage
+
+</div>
+
+      </div>
+
+        <!-- Configure Disqus --></div>
+  </main></body>
+</html>

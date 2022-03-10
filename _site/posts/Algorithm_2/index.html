@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css">
+<title>알고리즘 - 2</title>
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>알고리즘 - 2 | I’m L-Hyun</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="알고리즘 - 2" />
+<meta name="author" content="L-Hyun" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="L-Hyun’s CS Blog" />
+<meta property="og:description" content="L-Hyun’s CS Blog" />
+<link rel="canonical" href="http://localhost:4000/posts/Algorithm_2/" />
+<meta property="og:url" content="http://localhost:4000/posts/Algorithm_2/" />
+<meta property="og:site_name" content="I’m L-Hyun" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-03-07T00:00:00+09:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="알고리즘 - 2" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"L-Hyun"},"dateModified":"2022-03-07T00:00:00+09:00","datePublished":"2022-03-07T00:00:00+09:00","description":"L-Hyun’s CS Blog","headline":"알고리즘 - 2","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/Algorithm_2/"},"url":"http://localhost:4000/posts/Algorithm_2/"}</script>
+<!-- End Jekyll SEO tag -->
+</head>
+<body>
+  <header class="texture-black">
+    <div class="container"><div class="navbar">
+	<ul>
+		
+	</ul>
+</div></div><div class="container">
+	<h1>알고리즘 - 2</h1>
+	<h4 class="post-description"></h4>
+	<div class="post-date" style="margin-top:20px">
+		Published on Mar 7, 2022
+	</div>
+	<ul class="post-tags"><li>Algorithm</li></ul>
+</div>
+</header>
+  <main>
+    <div class="container">
+      <div class="post-container">
+          <style type="text/css">
+  @font-face {
+    font-family: 'Cafe24SsurroundAir';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  .article {
+    font-family: 'Cafe24SsurroundAir';
+  }
+  .contentsItems { color: black; }
+  .contentsItems:hover {
+    color: black;
+    text-decoration: underline;
+  }
+  .title {
+    font-size: 30px;
+    border-bottom: 3px solid #6667ab;
+    border-left: 20px solid #6667ab;
+    padding-left: 5px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+  }
+  .subtitle {
+    margin-top: 20px;
+	  font-size: 25px;
+	  color: #5e5e7d;
+  }
+  .subsub {
+    font-size: 17px;
+    color: #13356b;
+  }
+  .section {
+    padding-left: 15px;
+  }
+  .define{
+    font-weight: bold;
+  }
+  .red{
+    display: inline;
+    color: #a12d27;
+  }
+  .disabled {
+    display: inline;
+    color: #777777;
+  }
+</style>
+
+<div class="article">
+
+<div class="title">Contents</div>
+
+- <div class="disabled">Introdcution</div>
+- <div class="disabled">Mathematical Background</div>
+- <div href="#Analyzing" class="contentsItems">Analyzing Algorithms and Problems</div>
+- <div class="disabled">Classifying Functions by Their Asymptotic Growth Rates</div>
+- <div class="disabled">Searching an Ordered Array</div>
+
+<div id="Analyzing" class="title">Analyzing Algorithms and Problems</div>
+
+- Improve, 알고리즘 개선 가능
+- Choose Best Algorithm for Problem, 최적 알고리즘 선택 가능
+
+<div class="section"><div class="subsub">Analyzing parts</div></div>
+
+- Correctness
+- Time &amp; Space Complexity
+- Optimality, Simplicity
+
+<div class="subtitle">Correctness</div>
+
+1. If Preconditions(input) is Satisfied
+2. Then Postconditions(output) will be True
+3. When Alogorithm Terminated
+
+<div class="subtitle">Amout of Work Done</div>
+<div class="section">
+  <div class="define">Time Complexity</div>
+  <div class="subsub">Measure of Work</div>
+  - Efficiency of Algorithm, 알고리즘의 효율성
+  - 주변환경에 독립적
+  - Input의 크기에 따라 변화
+
+  <div class="subsub">Basic Operation</div>
+  - Fundamental Operation of Problem
+  - 전체 연산에 비례하는 연산 == 가장 많이 사용하는 연산 중 하나
+
+  <div class="subsub">인풋의 형태(범위, 정렬여부 등)에 영향을 받음</div>
+</div>
+
+<div class="subtitle">Worst-Case Complexity</div>
+
+- 크기가 n인 input들의 집합 $D_n$
+- $D_n$ 중 하나인 I에 대해서 알고리즘의 일의 양 $t(I)$
+- $W(n) = max(t(i)\,for\,i\,in\,D(n))$
+  - Input에 따라 가장 많은 일을 하는 경우
+
+<div class="subtitle">Average Complexity</div>
+
+- 인풋 $I$가 나올 확률 $Pr(I)$
+- $A(n) = sum(Pr(I)*t(i)\,for\,i\,in\,D(n))$
+- $t(I)$는 알고리즘 분석으로 측정할 수 있지만
+- $Pr(I)$는 계산으로 알아내기 어려움 == <div class="red">일반적으로 불가능</div>
+- 일반적으로 $Pr(I)$는 통계적으로 측정 or 모든 발생확률이 동일하다고 가정
+
+<div class="section">
+  <div class="subsub">ex. Search In Unordered Array</div>
+
+&gt; N개의 요소를 가지고 정렬되지 않은 배열 E
+&gt; 특정한 값 K를 가진 인덱스를 찾고 있으면 인덱스 반환
+&gt; 없으면 -1 반환
+
+```c
+int seqSearch(int[] E, int n, int K){
+  int ans, idx;
+  ans = -1; // 실패 가정
+  for (idx = 0; idx &lt; n; idx++){
+    if (E[idx] == K){
+      ans = idx; // 성공
+      break; // 종료
+    }
+  }
+  return ans;
+}
+```
+
+$A(n) = Pr(succ)A_{succ}(n) + Pr(fail)A_{fail}(n)$
+$A_{succ}(n) = \displaystyle\sum_{i=0}^{n - 1}{Pr(I_i|succ)*t(I_i)} = \frac{1}{n} \sum_{i=0}^{n-1}(i + 1)$
+$= \displaystyle \frac{1}{n}\sum_{i=1}^{n}(i) = \frac{n + 1}{2}$
+
+$A_{fail}(n) = Pr(I|fail)*t(I_i) = 1*n = n$
+_탐색 실패는 1가지 경우 밖에 없음, $Pr(I|fail) = 1$_
+
+$\displaystyle A(n) = q\frac{n+1}{2} + (1-q)n$
+
+</div>
+
+</div>
+
+      </div>
+
+        <!-- Configure Disqus --></div>
+  </main></body>
+</html>
