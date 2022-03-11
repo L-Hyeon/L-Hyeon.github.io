@@ -1,0 +1,318 @@
+I"
+!<style type="text/css">
+  @font-face {
+    font-family: 'Cafe24SsurroundAir';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  .article {
+    font-family: 'Cafe24SsurroundAir';
+  }
+  .contentsItems { color: black; }
+  .contentsItems:hover {
+    color: black;
+    text-decoration: underline;
+  }
+  .title {
+    font-size: 30px;
+    border-bottom: 3px solid #6667ab;
+    border-left: 20px solid #6667ab;
+    padding-left: 5px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+  }
+  .subtitle {
+    margin-top: 20px;
+	  font-size: 25px;
+	  color: #5e5e7d;
+  }
+  .subsub {
+    font-size: 17px;
+    color: #13356b;
+  }
+  .section {
+    padding-left: 15px;
+  }
+  .define{
+    font-weight: bold;
+    padding-left: 15px;
+  }
+  .red{
+    display: inline;
+    color: #a12d27;
+  }
+  .disabled {
+    display: inline;
+    color: #777777;
+  }
+</style>
+
+<div class="title">Introdution</div>
+
+<ul>
+  <li><a href="#System" class="contentsItems">Database-System</a></li>
+  <li><a href="#Purpose" class="contentsItems">Purpose of Database Systems</a></li>
+  <li><a href="#Model" class="contentsItems">Data Model</a></li>
+  <li><a href="#Languages" class="contentsItems">Database Languages</a></li>
+  <li><a href="#Design" class="contentsItems">Database Design</a></li>
+  <li><a href="#Engine" class="contentsItems">Database Engine</a></li>
+  <li><a href="#Architecture" class="contentsItems">Database Architecture</a></li>
+  <li><a href="#User" class="contentsItems">Database Users and Administrators</a></li>
+  <li><a href="#History" class="contentsItems">History of DB Systems</a></li>
+</ul>
+
+<div id="System" class="title">Database System</div>
+<div class="subtitle">DBMS</div>
+
+<ul>
+  <li>Database Management System</li>
+  <li>데이터 베이스를 관리, 조작하는 별도의 SW</li>
+</ul>
+
+<div id="Purpose" class="title">Purpose of DB</div>
+<div class="subtitle">Before DB, File System</div>
+
+<ul>
+  <li>각 파일마다 필요한 데이터를 따로 저장하기 때문에 중복된 데이터 발생, 데이터 일관성 저하</li>
+  <li>데이터 접근, 처리가 어려움(DB와 달리 명령어를 직접 작성해야 함)</li>
+  <li>여러 파일과 포맷이 나타남</li>
+  <li>제약 조건을 추가하거나 변경이 어려움</li>
+  <li>동시 접근 불가</li>
+  <li>작업 도중 에러 발생 시 에러 처리 어려움</li>
+</ul>
+
+<div class="subtitle">With DB</div>
+
+<ul>
+  <li>데이터 중복을 없애 일관성 유지</li>
+  <li>명령어를 통한 빠른 접근</li>
+  <li>동시 접근 가능</li>
+  <li>작업 중 에러 처리 (Atomicity of updates)</li>
+  <li>조건 변경 쉬움</li>
+  <li>보안</li>
+</ul>
+
+<div id="Model" class="title">Data Models</div>
+<ul>
+  <li>Relational Model</li>
+  <li>Entity-Relationship data Model</li>
+  <li>Object-based data Model</li>
+  <li>Semi-structured data Model</li>
+  <li>Network Modal, Hiearchical Modal</li>
+</ul>
+
+<div class="subtitle">Relational Model</div>
+
+<ul>
+  <li>2차원 테이블 형태의 데이터</li>
+  <li>행과 열로 구성</li>
+  <li>Attribute(속성)
+    <ul>
+      <li>열(Column)의 이름</li>
+      <li>순서가 없음</li>
+      <li>속성의 값은 하나의 값만을 가짐(Atomic)</li>
+    </ul>
+  </li>
+  <li>Tuple
+    <ul>
+      <li>실제 데이터, 행(Row)</li>
+      <li>순서가 없음</li>
+      <li>각 튜플은 유일해야 함</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="subtitle">Levels of Abstraction</div>
+
+<ul>
+  <li>Physical Level: 어떻게 레코드가 저장되는지</li>
+  <li>Logical Level: 데이터가 저장되어 있는 형태(관계)</li>
+  <li>View Level: 세부 데이터는 숨긴 채 보여지는 부분</li>
+</ul>
+
+<div class="subtitle">Schema, 구조</div>
+<div class="define">DB의 구조와 제약조건에 관해 전반적인 정보</div>
+
+<ul>
+  <li>속성, 개체, 관계, 제약조건을 기술</li>
+  <li>Logical Schema: 테이블의 정보</li>
+  <li>Physical Schema: 물리적인 구조(파일 구조)</li>
+  <li>Instance: 입력된 데이터</li>
+  <li>ex) table (ID, name, dept_name, salary)</li>
+</ul>
+
+<div class="subtitle">Instance</div>
+
+<ul>
+  <li>스키마에 대한 실제 데이터, 테이블의 각 행(row)</li>
+  <li>DB 수정에 따라 변경</li>
+  <li>인스턴스의 집합 = DB의 상태(state)</li>
+</ul>
+
+<div class="subtitle">Physical Data Independence</div>
+
+<ul>
+  <li>물리적인 구조(스키마)를 변경해도 논리적 구조(스키마)에는 영향을 주지 않음</li>
+  <li>물리적 추상화 레벨에서 변경이 일어나도, 논리적 추상화 레벨은 알지 못 함</li>
+</ul>
+
+<div id="Languages" class="title">Database Languages</div>
+<div class="subtitle">DDL</div>
+
+<ul>
+  <li>Data Definition Language</li>
+  <li>테이블의 스키마를 정의하는 명령어</li>
+  <li>ex) CREATE, ALTER</li>
+  <li>DDL 컴파일러가 Data Dictionary에 해당 테이블에 대한 메타데이터(db스키마 – 구조, 고유번호, 접근권한 등) 저장</li>
+</ul>
+
+<div class="section">
+  <div class="subsub">Metadata</div>
+
+- 데이터에 대한 데이터(정보)
+- 다른 데이터를 설명해주는 정보
+
+</div>
+
+<div class="subtitle">DML</div>
+
+<ul>
+  <li>Data Manipulation Language</li>
+  <li>데이터에 직접 접근하거나 수정하는 명령어</li>
+  <li>aka 쿼리문</li>
+  <li>
+    <div class="red">Procedural DML</div>
+    <ul>
+      <li>어떻게 데이터 가져올 것인지 명시해야 함</li>
+    </ul>
+  </li>
+  <li>
+    <div class="red">Declarative DML</div>
+    <ul>
+      <li>데이터 획득 방법 명시 없음</li>
+    </ul>
+    <ul>
+      <li>ex) SELECT x FROM t WHERE x &gt; 100</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="subtitle">SQL</div>
+
+<ul>
+  <li>Structured Query Language</li>
+  <li>non-procedual한 언어 == &lt;div class="red"&gt;Declarative DML&lt;/div&gt;</li>
+  <li>ex) SELECT name FROM table WHERE condition</li>
+  <li>일반 프로그래밍 언어는 아님</li>
+  <li>일반 프로그래밍 언어에서 Embedded SQL 이용</li>
+</ul>
+
+<div id="Design" class="title">DB Design</div>
+
+<ul>
+  <li>Logical Design
+    <ul>
+      <li>필요한 속성(Attributes) 정의</li>
+      <li>속성간의 관계 고려</li>
+    </ul>
+  </li>
+  <li>Physical Design
+    <ul>
+      <li>물리적인 자료 구조 정의</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="title">DB Engine</div>
+<p><em>학기 범위 아님</em></p>
+
+<ul>
+  <li>Storage Manager</li>
+  <li>Query Processor Component</li>
+  <li>Transaction Management Component</li>
+</ul>
+
+<div id="Architecture" class="title">DB Architecture</div>
+
+<ul>
+  <li>Centralized DB</li>
+  <li>Client-Server</li>
+  <li>Parrallel DB</li>
+  <li>Distributed DB</li>
+</ul>
+
+<div class="subtitle">Application</div>
+<div class="section">
+  <div class="subsub">Two-Tier</div>
+  - 서버에 DB만 존재
+  - 클라이언트에 모든 프로그램 존재
+
+  <div class="subsub">Three-Tier</div>
+  - 서버에도 앱이 존재
+  - 클라이언트 프로그램이 가벼워짐
+
+</div>
+
+<div id="User" class="title">Database Users and Administrators</div>
+
+<ul>
+  <li>Naive User, 실제 사용자</li>
+  <li>App Programmer, 개발자</li>
+  <li>Analysts, 분석가</li>
+  <li>Administrator, 관리자</li>
+</ul>
+
+<div class="subtitle">DB Administrator</div>
+
+<ul>
+  <li>조직에서 DB를 관리하는 인물</li>
+  <li>스키마 정의 (테이블 정의)</li>
+  <li>저장매체 구조, 접근 방법 정의</li>
+  <li>스키마와 물리적 구조 수정</li>
+  <li>데이터 접근 권한 관리</li>
+  <li>유지/보수</li>
+  <li>백업</li>
+  <li>저장장치 용량 관리</li>
+  <li>DB 모니터</li>
+</ul>
+
+<div id="History" class="title">History of DB</div>
+
+<div class="subtitle">50s ~ early 60s</div>
+<ul>
+  <li>File System</li>
+  <li>Punch card, Magnetic Tape</li>
+</ul>
+
+<div class="subtitle">late 60s ~ 70s</div>
+<ul>
+  <li>Tedd Codd Define Relational Data Model</li>
+  <li>Network, Hierarchical Model</li>
+  <li>Hard disk</li>
+</ul>
+
+<div class="subtitle">80s</div>
+<ul>
+  <li>SQL becomes Standard</li>
+  <li>Parallel, Distributed, Object-oriented Model</li>
+</ul>
+
+<div class="subtitle">90s</div>
+<ul>
+  <li>Data-Mining</li>
+  <li>Data warehouses</li>
+</ul>
+
+<div class="subtitle">00s</div>
+<ul>
+  <li>Big Data, NoSQL</li>
+</ul>
+
+<div class="subtitle">10s</div>
+<ul>
+  <li>SQL for Big Data</li>
+  <li>Massive Parallel DB</li>
+  <li>Main Memory as Storage</li>
+</ul>
+:ET

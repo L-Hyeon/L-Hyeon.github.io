@@ -1,0 +1,1132 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-03-11T11:34:46+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">I’m L-Hyun</title><subtitle>L-Hyun&apos;s CS Blog Background Photo by &lt;a href=&quot;https://unsplash.com/@yuhao?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText&quot;&gt;Pang Yuhao&lt;/a&gt; on &lt;a href=&quot;https://unsplash.com/backgrounds/cool/awesome?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText&quot;&gt;Unsplash&lt;/a&gt;</subtitle><author><name>L-Hyun</name></author><entry><title type="html">네트워크 실습 - 1</title><link href="http://localhost:4000/network/2022/03/10/Network-Training_1.html" rel="alternate" type="text/html" title="네트워크 실습 - 1" /><published>2022-03-10T00:00:00+09:00</published><updated>2022-03-10T00:00:00+09:00</updated><id>http://localhost:4000/network/2022/03/10/Network-Training_1</id><content type="html" xml:base="http://localhost:4000/network/2022/03/10/Network-Training_1.html"><![CDATA[<style type="text/css">
+  @font-face {
+    font-family: 'Cafe24SsurroundAir';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  .article {
+    font-family: 'Cafe24SsurroundAir';
+  }
+  .contentsItems { color: black; }
+  .contentsItems:hover {
+    color: black;
+    text-decoration: underline;
+  }
+  .title {
+    font-size: 30px;
+    border-bottom: 3px solid #6667ab;
+    border-left: 20px solid #6667ab;
+    padding-left: 5px;
+    margin-bottom: 10px;
+  }
+  .subtitle {
+    margin-top: 20px;
+	  font-size: 25px;
+	  color: #5e5e7d;
+  }
+  .subsub {
+    font-size: 17px;
+    color: #13356b;
+  }
+  .section {
+    padding-left: 15px;
+  }
+  .define{
+    font-weight: bold;
+    padding-left: 15px;
+  }
+  .red{
+    display: inline;
+    color: #a12d27;
+  }
+  .disabled {
+    display: inline;
+    color: #777777;
+  }
+</style>
+
+<div class="article">
+
+<div class="title">네트워크 프로그래밍</div>
+
+- aka 소켓 프로그래밍
+- 소켓 기반으로 프로그래밍
+
+<div class="subtitle">소켓</div>
+
+- OS에 의해 제공되는 SW적 네트워크 연결 장치
+- 프로그래머가 물리적, SW적 내용을 신경쓰지 않게 하는 연결 도구
+- 서버 소켓(리스닝 소켓)
+- 클라이언트 소켓
+
+<div class="subtitle">서버 소켓 in Coding</div>
+<div class="section"><div class="subsub">소켓 생성</div></div>
+
+- socket 함수로 생성
+- 송신 소켓, 수신 소켓 생성 방법은 차이가 있음
+
+```c
+socket(int domain, int type, int protocol);
+```
+
+<div class="section"><div class="subsub">소켓의 주소 할당, 연결</div></div>
+
+```c
+int bind(int sockfd, struct sockaddr *myaddr, socklen_t addrlen);
+```
+
+<div class="section"><div class="subsub">연결요청 가능한 상태의 소켓</div></div>
+
+- Server 측에서는 서버 소켓으로 변환시켜 줘야 요청을 받을 수 있음
+- Client 측은 상관 없음
+
+```c
+int listen(int sockfd, int backlog);
+// 소켓을 수신 가능한 소켓으로 변환
+```
+
+<div class="section"><div class="subsub">연결요청의 수락</div></div>
+
+- accept 함수 호출 이후 데이터 송수신 가능
+- 연결 요청이 있는 경우에만 accept 함수가 반환
+
+```c
+int accept(int sockfd, struct sockaddr *addr, socklen_t *addrlen);
+// 연결이 오면 소켓을 리턴
+
+// 최초 생성한 소켓은 수신 용도로만 사용됨
+// 사용자와 데이터 교환은 리턴된 소켓에서 실행
+```
+
+<div class="subtitle">클리아언트 소켓 in Coding</div>
+
+- 소켓 생성, bind까지는 동일
+
+<div class="section"><div class="subsub">연결 요청</div></div>
+
+```c
+int connect(int sockfd, struct sockaddr *serv_addr, socklen_t addrlen)
+//연결 성공 시 1 반환, 실패 시 0 반환
+```
+
+</div>]]></content><author><name>L-Hyun</name></author><category term="Network" /><category term="CS" /><category term="Networkj" /><category term="네트워크" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">알고리즘 - 3</title><link href="http://localhost:4000/algorithm/2022/03/09/Algorithms_3.html" rel="alternate" type="text/html" title="알고리즘 - 3" /><published>2022-03-09T00:00:00+09:00</published><updated>2022-03-09T00:00:00+09:00</updated><id>http://localhost:4000/algorithm/2022/03/09/Algorithms_3</id><content type="html" xml:base="http://localhost:4000/algorithm/2022/03/09/Algorithms_3.html"><![CDATA[<style type="text/css">
+  @font-face {
+    font-family: 'Cafe24SsurroundAir';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  .article {
+    font-family: 'Cafe24SsurroundAir';
+  }
+  .contentsItems { color: black; }
+  .contentsItems:hover {
+    color: black;
+    text-decoration: underline;
+  }
+  .title {
+    font-size: 30px;
+    border-bottom: 3px solid #6667ab;
+    border-left: 20px solid #6667ab;
+    padding-left: 5px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+  }
+  .subtitle {
+    margin-top: 20px;
+	  font-size: 25px;
+	  color: #5e5e7d;
+  }
+  .subsub {
+    font-size: 17px;
+    color: #13356b;
+  }
+  .section {
+    padding-left: 15px;
+  }
+  .define{
+    font-weight: bold;
+    padding-left: 15px;
+  }
+  .red{
+    display: inline;
+    color: #a12d27;
+  }
+  .disabled {
+    display: inline;
+    color: #777777;
+  }
+</style>
+
+<div class="title">Contents</div>
+
+<ul>
+  <li>
+    <div class="disabled">Introdcution</div>
+  </li>
+  <li>
+    <div class="disabled">Mathematical Background</div>
+  </li>
+  <li>
+    <div href="#Analyzing" class="contentsItems">Analyzing Algorithms and Problems</div>
+  </li>
+  <li>
+    <div href="#Asymptotic" class="contentsItems">Classifying Functions by Their Asymptotic Growth Rates</div>
+  </li>
+  <li>
+    <div class="disabled">Searching an Ordered Array</div>
+  </li>
+</ul>
+
+<div id="Analyzing" class="title">Analyzing Algorithms and Problems(Cont.)</div>
+
+<div class="subtitle">Space Usage and Simplicity</div>
+<div class="section">
+  <div class="subsub">Space Usage</div>
+  - Amout of Space Used depends on Input
+      - 인풋 타입, 크기에 따라 변화 == Worst, Average 분석 가능
+  - Time and Space <div class="red">Tradeoff(반비례)</div>
+  <div class="subsub">Simplicity is Virture(미덕)</div>
+  - Correctness 분석이 쉬워짐
+  - 가독성이 높아 프로그램 작성, 디버깅, 수정이 쉬워짐
+</div>
+
+<div class="subtitle">Problem Complexity</div>
+<div class="define">모든 문제가 고유한 복잡도를 가지고 있음</div>
+
+<div class="subsub">How to Analyze Problem Complexity</div>
+<ul>
+  <li>알고리즘의 클래스 선택
+    <ul>
+      <li>어떤 연산으로 해결할 것인지</li>
+      <li>Basic Operation 선택</li>
+    </ul>
+  </li>
+  <li>문제를 해결하기 위해 필요한 &lt;div class="red"&gt;기본연산의 최소 횟수&lt;/div&gt;</li>
+</ul>
+<div class="subsub">Optimal</div>
+<div class="define">가능한 최고의 알고리즘 == Best Possible</div>
+
+<div class="subtitle">How To Show an Algorithm is Optimal</div>
+<div class="section">
+
+알고리즘 A의 Worst-Case Complexity $W_A(n)$, 문제의 Complexity $F(n)$
+
+  <div class="subsub">if W_A(n) == F(n)</div>
+  알고리즘 A is <div class="red">Optimal</div>
+  <div class="subsub">else</div>
+  - 더 좋은 알고리즘이 존재할 수 있다
+  <div class="subsub">or</div>
+  더 좋은 <div class="red">Lower Bound</div>(Complexity of Problem)가 존재할 수 있다
+</div>
+
+<div class="subtitle">ex. Matrix Multiplication</div>
+<div class="section">
+
+- 두 행렬의 곱셈
+- 하나의 원소를 계산하기 위해 곱셈 n번, 덧셈 n-1번 필요 == $O(n)$ time
+  결과 행렬은 nxn이고, $n^2$개의 원소를 가지기 때문에 $O(n^3)$ Time
+  == Upper Bound = $O(n^3)$ Time
+- 현재 Upper Bound = $O(n^{2.3728596})$
+</div>
+
+<div class="subtit">ex. Devise A</div>
+<div class="section">
+  <div class="subsub">Problem</div>
+  Find the Largest Entry in Array E sized n
+  <div class="subsub">Pseudo Code</div>
+
+```c
+  int findMax(int[] E, int n){
+    int max = E[0];
+    for (int i = 1; i &lt; n; i++){
+      if (max &lt; E[i])
+        max = E[i];
+    }
+    return max;
+  }
+```
+
+  <div class="subsub">Basic Operation</div>
+  배열의 원소 E[i]와 현재까지 가장 큰 원소 max를 비교하는 연산
+
+  <div class="subsub">Worst-Case</div>
+
+n-1번의 비교를 해야 함 == $W(n) = n - 1$
+
+  <div class="subsub">Problem Complexity</div>
+
+- Class of Algorithms
+  - copy, compare
+- Finding F(n)
+
+  1. 배열에서 중복이 없다고 가정
+  2. n개의 다른 원소들에서 n-1개의 원소들은 최대값이 아님
+  3. 한 원소가 최대값이 아님을 알기 위해서는 최소 1번은 다른 원소와 비교를 해야 함
+  4. n-1개의 원소들은 각각 1번씩은 다른 원소와 비교해야 최대값이 아님을 알게 될 수 있음
+  5. 최소 n-1번의 기본연산(비교)가 필요함
+  6. $F(n)=n-1$
+
+  <div class="subsub">결론</div>
+
+$W(n) == F(n)$이므로 알고리즘은 Optimal
+
+</div>
+
+<div id="Asymptotic" class="title">Classifying Functions by Their Asymptotic Growth Rates</div>
+<div class="subtitle">Classifying Functions</div>
+<div class="define">계수와 상수를 제외한 함수들을 비교하고 분류</div>
+<div class="section">
+<div class="subsub">Big Omega</div>
+
+- $\Omega(g)$
+- 적어도 함수 g보다는 증가율이 <div class="red">같거나 빠른</div> 함수들의 집합
+
+<div class="subsub">Big Theta</div>
+
+- $\theta(g)$
+- 적어도 함수 g보다는 증가율이 <div class="red">같은</div> 함수들의 집합
+
+<div class="subsub">Big Oh</div>
+
+- $O(g)$
+- 적어도 함수 g보다는 증가율이 <div class="red">같거나 느린</div> 함수들의 집합
+
+</div>
+
+<div class="subtitle">Big X sets</div>
+<div class="section">
+
+양수에 대한 함수 $f, g$
+상수 $c$, 자연수 $n_0$
+
+- $O(n)=f(n)\leq c \times g(n)\,for\,n \geq n_0$ == Upper Bound
+- $\Omega(n)=f(n)\geq c \times g(n)\,for \,n \geq n_0$ == Lower Bound
+- $\theta(n)=O(g) \cap \omega(n)$
+
+</div>
+
+<div class="subtitle">Little x sets</div>
+
+<ul>
+  <li>$o(g), \omega(g)$ = 같은 경우 제외</li>
+</ul>]]></content><author><name>L-Hyun</name></author><category term="Algorithm" /><category term="CS" /><category term="Algorithmm" /><category term="알고리즘" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">네트워크 - 2</title><link href="http://localhost:4000/network/2022/03/08/Network_2.html" rel="alternate" type="text/html" title="네트워크 - 2" /><published>2022-03-08T00:00:00+09:00</published><updated>2022-03-08T00:00:00+09:00</updated><id>http://localhost:4000/network/2022/03/08/Network_2</id><content type="html" xml:base="http://localhost:4000/network/2022/03/08/Network_2.html"><![CDATA[<h3 id="address">Address</h3>
+
+<p>DataLink - Physical(mac주소)
+Network - Logical(IP주소)
+Transport - Port</p>
+
+<h3 id="physical-address">Physical Address</h3>
+
+<ul>
+  <li>MAC주소 사용(48비트, 장비 자체의 고유번호)</li>
+  <li>프레임에 붙어 있는 destination을 확인해서 본인 것만 받음</li>
+  <li>스위치가 연결된 장비들의 주소를 가진 테이블을 보고 보내주기도 함</li>
+  <li>전송되는 과정에서 계속 변경됨(라우터를 만날 때마다)</li>
+</ul>
+
+<h5 id="장비">장비</h5>
+
+<ol>
+  <li>리피터, 신호 증폭</li>
+  <li>허브, 리피터처럼 신호를 증폭하지만 연결된 모든 곳으로 보냄</li>
+  <li>브릿지, 리피터 + 필터링(목적지에 맞는 곳으로만 보냄)</li>
+  <li>스위치 - 허브 + 필터링</li>
+</ol>
+
+<h3 id="logical-address">Logical Address</h3>
+
+<ul>
+  <li>IP주소 사용</li>
+  <li>전송되는 과정에서 변경되지 않음</li>
+</ul>
+
+<h3 id="port-address">Port Address</h3>
+
+<ul>
+  <li>목적지 컴퓨터까지 온 후 목적 프로그램 식별</li>
+  <li>컴퓨터가 프로그램마다 부여하는 번호</li>
+  <li>전송되는 동안 변하지 않음</li>
+</ul>]]></content><author><name>L-Hyun</name></author><category term="Network" /><category term="CS" /><category term="Networkj" /><category term="네트워크" /><summary type="html"><![CDATA[Address]]></summary></entry><entry><title type="html">네트워크 - 3</title><link href="http://localhost:4000/network/2022/03/08/Network-3.html" rel="alternate" type="text/html" title="네트워크 - 3" /><published>2022-03-08T00:00:00+09:00</published><updated>2022-03-08T00:00:00+09:00</updated><id>http://localhost:4000/network/2022/03/08/Network-3</id><content type="html" xml:base="http://localhost:4000/network/2022/03/08/Network-3.html"><![CDATA[<h2 id="pre">Pre</h2>
+
+<h3 id="circuit-switching-network">Circuit Switching Network</h3>
+
+<ul>
+  <li>중앙제어 전달 방식</li>
+  <li>전송하기 전에 이미 경로가 정해짐</li>
+</ul>
+
+<h3 id="packet-switching-network">Packet Switching Network</h3>
+
+<ul>
+  <li>목적지 주소 전달 방식</li>
+  <li>전송하는 과정에서 경로가 정해짐</li>
+</ul>
+
+<h3 id="packet">Packet</h3>
+
+<ul>
+  <li>대개 연결에서 쓰이는 데이터는 500Byte</li>
+  <li>헤더는 각 레이어마다 20Byte, 포트 번호는 4Byte (보내는 쪽, 받는 쪽 각각 2바이트)</li>
+  <li>IP주소는 8Byte (각 4바이트)</li>
+</ul>
+
+<h3 id="why-mac-address-in-data-link">Why Mac Address In Data Link?</h3>
+
+<ul>
+  <li>개발될 당시에는 Network 레이어에는 다른 주소들이 있었음</li>
+  <li>이미 로컬에서는 MAC을 쓰기로 합의된 상태</li>
+  <li>Network에서 IP 이외의 것들이 사장되었기에 지금 보기에는 문제가 없어보임</li>
+  <li>BUT, 예전에는 문제가 있었다…</li>
+</ul>
+
+<h3 id="intermediate-node">Intermediate Node</h3>
+
+<ul>
+  <li>중간 라우터는 패킷 전체 내용을 보지 않음</li>
+  <li>IP주소를 가지는 Network 레이어의 헤더까지만 보고 다음 노드로 전송</li>
+</ul>
+
+<h2 id="tcp">TCP</h2>
+
+<h3 id="well-known-port">Well Known Port</h3>
+
+<p><img src="https://t1.daumcdn.net/cfile/tistory/247E473356FB590B30?download" /></p>
+
+<h3 id="stream-delivery">Stream Delivery</h3>
+
+<ul>
+  <li>보내기 위한 데이터를 Buffer에 저장</li>
+  <li>패킷마다 번호를 붙여 관리 - 랜덤하게 시작 번호 지정</li>
+  <li>버퍼는 Empty, Sent, Not Sent로 구분해서 패킷 관리</li>
+  <li>각 커넥션에서 보내면서 받았는 지 확인</li>
+  <li>시작 패킷을 제외하고는 시퀀스 넘버를 따름
+    <ul>
+      <li>시작이 10001이고 그 패킷의 크기가 1000이면 11001이 다음 패킷의 번호가 됨 그 다음은 12001…</li>
+    </ul>
+  </li>
+  <li>패킷은 세그먼트라고 함</li>
+</ul>
+
+<h3 id="segment">Segment</h3>
+
+<ul>
+  <li>20 ~ 60 Byte 헤더를 가짐</li>
+  <li>헤더의 Sequence Number == 패킷 번호</li>
+</ul>]]></content><author><name>L-Hyun</name></author><category term="Network" /><category term="CS" /><category term="Networkj" /><category term="네트워크" /><summary type="html"><![CDATA[Pre]]></summary></entry><entry><title type="html">데이터베이스 - 2</title><link href="http://localhost:4000/db/2022/03/08/DB_2.html" rel="alternate" type="text/html" title="데이터베이스 - 2" /><published>2022-03-08T00:00:00+09:00</published><updated>2022-03-08T00:00:00+09:00</updated><id>http://localhost:4000/db/2022/03/08/DB_2</id><content type="html" xml:base="http://localhost:4000/db/2022/03/08/DB_2.html"><![CDATA[<h3 id="관계형-모델">관계형 모델</h3>
+
+<ul>
+  <li>attributes(columns) - 스키마의 이름</li>
+  <li>tuples(rows) - 실제 값들, 레코드 하나</li>
+</ul>
+
+<h3 id="relation-schema-and-instance">Relation Schema and Instance</h3>
+
+<p>ex) Instructor = (ID, name, dept_name, salary)
+instructor = Realtion Schema</p>
+
+<ul>
+  <li>instance = 현재 값 $r(R)$</li>
+</ul>
+
+<h3 id="attributes">Attributes</h3>
+
+<ul>
+  <li>domain = 해당 속성에서 유효한 값의 범위</li>
+  <li>각 값은 atomic == 하나의 값만 가짐</li>
+  <li>null값 허용</li>
+</ul>
+
+<h3 id="relations-are-unordered">Relations are Unordered</h3>
+
+<ul>
+  <li>테이블을 정렬되어 있지 않음</li>
+</ul>
+
+<h3 id="database-schema">Database Schema</h3>
+
+<ul>
+  <li>DB Schema - Logical Structure of DB</li>
+  <li>Instance - snapshot of the data, 당시의 db에 저장된 값</li>
+</ul>
+
+<h3 id="key">Key</h3>
+
+<ul>
+  <li>특정한 튜플을 지정하는 유일한 대표값</li>
+  <li>superKey = primary key를 포함한 집합</li>
+  <li>candidateKey = primary key만을 포함한 집합</li>
+  <li>foreignKey = 다른 테이블에도 반드시 존재하는 속성</li>
+</ul>]]></content><author><name>L-Hyun</name></author><category term="DB" /><category term="CS" /><category term="Database" /><category term="데이터베이스" /><summary type="html"><![CDATA[관계형 모델]]></summary></entry><entry><title type="html">컴퓨터 구조 - 2</title><link href="http://localhost:4000/structure/2022/03/08/Computer-Structure_2.html" rel="alternate" type="text/html" title="컴퓨터 구조 - 2" /><published>2022-03-08T00:00:00+09:00</published><updated>2022-03-08T00:00:00+09:00</updated><id>http://localhost:4000/structure/2022/03/08/Computer-Structure_2</id><content type="html" xml:base="http://localhost:4000/structure/2022/03/08/Computer-Structure_2.html"><![CDATA[<h3 id="response-time-and-throughput">Response Time and Throughput</h3>
+
+<ul>
+  <li>Response Time</li>
+  <li>Throughput
+    <ul>
+      <li>total work / unit time</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="relative-performance">Relative Performance</h3>
+
+<ul>
+  <li>$Performance = 1/Execution Time$</li>
+  <li>X is n times faster than Y
+$Performance_x / Performance_y$
+$=Time_x/Time_y = n$</li>
+</ul>
+
+<h3 id="measuring-execution-time">Measuring Execution Time</h3>
+
+<ul>
+  <li>Elapsed time
+    <ul>
+      <li>총 반응 시간, 모든 측면 고려</li>
+    </ul>
+  </li>
+  <li>CPU Time
+    <ul>
+      <li>user cpu time - 순수 프로그램 실행 시간</li>
+      <li>system cpu time - os가 관여한 시간</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="cpu-clocking">CPU Clocking</h3>
+
+<ul>
+  <li>주기적인 클락에 따라서 운영됨</li>
+  <li>clock period = 1/clock frequency
+**cpu는 조합회로와 순차회로 구성</li>
+</ul>
+
+<h3 id="cpu-time">CPU Time</h3>
+
+<p>$CPU Time = Clock Cycles \times Cycle Time$</p>
+
+<ul>
+  <li>사이클 횟수 줄이기</li>
+  <li>주파수 늘리기</li>
+</ul>
+
+<h3 id="cycle-per-instruction">Cycle Per Instruction</h3>
+
+<p><em>$CPI = Cycle / Instruction\,Count$</em>
+<em>$CPU\,Time = Instruction\,Count \times CPI \times Cycle Time$</em></p>
+
+<ul>
+  <li>프로그램에 따라 Instruction Count 달라짐</li>
+</ul>
+
+<h3 id="cpi-example">CPI Example</h3>
+
+<p>Instuction Count I
+A, Cycle Time = 250ps, CPI = 2.0
+B, Cycle Time = 500ps, CPI = 1.2
+$Time_A = I\times250ps\times2.0 = 500ps\times I$
+$Time_B = I\times500ps\times1.2 = 600ps\times I$
+$Time_B/Time_A = 600ps/500ps = 1.2$
+$B\,is\,1.2\,times\,faster\,than\,A$</p>
+
+<h3 id="cpi-cont">CPI (cont.)</h3>
+
+<p>$\displaystyle Clock\,Cycles = \sum_{i=1}^{n}CPI_i\times Instruction\,Time_i$</p>
+
+<h3 id="affects-performance">Affects Performance</h3>
+
+<ul>
+  <li>Algorithm</li>
+  <li>Programming Language, Compiler, Architecture</li>
+  <li>Processor, Memory system</li>
+  <li>I/O</li>
+</ul>
+
+<h3 id="연습문제">연습문제</h3>
+
+<p>$IC = 2.389*10^{12}$
+$Execution Time = 750s$</p>
+
+<p>a) cycle time = 0.333ns이면 CPI?
+CPI = cycles/IC
+$750s/0.333ns/2.389*10^{12} = 0.943$</p>
+
+<p>b) IC 10% 증가, CPI 5% 감소 time?
+$time = CPI<em>IC</em>Cycle$
+$1.1*0.95 = 1.045$</p>
+
+<h3 id="processor-trend">Processor Trend</h3>
+
+<ul>
+  <li>2000년 전까지는 클럭 주파수가 계속해서 상승</li>
+  <li>BUT, 전력 소모량 역시 계속해서 증가</li>
+  <li>전력소모량을 염두해 프로세서 수를 늘리는 방식 채용</li>
+</ul>
+
+<p>$Power = Capacity\,Load\times Voltage^2 \times Frequency$</p>
+
+<h3 id="reducing-power">Reducing Power</h3>
+
+<ul>
+  <li>주파수를 약간만 줄여도 파워 소모량에 엄청난 변화</li>
+  <li>주파수를 조금만 줄이고 코어 수를 늘리자</li>
+</ul>
+
+<h3 id="summary">Summary</h3>
+
+<ul>
+  <li>CPU Time 계산</li>
+  <li>전력 문제로 주파수를 높일 수 없어 멀티 코어 아키텍쳐가 나옴</li>
+</ul>]]></content><author><name>L-Hyun</name></author><category term="Structure" /><category term="CS" /><category term="Computer Structure" /><category term="컴퓨터 구조론" /><summary type="html"><![CDATA[Response Time and Throughput]]></summary></entry><entry><title type="html">운영체제 - 2</title><link href="http://localhost:4000/os/2022/03/07/OS_2.html" rel="alternate" type="text/html" title="운영체제 - 2" /><published>2022-03-07T00:00:00+09:00</published><updated>2022-03-07T00:00:00+09:00</updated><id>http://localhost:4000/os/2022/03/07/OS_2</id><content type="html" xml:base="http://localhost:4000/os/2022/03/07/OS_2.html"><![CDATA[<h3 id="os의-구조">OS의 구조</h3>
+
+<ul>
+  <li>User Interfaces
+    <ul>
+      <li>GUI, batch, command line</li>
+    </ul>
+  </li>
+  <li>System Calls</li>
+  <li>Kernal
+    <ul>
+      <li>program execution, I/O operations, file systems, communication, resource allocation, accounting, error detections, protection and secuirty</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="computer-hardware">Computer Hardware</h3>
+
+<ul>
+  <li>System Bus</li>
+  <li>CPU</li>
+  <li>Disk Controller</li>
+  <li>USB Controller</li>
+  <li>Graphics Adapter</li>
+  <li>Memory</li>
+</ul>
+
+<h5 id="system-bus">System Bus</h5>
+
+<ul>
+  <li>각 요소들 연결</li>
+  <li>종류
+    <ul>
+      <li>Data Bus - 데이터 전송</li>
+      <li>Command/Address Bus - 명령어(Read, Write)와 주소 전달</li>
+    </ul>
+  </li>
+  <li>요소
+    <ul>
+      <li>Bus Arbiter(관리자) - 충돌 방지</li>
+      <li>Bus Master - bus transaction을 요청하는 부류
+        <ul>
+          <li>CPU, DMA controller(다이렉트 메모리 엑세스)</li>
+        </ul>
+      </li>
+      <li>Bus Slave - bus master로부터 요청을 받는 부류
+        <ul>
+          <li>상황에 따라 모든 요소 포함</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h5 id="io-operations">I/O Operations</h5>
+
+<ul>
+  <li>I/O 컨트롤러가 CPU 요청에 따라 각각의 I/O operation 실행</li>
+  <li>I/O 컨트롤러 레지스터
+    <ul>
+      <li>데이터 레지스터</li>
+      <li>컨트롤 레지스터 - 대기열</li>
+    </ul>
+  </li>
+  <li>
+    <p>작동 방식</p>
+
+    <ol>
+      <li><strong>Read</strong> status register of the I/O controller - 가용 상태인지 확인</li>
+      <li><strong>Write</strong> data to I/O Controller</li>
+    </ol>
+
+    <ul>
+      <li>사용 불가능한 경우 지속적으로 Read</li>
+    </ul>
+  </li>
+  <li>Polling &amp; Interrput-driven
+    <ul>
+      <li>I/O status를 어떻게 확인할 것인지</li>
+      <li>Polling - CPU가 I/O status를 지속적으로 확인</li>
+      <li>Interrupt-Driven - I/O 컨트롤러가 작업 가능을 CPU에 얄려줌</li>
+    </ul>
+  </li>
+  <li>Memory-mapped &amp; Port-mapped
+    <ul>
+      <li>I/O 레지스터 접근을 어떻게 할 것인지</li>
+      <li>Memory-mapped - 메모리에 I/O 주소를 사용</li>
+      <li>Port-mapped - 별개의 포트로 I/O 주소 사용</li>
+    </ul>
+  </li>
+</ul>
+
+<h5 id="interrupts-mechanism">Interrupts Mechanism</h5>
+
+<p><em><strong>CPU 외부에서</strong> CPU에게 이벤트 발생을 알려 CPU의 흐름을 방해</em></p>
+
+<ul>
+  <li>ISR(Interrupt Service Routine) - 인터럽트가 오면 어떻게 대응할 것인지 미리 정의되어 있는 함수, 인터럽트 벡터에 존재</li>
+  <li>Trap, Exception - Software-Generated Interrupt, CPU 내부에서 발생시키는 인터럽트</li>
+  <li>OS is <strong>Interrupt-Driven</strong></li>
+</ul>
+
+<h5 id="interrupt-handling">Interrupt Handling</h5>
+
+<ol>
+  <li>작업 중인 명령까지 수행하고 작업(레지스터값, PC값 등)을 저장</li>
+  <li>인터럽트 벡터와 IRQ를 통해 ISR의 주소를 알아냄</li>
+  <li>ISR 실행</li>
+  <li>작업을 불러와서 재개</li>
+</ol>
+
+<h2 id="os-design-and-implementaion">OS Design and Implementaion</h2>
+
+<h5 id="os-design">OS Design</h5>
+
+<p><em>Not Solvable, 정답은 없음</em></p>
+
+<ol>
+  <li>목표, 세부사항 설정</li>
+  <li>하드웨어와 시스템 선택</li>
+</ol>
+
+<ul>
+  <li>Policy(무엇을 해야 하는 가), Mechanism(어떻게 할 것인가)을 구분
+    <ul>
+      <li>프로젝트를 유연하게 만들어줌</li>
+    </ul>
+  </li>
+</ul>
+
+<h5 id="os-implementation">OS Implementation</h5>
+
+<ul>
+  <li>주로 C, C++, 몇몇 부분은 기계어, 어셈블리어, 스크립트, 파이썬 등등
+    <ul>
+      <li>여러가지 언어의 혼합</li>
+    </ul>
+  </li>
+  <li>High-Level은 여러 하드웨어에 포트 쉬움, 빠르고 간결한 코드, 디버깅 쉬움
+    <ul>
+      <li>BUT, 느림</li>
+    </ul>
+  </li>
+  <li>핵심적인 기능 이외에는 알고리즘의 속도가 더 중요해서 High-Level 주로 사용</li>
+</ul>
+
+<h3 id="os-structure">OS Structure</h3>
+
+<ul>
+  <li>Decomposition(모듈화)</li>
+  <li>Abstraction(추상화)</li>
+</ul>
+
+<h5 id="simple-structure-ms-dos">Simple-Structure (MS-DOS)</h5>
+
+<ul>
+  <li>비모듈화</li>
+  <li>프로그램 -&gt; 커널 -&gt; 완료해야 다시 프로그램으로 돌아감</li>
+  <li>Single Program</li>
+</ul>
+
+<h5 id="more-complex-initial-unix">More Complex (Initial UNIX)</h5>
+
+<ul>
+  <li>시스템 프로그램과 커널로 모듈화</li>
+</ul>
+
+<h5 id="layered-approach">Layered Approach</h5>
+
+<ul>
+  <li>몇 개의 레이어로 모듈화</li>
+  <li>각 레이어는 바로 밑 레이어로 소통 가능</li>
+</ul>
+
+<h5 id="micro-kernal">Micro Kernal</h5>
+
+<ul>
+  <li>커널의 경량화, 필수적인 부분만 남기고 나머지는 user-level program으로</li>
+  <li>message passing으로 유저 모듈간 통신
+    <ul>
+      <li>메모리 복사 발생 == 오버헤드 발생</li>
+    </ul>
+  </li>
+  <li>커널 업데이트가 굉장히 쉬움 - 커널이 작아서</li>
+  <li>새로운 아키텍쳐에 적용하기가 쉬움 - 커널이 작아서</li>
+  <li>안정성 - 커널에서 작동하는 코드가 줄어듦</li>
+  <li>보안성</li>
+</ul>
+
+<p>#####</p>]]></content><author><name>L-Hyun</name></author><category term="OS" /><category term="CS" /><category term="OS" /><category term="운영체제" /><summary type="html"><![CDATA[OS의 구조]]></summary></entry><entry><title type="html">알고리즘 - 2</title><link href="http://localhost:4000/algorithm/2022/03/07/Algorithm_2.html" rel="alternate" type="text/html" title="알고리즘 - 2" /><published>2022-03-07T00:00:00+09:00</published><updated>2022-03-07T00:00:00+09:00</updated><id>http://localhost:4000/algorithm/2022/03/07/Algorithm_2</id><content type="html" xml:base="http://localhost:4000/algorithm/2022/03/07/Algorithm_2.html"><![CDATA[<style type="text/css">
+  @font-face {
+    font-family: 'Cafe24SsurroundAir';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  .article {
+    font-family: 'Cafe24SsurroundAir';
+  }
+  .contentsItems { color: black; }
+  .contentsItems:hover {
+    color: black;
+    text-decoration: underline;
+  }
+  .title {
+    font-size: 30px;
+    border-bottom: 3px solid #6667ab;
+    border-left: 20px solid #6667ab;
+    padding-left: 5px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+  }
+  .subtitle {
+    margin-top: 20px;
+	  font-size: 25px;
+	  color: #5e5e7d;
+  }
+  .subsub {
+    font-size: 17px;
+    color: #13356b;
+  }
+  .section {
+    padding-left: 15px;
+  }
+  .define{
+    font-weight: bold;
+  }
+  .red{
+    display: inline;
+    color: #a12d27;
+  }
+  .disabled {
+    display: inline;
+    color: #777777;
+  }
+</style>
+
+<div class="title">Contents</div>
+
+<ul>
+  <li>
+    <div class="disabled">Introdcution</div>
+  </li>
+  <li>
+    <div class="disabled">Mathematical Background</div>
+  </li>
+  <li>
+    <div href="#Analyzing" class="contentsItems">Analyzing Algorithms and Problems</div>
+  </li>
+  <li>
+    <div class="disabled">Classifying Functions by Their Asymptotic Growth Rates</div>
+  </li>
+  <li>
+    <div class="disabled">Searching an Ordered Array</div>
+  </li>
+</ul>
+
+<div id="Analyzing" class="title">Analyzing Algorithms and Problems</div>
+
+<ul>
+  <li>Improve, 알고리즘 개선 가능</li>
+  <li>Choose Best Algorithm for Problem, 최적 알고리즘 선택 가능</li>
+</ul>
+
+<div class="section"><div class="subsub">Analyzing parts</div></div>
+
+<ul>
+  <li>Correctness</li>
+  <li>Time &amp; Space Complexity</li>
+  <li>Optimality, Simplicity</li>
+</ul>
+
+<div class="subtitle">Correctness</div>
+
+<ol>
+  <li>If Preconditions(input) is Satisfied</li>
+  <li>Then Postconditions(output) will be True</li>
+  <li>When Alogorithm Terminated</li>
+</ol>
+
+<div class="subtitle">Amout of Work Done</div>
+<div class="section">
+  <div class="define">Time Complexity</div>
+  <div class="subsub">Measure of Work</div>
+  - Efficiency of Algorithm, 알고리즘의 효율성
+  - 주변환경에 독립적
+  - Input의 크기에 따라 변화
+
+  <div class="subsub">Basic Operation</div>
+  - Fundamental Operation of Problem
+  - 전체 연산에 비례하는 연산 == 가장 많이 사용하는 연산 중 하나
+
+  <div class="subsub">인풋의 형태(범위, 정렬여부 등)에 영향을 받음</div>
+</div>
+
+<div class="subtitle">Worst-Case Complexity</div>
+
+<ul>
+  <li>크기가 n인 input들의 집합 $D_n$</li>
+  <li>$D_n$ 중 하나인 I에 대해서 알고리즘의 일의 양 $t(I)$</li>
+  <li>$W(n) = max(t(i)\,for\,i\,in\,D(n))$
+    <ul>
+      <li>Input에 따라 가장 많은 일을 하는 경우</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="subtitle">Average Complexity</div>
+
+<ul>
+  <li>인풋 $I$가 나올 확률 $Pr(I)$</li>
+  <li>$A(n) = sum(Pr(I)*t(i)\,for\,i\,in\,D(n))$</li>
+  <li>$t(I)$는 알고리즘 분석으로 측정할 수 있지만</li>
+  <li>$Pr(I)$는 계산으로 알아내기 어려움 == &lt;div class="red"&gt;일반적으로 불가능&lt;/div&gt;</li>
+  <li>일반적으로 $Pr(I)$는 통계적으로 측정 or 모든 발생확률이 동일하다고 가정</li>
+</ul>
+
+<div class="section">
+  <div class="subsub">ex. Search In Unordered Array</div>
+
+&gt; N개의 요소를 가지고 정렬되지 않은 배열 E
+&gt; 특정한 값 K를 가진 인덱스를 찾고 있으면 인덱스 반환
+&gt; 없으면 -1 반환
+
+```c
+int seqSearch(int[] E, int n, int K){
+  int ans, idx;
+  ans = -1; // 실패 가정
+  for (idx = 0; idx &lt; n; idx++){
+    if (E[idx] == K){
+      ans = idx; // 성공
+      break; // 종료
+    }
+  }
+  return ans;
+}
+```
+
+$A(n) = Pr(succ)A_{succ}(n) + Pr(fail)A_{fail}(n)$
+$A_{succ}(n) = \displaystyle\sum_{i=0}^{n - 1}{Pr(I_i|succ)*t(I_i)} = \frac{1}{n} \sum_{i=0}^{n-1}(i + 1)$
+$= \displaystyle \frac{1}{n}\sum_{i=1}^{n}(i) = \frac{n + 1}{2}$
+
+$A_{fail}(n) = Pr(I|fail)*t(I_i) = 1*n = n$
+_탐색 실패는 1가지 경우 밖에 없음, $Pr(I|fail) = 1$_
+
+$\displaystyle A(n) = q\frac{n+1}{2} + (1-q)n$
+
+</div>]]></content><author><name>L-Hyun</name></author><category term="Algorithm" /><category term="CS" /><category term="Algorithmm" /><category term="알고리즘" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">컴퓨터 구조 - 1</title><link href="http://localhost:4000/structure/2022/03/04/Computer-Structure_1.html" rel="alternate" type="text/html" title="컴퓨터 구조 - 1" /><published>2022-03-04T00:00:00+09:00</published><updated>2022-03-04T00:00:00+09:00</updated><id>http://localhost:4000/structure/2022/03/04/Computer-Structure_1</id><content type="html" xml:base="http://localhost:4000/structure/2022/03/04/Computer-Structure_1.html"><![CDATA[<h3 id="컴퓨터-혁명">컴퓨터 혁명</h3>
+
+<ul>
+  <li>현재 대부분의 분야에 컴퓨터가 사용됨</li>
+</ul>
+
+<h3 id="컴퓨터-분류">컴퓨터 분류</h3>
+
+<ul>
+  <li>개인용 컴퓨터
+    <ul>
+      <li>일반적인 성능</li>
+      <li>가성비가 중요</li>
+    </ul>
+  </li>
+  <li>서버 컴퓨터
+    <ul>
+      <li>고용량, 고성능</li>
+      <li>네트워크 기반</li>
+    </ul>
+  </li>
+  <li>슈퍼 컴퓨터</li>
+  <li>임베디드 컴퓨터</li>
+</ul>
+
+<h3 id="the-postpc-era">The PostPC Era</h3>
+
+<ul>
+  <li>모바일 기기(PMD)
+    <ul>
+      <li>배터리 기반</li>
+      <li>인터넷에 연결</li>
+    </ul>
+  </li>
+  <li>클라우드
+    <ul>
+      <li>Warehouse Scale Computing(WSC) - 데이터 센터</li>
+      <li>Software as a Service(SaaS)</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="7-great-ideas">7 Great Ideas</h3>
+
+<ul>
+  <li>추상화를 통해 간단한 설계</li>
+  <li>일반적인 상황에서 빠르게</li>
+  <li>병렬</li>
+  <li>파이프라이닝</li>
+  <li>예측</li>
+  <li>상속</li>
+  <li>독립성</li>
+</ul>
+
+<h3 id="below-your-program">Below Your Program</h3>
+
+<ul>
+  <li>Application S/W</li>
+  <li>System S/W
+    <ul>
+      <li>Compiler</li>
+      <li>OS</li>
+    </ul>
+  </li>
+  <li>Hardware</li>
+</ul>
+
+<h3 id="level-of-program-code">Level of Program Code</h3>
+
+<ul>
+  <li>High-Level</li>
+  <li>Assembly</li>
+  <li>Hardware Representation – 기계어</li>
+</ul>
+
+<h3 id="컴퓨터-구조">컴퓨터 구조</h3>
+
+<ul>
+  <li>프로세서</li>
+  <li>컴파일러</li>
+  <li>메모리</li>
+  <li>입출력 장치</li>
+  <li>etc.</li>
+</ul>
+
+<h3 id="cpu의-구조">CPU의 구조</h3>
+
+<ul>
+  <li>Datapath - 데이터를 처리하는 구간</li>
+  <li>Control - 데이터패스 제어</li>
+  <li>Cache Memory</li>
+</ul>
+
+<h3 id="추상화">추상화</h3>
+
+<ul>
+  <li>복잡함을 다루는 데 도움</li>
+  <li>ISA(Instruction Set Architecture)
+    <ul>
+      <li>HW가 SW의 명령어를 신경쓰지 않게 됨</li>
+    </ul>
+  </li>
+  <li>Application Binary Interface
+    <ul>
+      <li>SW간 추상화</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="safe-place-for-data">Safe Place for Data</h3>
+
+<ul>
+  <li>메인 메모리 - 휘발성</li>
+  <li>보조 메모리 - 비휘발성</li>
+</ul>]]></content><author><name>L-Hyun</name></author><category term="Structure" /><category term="CS" /><category term="Computer Structure" /><category term="컴퓨터 구조론" /><summary type="html"><![CDATA[컴퓨터 혁명]]></summary></entry><entry><title type="html">네트워크 - 1</title><link href="http://localhost:4000/network/2022/03/03/Network_1.html" rel="alternate" type="text/html" title="네트워크 - 1" /><published>2022-03-03T00:00:00+09:00</published><updated>2022-03-03T00:00:00+09:00</updated><id>http://localhost:4000/network/2022/03/03/Network_1</id><content type="html" xml:base="http://localhost:4000/network/2022/03/03/Network_1.html"><![CDATA[<h3 id="인터넷">인터넷</h3>
+
+<p><em>컴퓨터로 연결하여 <span style="color:red">TCP/IP</span> 프로토콜을 통해 정부를 주고 받는 컴퓨터 네트워크</em></p>
+
+<h3 id="osi-7계층">OSI 7계층</h3>
+
+<p><em>ISO에서 제인한 통신 모델</em></p>
+
+<ol>
+  <li>Physical
+    <ul>
+      <li>비트들을 전송 매체애 실어 보냄</li>
+    </ul>
+  </li>
+  <li>Data Link
+    <ul>
+      <li>비트들을 프레임으로 재구성, Hop-to-Hop 전송</li>
+    </ul>
+  </li>
+  <li>NetWork
+    <ul>
+      <li>source에서 destination까지의 전달</li>
+    </ul>
+  </li>
+  <li>Transport
+    <ul>
+      <li>신뢰성 보장 테이터 전송, 프로세스-to-프로세스 전송</li>
+    </ul>
+  </li>
+  <li>Session</li>
+  <li>Presentation</li>
+  <li>Application</li>
+</ol>
+
+<p>각 계층별로 필요한 헤더를 추가(캡슐화)</p>
+
+<h3 id="네트워크-연결-방식">네트워크 연결 방식</h3>
+
+<ul>
+  <li>Circuit Switching Network - 중앙제어 전달 방식
+    <ul>
+      <li>중앙에서 전달 제어, 차량/교통 시스템에 사용</li>
+    </ul>
+  </li>
+  <li>Packet Switching Network - 목적지 주소 전달 방식
+    <ul>
+      <li>인터넷에서 사용</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="tcpip-5계층">TCP/IP 5계층</h3>
+
+<p><em>OSI 7계층을 사용하는 다른 프토토콜들이 대부분 사라짐</em></p>
+
+<ol>
+  <li>Physical</li>
+  <li>Data Link</li>
+  <li>Network</li>
+  <li>Transport</li>
+  <li>Application</li>
+</ol>
+
+<h3 id="physical">Physical</h3>
+
+<p><em>비트들을 전송매체에 전기신호로 변환해서 보냄</em>
+<em>비트 전송 방법이 정의되어 있음</em></p>
+
+<h3 id="data-link">Data Link</h3>
+
+<p><em>Hop-to-Hop Delivery관련 작업(노드간 통신)</em>
+<em>MAC주소 사용</em>
+<em>프레임이라는 데이터 단위 사용</em></p>
+
+<h3 id="network">Network</h3>
+
+<p><em>Source-to-Destination</em>
+<em>IP주소 사용</em>
+<em>헤더에 목적지 IP를 붙여 목적지 명시</em>
+<em>데이터그램이라는 데이터 단위 사용</em></p>
+
+<h3 id="transport">Transport</h3>
+
+<p><em>Process-to-Process</em>
+<em>Port번호 사용</em>
+<em>신뢰성 보장, 모든 패킷을 다 받았는지 확인</em>
+<em>세그먼트(TCP)/유저 데이터그램(UDP)라는 데이터 단위 사용</em></p>
+
+<h4 id="application">Application</h4>
+
+<p><em>메시지라는 데이터 단위 사용</em></p>]]></content><author><name>L-Hyun</name></author><category term="Network" /><category term="CS" /><category term="Networkj" /><category term="네트워크" /><summary type="html"><![CDATA[인터넷]]></summary></entry></feed>

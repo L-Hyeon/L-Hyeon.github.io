@@ -1,0 +1,169 @@
+I"�<style type="text/css">
+  @font-face {
+    font-family: 'Cafe24SsurroundAir';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  .article {
+    font-family: 'Cafe24SsurroundAir';
+  }
+  .contentsItems { color: black; }
+  .contentsItems:hover {
+    color: black;
+    text-decoration: underline;
+  }
+  .title {
+    font-size: 30px;
+    border-bottom: 3px solid #6667ab;
+    border-left: 20px solid #6667ab;
+    padding-left: 5px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+  }
+  .subtitle {
+    margin-top: 20px;
+	  font-size: 25px;
+	  color: #5e5e7d;
+  }
+  .subsub {
+    font-size: 17px;
+    color: #13356b;
+  }
+  .section {
+    padding-left: 15px;
+  }
+  .define{
+    font-weight: bold;
+  }
+  .red{
+    display: inline;
+    color: #a12d27;
+  }
+  .disabled {
+    display: inline;
+    color: #777777;
+  }
+</style>
+
+<div class="title">Contents</div>
+
+<ul>
+  <li>
+    <div class="disabled">Introdcution</div>
+  </li>
+  <li>
+    <div class="disabled">Mathematical Background</div>
+  </li>
+  <li>
+    <div href="#Analyzing" class="contentsItems">Analyzing Algorithms and Problems</div>
+  </li>
+  <li>
+    <div class="disabled">Classifying Functions by Their Asymptotic Growth Rates</div>
+  </li>
+  <li>
+    <div class="disabled">Searching an Ordered Array</div>
+  </li>
+</ul>
+
+<div id="Analyzing" class="title">Analyzing Algorithms and Problems</div>
+
+<ul>
+  <li>Improve, 알고리즘 개선 가능</li>
+  <li>Choose Best Algorithm for Problem, 최적 알고리즘 선택 가능</li>
+</ul>
+
+<div class="section"><div class="subsub">Analyzing parts</div></div>
+
+<ul>
+  <li>Correctness</li>
+  <li>Time &amp; Space Complexity</li>
+  <li>Optimality, Simplicity</li>
+</ul>
+
+<div class="subtitle">Correctness</div>
+
+<ol>
+  <li>If Preconditions(input) is Satisfied</li>
+  <li>Then Postconditions(output) will be True</li>
+  <li>When Alogorithm Terminated</li>
+</ol>
+
+<div class="subtitle">Amout of Work Done</div>
+<div class="section">
+  <div class="define">Time Complexity</div>
+  <div class="subsub">Measure of Work</div>
+  - Efficiency of Algorithm, 알고리즘의 효율성
+  - 주변환경에 독립적
+  - Input의 크기에 따라 변화
+
+  <div class="subsub">Basic Operation</div>
+  - Fundamental Operation of Problem
+  - 전체 연산에 비례하는 연산 == 가장 많이 사용하는 연산 중 하나
+
+  <div class="subsub">인풋의 형태(범위, 정렬여부 등)에 영향을 받음</div>
+</div>
+
+<div class="subtitle">Worst-Case Complexity</div>
+
+<ul>
+  <li>크기가 n인 input들의 집합 $D_n$</li>
+  <li>$D_n$ 중 하나인 I에 대해서 알고리즘의 일의 양 $t(I)$</li>
+  <li>$W(n) = max(t(i)\,for\,i\,in\,D(n))$
+    <ul>
+      <li>Input에 따라 가장 많은 일을 하는 경우</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="subtitle">Average Complexity</div>
+
+<ul>
+  <li>인풋 $I$가 나올 확률 $Pr(I)$</li>
+  <li>$A(n) = sum(Pr(I)*t(i)\,for\,i\,in\,D(n))$</li>
+  <li>$t(I)$는 알고리즘 분석으로 측정할 수 있지만</li>
+  <li>$Pr(I)$는 계산으로 알아내기 어려움 == &lt;div class="red"&gt;일반적으로 불가능&lt;/div&gt;</li>
+  <li>일반적으로 $Pr(I)$는 통계적으로 측정 or 모든 발생확률이 동일하다고 가정</li>
+</ul>
+
+<div class="subsub">ex. Search In Unordered Array</div>
+
+<blockquote>
+  <p>N개의 요소를 가지고 정렬되지 않은 배열 E
+특정한 값 K를 가진 인덱스를 찾고 있으면 인덱스 반환
+없으면 -1 반환</p>
+</blockquote>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="nf">seqSearch</span><span class="p">(</span><span class="kt">int</span><span class="p">[]</span> <span class="n">E</span><span class="p">,</span> <span class="kt">int</span> <span class="n">n</span><span class="p">,</span> <span class="kt">int</span> <span class="n">K</span><span class="p">){</span>
+  <span class="kt">int</span> <span class="n">ans</span><span class="p">,</span> <span class="n">idx</span><span class="p">;</span>
+  <span class="n">ans</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span> <span class="c1">// 실패 가정</span>
+  <span class="k">for</span> <span class="p">(</span><span class="n">idx</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">idx</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">;</span> <span class="n">idx</span><span class="o">++</span><span class="p">){</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">E</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span> <span class="o">==</span> <span class="n">K</span><span class="p">){</span>
+      <span class="n">ans</span> <span class="o">=</span> <span class="n">idx</span><span class="p">;</span> <span class="c1">// 성공</span>
+      <span class="k">break</span><span class="p">;</span> <span class="c1">// 종료</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="n">ans</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>$A(n) = Pr(succ)A_{succ}(n) + Pr(fail)A_{fail}(n)$
+$A_{succ}(n) = \displaystyle\sum_{i=0}^{n - 1}{Pr(I_i|succ)*t(I_i)} = \frac{1}{n} \sum_{i=0}^{n-1}(i + 1)$
+$= \displaystyle \frac{1}{n}\sum_{i=1}^{n}(i) = \frac{n + 1}{2}$</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>$A_{fail}(n) = Pr(I</td>
+      <td>fail)<em>t(I_i) = 1</em>n = n$</td>
+    </tr>
+    <tr>
+      <td>_탐색 실패는 1가지 경우 밖에 없음, $Pr(I</td>
+      <td>fail) = 1$_</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>$\displaystyle A(n) = q\frac{n+1}{2} + (1-q)n$</p>
+
+:ET

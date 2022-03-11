@@ -54,7 +54,6 @@ tags: [CS, Algorithmm, 알고리즘]
   }
 </style>
 
-<div class="article">
 <div class="title">Contents</div>
 
 - <div class="disabled">Introdcution</div>
@@ -189,5 +188,3 @@ $W(n) == F(n)$이므로 알고리즘은 Optimal
 <div class="subtitle">Little x sets</div>
 
 - $o(g), \omega(g)$ = 같은 경우 제외
-
-</div>
