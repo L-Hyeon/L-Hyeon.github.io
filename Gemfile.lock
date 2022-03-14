@@ -1,3 +1,17 @@
+GIT
+  remote: https://github.com/benbalter/jekyll-default-layout
+  revision: 24d5796c437b912d50e5e941cce6c000e293e556
+  specs:
+    jekyll-default-layout (0.1.5)
+      jekyll (>= 3.0, < 5.0)
+
+GIT
+  remote: https://github.com/hydecorp/jekyll-seo-tag
+  revision: 6135021410981d2d76878568e9c21cf363882bfe
+  specs:
+    jekyll-seo-tag (2.6.1)
+      jekyll (>= 3.3, < 5.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -5,7 +19,6 @@ GEM
       public_suffix (>= 2.0.2, < 5.0)
     colorator (1.1.0)
     concurrent-ruby (1.1.9)
-    duktape (2.6.0.0)
     em-websocket (0.5.3)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0)
@@ -14,9 +27,9 @@ GEM
     ffi (1.15.5)
     forwardable-extended (2.6.0)
     http_parser.rb (0.8.0)
-    i18n (1.10.0)
+    i18n (1.9.1)
       concurrent-ruby (~> 1.0)
-    jekyll (4.2.2)
+    jekyll (4.2.1)
       addressable (~> 2.4)
       colorator (~> 1.0)
       em-websocket (~> 0.5)
@@ -31,11 +44,11 @@ GEM
       rouge (~> 3.0)
       safe_yaml (~> 1.0)
       terminal-table (~> 2.0)
+    jekyll-avatar (0.7.0)
+      jekyll (>= 3.0, < 5.0)
     jekyll-compose (0.12.0)
       jekyll (>= 3.7, < 5.0)
-    jekyll-default-layout (0.1.5)
-      jekyll (>= 3.0, < 5.0)
-    jekyll-feed (0.16.0)
+    jekyll-feed (0.15.1)
       jekyll (>= 3.7, < 5.0)
     jekyll-include-cache (0.2.1)
       jekyll (>= 3.7, < 5.0)
@@ -51,10 +64,8 @@ GEM
       jekyll (>= 3.3, < 5.0)
     jekyll-relative-links (0.6.1)
       jekyll (>= 3.3, < 5.0)
-    jekyll-sass-converter (2.2.0)
+    jekyll-sass-converter (2.1.0)
       sassc (> 2.0.1, < 3.0)
-    jekyll-seo-tag (2.8.0)
-      jekyll (>= 3.8, < 5.0)
     jekyll-sitemap (1.4.0)
       jekyll (>= 3.7, < 5.0)
     jekyll-theme-hydejack (9.1.6)
@@ -93,30 +104,28 @@ GEM
     terminal-table (2.0.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
     unicode-display_width (1.8.0)
-    webrick (1.7.0)
 
 PLATFORMS
-  arm64-darwin-21
+  x86_64-linux
 
 DEPENDENCIES
-  duktape
-  jekyll (~> 4.1)
+  jekyll (~> 4.2.1)
+  jekyll-avatar
   jekyll-compose
-  jekyll-default-layout
+  jekyll-default-layout!
   jekyll-feed
-  jekyll-include-cache
   jekyll-last-modified-at
   jekyll-optional-front-matter
   jekyll-paginate
   jekyll-readme-index
   jekyll-redirect-from
   jekyll-relative-links
-  jekyll-seo-tag
+  jekyll-seo-tag!
   jekyll-sitemap
-  jekyll-theme-hydejack (~> 9.1)
+  jekyll-theme-hydejack (~> 9.1.5)
   jekyll-titles-from-headings
   kramdown-math-katex
-  webrick
+  kramdown-parser-gfm
 
 BUNDLED WITH
-   2.3.9
+   2.2.24
