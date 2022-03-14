@@ -17,21 +17,31 @@
 
 # Language of your content in 2-letter code, e.g.: en, de.
 # You may also provide a location, e.g.: en-us, de_AT.
-lang:                  en
+lang: ko-KR, en-US
 
 # The title of your blog. Used in the sidebar and the browser tab.
-title:                 L-Hyun
+title: L-Hyun
 
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
-description:           >
+description: >
   L-Hyun's CS Blog
 
 # A shorter description for the sidebar.
 tagline:               L-Hyun, A Developer.
 
 # A list of keywords for your blog
-keywords:              [Developer, ComputerScience, CS, 개발자, 개발, 컴공, 프론트엔드, 백엔드, 풀스택]
+keywords: [
+    Developer, 
+    ComputerScience, 
+    CS, 
+    개발자, 
+    개발, 
+    컴공, 
+    프론트엔드, 
+    백엔드, 
+    풀스택
+  ]
 
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
@@ -74,7 +84,7 @@ legal:
     url:               /CHANGELOG/
 
 # This text will appear in a `<small>` tag in the footer of every page.
-copyright:             © 2021. All rights reserved.
+copyright:             © 2022. All rights reserved.
 
 # Format of the permalinks
 permalink:             /:categories/:year-:month-:day-:title/
@@ -83,19 +93,17 @@ permalink:             /:categories/:year-:month-:day-:title/
 paginate:              10
 paginate_path:         /:num/
 
-
 # Theme
 # ---------------------------------------------------------------------------------------
 
-theme: jekyll-theme-hydejack
+remote_theme: hydecorp/hydejack@v9.1.5
 # remote_theme: hydecorp/hydejack@v9
 
 
 # Customizaton
 # ----------------------------------------------------------------------------------------
- 
 # Sidebar image and theme color of the site.
-accent_image:          /assets/img/sidebar-bg.jpg
+accent_image:          /assets/img/blog/sidebar-bg.png
 accent_color:          rgb(79,177,186)
 
 # This is used for the `theme-color` meta tag,
@@ -147,6 +155,12 @@ defaults:
   #     type:            posts
   #   values:
   #     comments:        true
+  - scope:
+      type: posts
+    values:
+      comments: true
+      applause_button: true
+      sitemap: true
 
   # `jekyll-seo-tag` will mark collection outputs as `BlogPosting`,
   # but we want them to be `WebPage`s:
@@ -257,7 +271,7 @@ hydejack:
 
   # When using Google Analytics, set to `true` to display a cookie notice banner.
   # When enabled, no user-related data will be stored until the user gives consent.
-  cookies_banner:      false
+  cookies_banner:      true
 
   # Set to `true` if you would like to add a "Powered by Hydejack" link in the footer.
   # Note that this setting has no effect when using the free version.
@@ -288,7 +302,7 @@ hydejack:
   # Only use if you know what Service Workers are and how they can impact your site!
   offline:
     enabled:           false
-    cache_version:     13
+    cache_version:     7
     precache_assets:
       - /assets/img/swipe.svg
 
