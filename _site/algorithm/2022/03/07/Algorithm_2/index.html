@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en"><!--
+ __  __                __                                     __
+/\ \/\ \              /\ \             __                    /\ \
+\ \ \_\ \   __  __    \_\ \      __   /\_\      __       ___ \ \ \/'\
+ \ \  _  \ /\ \/\ \   /'_` \   /'__`\ \/\ \   /'__`\    /'___\\ \ , <
+  \ \ \ \ \\ \ \_\ \ /\ \L\ \ /\  __/  \ \ \ /\ \L\.\_ /\ \__/ \ \ \\`\
+   \ \_\ \_\\/`____ \\ \___,_\\ \____\ _\ \ \\ \__/.\_\\ \____\ \ \_\ \_\
+    \/_/\/_/ `/___/> \\/__,_ / \/____//\ \_\ \\/__/\/_/ \/____/  \/_/\/_/
+                /\___/                \ \____/
+                \/__/                  \/___/
+
+Powered by Hydejack v7.5.2 <https://qwtel.com/hydejack/>
+-->
+
+
+
+
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+
+  
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>알고리즘 - 2 | Hydejack</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="알고리즘 - 2" />
+<meta name="author" content="<firstname> <lastname>" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="A Jekyll theme with JavaScript powers. “Best Theme by a Mile”. Combines the best of static sites and modern web apps. Open _config.yml to edit this text." />
+<meta property="og:description" content="A Jekyll theme with JavaScript powers. “Best Theme by a Mile”. Combines the best of static sites and modern web apps. Open _config.yml to edit this text." />
+<link rel="canonical" href="http://localhost:4000/algorithm/2022/03/07/Algorithm_2/" />
+<meta property="og:url" content="http://localhost:4000/algorithm/2022/03/07/Algorithm_2/" />
+<meta property="og:site_name" content="Hydejack" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-03-07T00:00:00+09:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="알고리즘 - 2" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"<firstname> <lastname>"},"dateModified":"2022-03-07T00:00:00+09:00","datePublished":"2022-03-07T00:00:00+09:00","description":"A Jekyll theme with JavaScript powers. “Best Theme by a Mile”. Combines the best of static sites and modern web apps. Open _config.yml to edit this text.","headline":"알고리즘 - 2","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/algorithm/2022/03/07/Algorithm_2/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/icons/icon.png"},"name":"<firstname> <lastname>"},"url":"http://localhost:4000/algorithm/2022/03/07/Algorithm_2/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  
+
+  
+    <meta name="keywords" content="">
+  
+
+
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Hydejack">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<meta name="application-name" content="Hydejack">
+<meta name="msapplication-config" content="/assets/ieconfig.xml">
+
+
+<meta name="theme-color" content="#4fb1ba">
+
+
+<meta name="generator" content="Hydejack v7.5.2">
+
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Hydejack" />
+
+
+
+<link rel="alternate" href="http://localhost:4000/algorithm/2022/03/07/Algorithm_2/" hreflang="en">
+
+<link rel="shortcut icon" href="/assets/icons/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/icons/icon.png">
+
+<link rel="manifest" href="/assets/manifest.json">
+
+
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+
+
+
+
+
+
+
+<link id="_katexJS"  rel="dns-prefetch" href="/assets/bower_components/katex/dist/katex.min.js">
+<link id="_katexCSS" rel="dns-prefetch" href="/assets/bower_components/katex/dist/katex.min.css">
+
+<script>
+  function stdOnEnd(n,e){n.onload=function(){this.onerror=this.onload=null,e(null,n)},n.onerror=function(){this.onerror=this.onload=null,e(new Error("Failed to load "+this.src),n)}}function ieOnEnd(n,e){n.onreadystatechange=function(){"complete"!=this.readyState&&"loaded"!=this.readyState||(this.onreadystatechange=null,e(null,n))}}window.setRelStylesheet=function(n){function e(){this.rel="stylesheet"}var o=document.getElementById(n);o.addEventListener?o.addEventListener("load",e,!1):o.onload=e},window._loaded=!1,window.loadJSDeferred=function(n,e){function o(){window._loaded=!0;var o=document.createElement("script");o.src=n,e&&(("onload"in o?stdOnEnd:ieOnEnd)(o,e),o.onload||stdOnEnd(o,e));var t=document.scripts[0];t.parentNode.insertBefore(o,t)}window._loaded?o():window.addEventListener?window.addEventListener("load",o,!1):window.onload=o};
+!function(a){"use strict";var b=function(b,c,d){function e(a){return h.body?a():void setTimeout(function(){e(a)})}function f(){i.addEventListener&&i.removeEventListener("load",f),i.media=d||"all"}var g,h=a.document,i=h.createElement("link");if(c)g=c;else{var j=(h.body||h.getElementsByTagName("head")[0]).childNodes;g=j[j.length-1]}var k=h.styleSheets;i.rel="stylesheet",i.href=b,i.media="only x",e(function(){g.parentNode.insertBefore(i,c?g:g.nextSibling)});var l=function(a){for(var b=i.href,c=k.length;c--;)if(k[c].href===b)return a();setTimeout(function(){l(a)})};return i.addEventListener&&i.addEventListener("load",f),i.onloadcssdefined=l,l(f),i};"undefined"!=typeof exports?exports.loadCSS=b:a.loadCSS=b}("undefined"!=typeof global?global:this);
+!function(a){if(a.loadCSS){var b=loadCSS.relpreload={};if(b.support=function(){try{return a.document.createElement("link").relList.supports("preload")}catch(b){return!1}},b.poly=function(){for(var b=a.document.getElementsByTagName("link"),c=0;c<b.length;c++){var d=b[c];"preload"===d.rel&&"style"===d.getAttribute("as")&&(a.loadCSS(d.href,d,d.getAttribute("media")),d.rel=null)}},!b.support()){b.poly();var c=a.setInterval(b.poly,300);a.addEventListener&&a.addEventListener("load",function(){b.poly(),a.clearInterval(c)}),a.attachEvent&&a.attachEvent("onload",function(){a.clearInterval(c)})}}}(this);
+
+  window._noPushState = false;
+  window._noDrawer = false;
+</script>
+
+<!--[if gt IE 8]><!---->
+
+
+<script>
+  WebFontConfig = {
+    
+    google: {
+      families: ['Roboto+Slab:700','Noto+Sans:400,400i,700,700i']
+    },
+    
+
+    custom: {
+      families: ['icomoon'],
+      urls: ['/assets/icomoon/style.css']
+    }
+  };
+  (function(d) {
+    var wf = d.createElement('script'), s = d.scripts[0];
+    wf.src = "/assets/bower_components/webfontloader/webfontloader.js";
+    s.parentNode.insertBefore(wf, s);
+  }(document));
+</script>
+<!--<![endif]-->
+
+<noscript>
+  
+  
+
+  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:700%7CNoto+Sans:400,400i,700,700i">
+    <style>
+      html { font-family: Noto Sans, Helvetica, Arial, sans-serif }
+      h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .heading { font-family: Roboto Slab, Helvetica, Arial, sans-serif }
+    </style>
+  
+
+  <link rel="stylesheet" href="/assets/icomoon/style.css">
+</noscript>
+
+<!--[if gt IE 8]><!---->
+
+
+
+  <link rel="stylesheet" href="/assets/css/hydejack-7.5.2.css">
+
+
+
+<style id="_pageStyle">
+
+.content a:not(.btn){color:#4fb1ba;border-color:rgba(79,177,186,0.2)}.content a:not(.btn):hover{border-color:#4fb1ba}:focus{outline-color:#4fb1ba}.btn-primary{color:#fff;background-color:#4fb1ba;border-color:#4fb1ba}.btn-primary:focus,.btn-primary.focus{box-shadow:0 0 0 3px rgba(79,177,186,0.5)}.btn-primary:hover,.btn-primary.hover{color:#fff;background-color:#409ba3;border-color:#409ba3}.btn-primary:disabled,.btn-primary.disabled{color:#fff;background-color:#4fb1ba;border-color:#4fb1ba}.btn-primary:active,.btn-primary.active{color:#fff;background-color:#409ba3;border-color:#409ba3}::selection{color:#fff;background:#4fb1ba}::-moz-selection{color:#fff;background:#4fb1ba}
+
+</style>
+
+<!--<![endif]-->
+
+
+
+
+</head>
+
+<body>
+  <div class="navbar fixed-top">
+  <div class="content">
+    <div class="nav-btn-bar">
+      <span class="sr-only">Jump to:</span>
+      <a id="_menu" class="nav-btn no-hover" href="#_navigation">
+        <span class="sr-only">Navigation</span>
+        <span class="icon-menu"></span>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+<hy-push-state>
+  <main
+    id="_main"
+    class="content fade-in layout-post"
+    role="main"
+    data-color="#4fb1ba"
+    data-theme-color=""
+    
+      data-image="/assets/img/sidebar-bg.jpg"
+      data-overlay
+    
+    >
+    
+
+
+<article id="post-algorithm-2022-03-07-Algorithm_2" class="page post" role="article">
+  <header>
+    <h1 class="post-title">
+      
+        알고리즘 - 2
+      
+    </h1>
+
+    <p class="post-date heading">
+      
+      <time datetime="2022-03-07T00:00:00+09:00">07 Mar 2022</time>
+      
+      
+      
+      
+      
+
+
+
+
+
+
+
+
+
+in <span>Algorithm</span>
+
+      
+
+
+
+
+
+
+
+
+
+on <span>Cs</span>, <span>Algorithmm</span>, <span>알고리즘</span>
+
+    </p>
+
+    
+
+
+
+  <div class="hr pb0"></div>
+
+
+  </header>
+
+  
+    <style type="text/css">
+  @font-face {
+    font-family: 'Cafe24SsurroundAir';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  .article {
+    font-family: 'Cafe24SsurroundAir';
+  }
+  .contentsItems { color: black; }
+  .contentsItems:hover {
+    color: black;
+    text-decoration: underline;
+  }
+  .title {
+    font-size: 30px;
+    border-bottom: 3px solid #6667ab;
+    border-left: 20px solid #6667ab;
+    padding-left: 5px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+  }
+  .subtitle {
+    margin-top: 20px;
+	  font-size: 25px;
+	  color: #5e5e7d;
+  }
+  .subsub {
+    font-size: 17px;
+    color: #13356b;
+  }
+  .section {
+    padding-left: 15px;
+  }
+  .define{
+    font-weight: bold;
+  }
+  .red{
+    display: inline;
+    color: #a12d27;
+  }
+  .disabled {
+    display: inline;
+    color: #777777;
+  }
+</style>
+
+<div class="title">Contents</div>
+
+<ul>
+  <li>
+    <div class="disabled">Introdcution</div>
+  </li>
+  <li>
+    <div class="disabled">Mathematical Background</div>
+  </li>
+  <li>
+    <div href="#Analyzing" class="contentsItems">Analyzing Algorithms and Problems</div>
+  </li>
+  <li>
+    <div class="disabled">Classifying Functions by Their Asymptotic Growth Rates</div>
+  </li>
+  <li>
+    <div class="disabled">Searching an Ordered Array</div>
+  </li>
+</ul>
+
+<div id="Analyzing" class="title">Analyzing Algorithms and Problems</div>
+
+<ul>
+  <li>Improve, 알고리즘 개선 가능</li>
+  <li>Choose Best Algorithm for Problem, 최적 알고리즘 선택 가능</li>
+</ul>
+
+<div class="section"><div class="subsub">Analyzing parts</div></div>
+
+<ul>
+  <li>Correctness</li>
+  <li>Time &amp; Space Complexity</li>
+  <li>Optimality, Simplicity</li>
+</ul>
+
+<div class="subtitle">Correctness</div>
+
+<ol>
+  <li>If Preconditions(input) is Satisfied</li>
+  <li>Then Postconditions(output) will be True</li>
+  <li>When Alogorithm Terminated</li>
+</ol>
+
+<div class="subtitle">Amout of Work Done</div>
+<div class="section">
+  <div class="define">Time Complexity</div>
+  <div class="subsub">Measure of Work</div>
+  - Efficiency of Algorithm, 알고리즘의 효율성
+  - 주변환경에 독립적
+  - Input의 크기에 따라 변화
+
+  <div class="subsub">Basic Operation</div>
+  - Fundamental Operation of Problem
+  - 전체 연산에 비례하는 연산 == 가장 많이 사용하는 연산 중 하나
+
+  <div class="subsub">인풋의 형태(범위, 정렬여부 등)에 영향을 받음</div>
+</div>
+
+<div class="subtitle">Worst-Case Complexity</div>
+
+<ul>
+  <li>크기가 n인 input들의 집합 $D_n$</li>
+  <li>$D_n$ 중 하나인 I에 대해서 알고리즘의 일의 양 $t(I)$</li>
+  <li>$W(n) = max(t(i)\,for\,i\,in\,D(n))$
+    <ul>
+      <li>Input에 따라 가장 많은 일을 하는 경우</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="subtitle">Average Complexity</div>
+
+<ul>
+  <li>인풋 $I$가 나올 확률 $Pr(I)$</li>
+  <li>$A(n) = sum(Pr(I)*t(i)\,for\,i\,in\,D(n))$</li>
+  <li>$t(I)$는 알고리즘 분석으로 측정할 수 있지만</li>
+  <li>$Pr(I)$는 계산으로 알아내기 어려움 == &lt;div class="red"&gt;일반적으로 불가능&lt;/div&gt;</li>
+  <li>일반적으로 $Pr(I)$는 통계적으로 측정 or 모든 발생확률이 동일하다고 가정</li>
+</ul>
+
+<div class="section">
+  <div class="subsub">ex. Search In Unordered Array</div>
+
+&gt; N개의 요소를 가지고 정렬되지 않은 배열 E
+&gt; 특정한 값 K를 가진 인덱스를 찾고 있으면 인덱스 반환
+&gt; 없으면 -1 반환
+
+```c
+int seqSearch(int[] E, int n, int K){
+  int ans, idx;
+  ans = -1; // 실패 가정
+  for (idx = 0; idx &lt; n; idx++){
+    if (E[idx] == K){
+      ans = idx; // 성공
+      break; // 종료
+    }
+  }
+  return ans;
+}
+```
+
+$A(n) = Pr(succ)A_{succ}(n) + Pr(fail)A_{fail}(n)$
+$A_{succ}(n) = \displaystyle\sum_{i=0}^{n - 1}{Pr(I_i|succ)*t(I_i)} = \frac{1}{n} \sum_{i=0}^{n-1}(i + 1)$
+$= \displaystyle \frac{1}{n}\sum_{i=1}^{n}(i) = \frac{n + 1}{2}$
+
+$A_{fail}(n) = Pr(I|fail)*t(I_i) = 1*n = n$
+_탐색 실패는 1가지 경우 밖에 없음, $Pr(I|fail) = 1$_
+
+$\displaystyle A(n) = q\frac{n+1}{2} + (1-q)n$
+
+</div>
+
+
+  
+</article>
+
+
+<hr class="dingbat related" />
+
+
+
+
+  
+     
+
+
+  <aside class="about related mt4 mb4" role="complementary">
+    
+    
+
+<div class="author mt4">
+  
+
+  
+    
+  
+
+  
+
+  
+  <img
+    src="https://placehold.it/128x128"
+    class="avatar"
+    alt="<firstname> <lastname>"
+    srcset="https://placehold.it/128x128 1x,https://placehold.it/256x256 2x"
+    
+    
+  />
+
+
+  
+
+  
+  
+  <h2  class="page-title hr">
+    About
+  </h2>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+<p>Open <code class="language-plaintext highlighter-rouge">_data/authors.yml</code> to edit this text.</p>
+
+
+  <div class="sidebar-social">
+    <span class="sr-only">Social:</span>
+<ul>
+  
+
+  
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="https://twitter.com/<username>" title="Twitter" class="no-mark-external">
+    <span class="icon-twitter"></span>
+    <span class="sr-only">Twitter</span>
+  </a>
+</li>
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="https://github.com/<username>" title="GitHub" class="no-mark-external">
+    <span class="icon-github"></span>
+    <span class="sr-only">GitHub</span>
+  </a>
+</li>
+
+  
+</ul>
+
+  </div>
+</div>
+
+  </aside>
+
+
+  
+
+  
+  
+
+  
+    
+
+
+
+
+<aside class="related mb4" role="complementary">
+  <h2 class="hr">Related Posts</h2>
+
+  <ul class="related-posts">
+    
+      
+
+
+<li>
+  <a href="/algorithm/2022/03/09/Algorithms_3/" class="h4 flip-title">
+    <span>알고리즘 - 3</span>
+  </a>
+  <time class="heading faded fine" datetime="2022-03-09T00:00:00+09:00">09 Mar 2022</time>
+</li>
+
+    
+      
+
+
+<li>
+  <a href="/algorithm/2022/03/02/Algorithm_1/" class="h4 flip-title">
+    <span>알고리즘 - 1</span>
+  </a>
+  <time class="heading faded fine" datetime="2022-03-02T00:00:00+09:00">02 Mar 2022</time>
+</li>
+
+    
+  </ul>
+</aside>
+
+
+  
+
+
+    
+
+
+    <footer role="contentinfo">
+  <hr/>
+  
+    <p><small class="copyright">© 2017. All rights reserved.
+</small></p>
+  
+  
+  <p><small>Powered by <a class="external" href="https://qwtel.com/hydejack/">Hydejack</a> v<span id="_version">7.5.2</span></small></p>
+  <hr class="sr-only"/>
+</footer>
+
+  </main>
+  <hy-drawer>
+  <header id="_sidebar" class="sidebar" role="banner">
+    
+    <div class="sidebar-bg sidebar-overlay" style="background-color:#4fb1ba;background-image:url(/assets/img/sidebar-bg.jpg)"></div>
+
+    <div class="sidebar-sticky">
+      <div class="sidebar-about">
+        <h2 class="h1"><a href="/">Hydejack</a></h2>
+        
+        
+          <p class="">
+            A Jekyll theme with JavaScript powers. Open <code class="language-plaintext highlighter-rouge">_config.yml</code> to edit this text.
+
+          </p>
+        
+      </div>
+
+      <nav class="sidebar-nav heading" role="navigation">
+        <span class="sr-only">Navigation:</span>
+<ul>
+  
+  
+  
+  
+    
+      <li>
+        <a
+          id="_navigation"
+          href="/tag/hyde/"
+          class="sidebar-nav-item"
+          
+          >
+          Hyde
+        </a>
+      </li>
+    
+  
+    
+      <li>
+        <a
+          
+          href="/tag/hydejack/"
+          class="sidebar-nav-item"
+          
+          >
+          Hydejack
+        </a>
+      </li>
+    
+  
+    
+      <li>
+        <a
+          
+          href="/about/"
+          class="sidebar-nav-item"
+          
+          >
+          About
+        </a>
+      </li>
+    
+  
+    
+      <li>
+        <a
+          
+          href="/docs/7.5.2/"
+          class="sidebar-nav-item"
+          
+          >
+          Documentation
+        </a>
+      </li>
+    
+  
+</ul>
+
+      </nav>
+
+      
+
+      <div class="sidebar-social">
+        <span class="sr-only">Social:</span>
+<ul>
+  
+
+  
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="https://twitter.com/<username>" title="Twitter" class="no-mark-external">
+    <span class="icon-twitter"></span>
+    <span class="sr-only">Twitter</span>
+  </a>
+</li>
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="https://github.com/<username>" title="GitHub" class="no-mark-external">
+    <span class="icon-github"></span>
+    <span class="sr-only">GitHub</span>
+  </a>
+</li>
+
+  
+</ul>
+
+      </div>
+    </div>
+  </header>
+</hy-drawer>
+
+</hy-push-state>
+
+
+  
+
+  <!--[if gt IE 9]><!---->
+  
+  <script>loadJSDeferred('/assets/js/hydejack-7.5.2.js');</script>
+  
+  <!--<![endif]-->
+
+
+
+  
+<hr class="sr-only"/>
+<h2 class="sr-only">Templates (for web app):</h2>
+
+<template id="_animation-template">
+  <div class="animation-main fixed-top">
+    <div class="content">
+      <div class="page"></div>
+    </div>
+  </div>
+</template>
+
+<template id="_loading-template">
+  <div class="loading">
+    <span class="sr-only">Loading…</span>
+    <span class="icon-cog"></span>
+  </div>
+</template>
+
+<template id="_error-template">
+  <div class="page">
+    <h1 class="page-title">Error</h1>
+    
+    
+    <p class="lead">
+      Sorry, an error occurred while loading <a class="this-link" href=""></a>.
+
+    </p>
+  </div>
+</template>
+
+<template id="_back-template">
+  <a id="_back" class="back nav-btn no-hover">
+    <span class="sr-only">Back</span>
+    <span class="icon-arrow-left2"></span>
+  </a>
+</template>
+
+<template id="_permalink-template">
+  <a href="#" class="permalink">
+    <span class="sr-only">Permalink</span>
+    <span class="icon-link"></span>
+  </a>
+</template>
+
+
+
+</body>
+</html>

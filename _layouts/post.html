@@ -1,77 +1,39 @@
 ---
-layout: framework
-banner:
-banner_html: post-header.html
-hidden: []
-sidebar:
-  - article-menu
+# Copyright (c) 2017 Florian Klampfer <https://qwtel.com/>
+#
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be included in all
+# copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
+
+layout: base
 ---
 
-<div class="post">
-  <section>
+{% include post.html post=page link_title=false %}
 
-    {%- assign name = 'banner' -%}
-    {%- include functions.html func='get_value' -%}
-    {%- assign banner = return -%}
+<hr class="dingbat related" />
 
-    {%- assign name = 'hidden' -%}
-    {%- include functions.html func='get_value' -%}
-    {%- assign hidden = return -%}
-
-    {%- assign result = hidden | where_exp: "item", "item == 'header'" -%}
-    {%- if banner == nil and result.size == 0 -%}
-    {%- include views/post-header.html -%}
-    {%- endif -%}
-
-    {%- include views/article.html -%}
-
-    {%- assign result = hidden | where_exp: "item", "item == 'navigator'" -%}
-    {%- if result.size == 0 -%}
-    <div class="post-nav">
-      {%- if page.previous -%}
-        <a class="previous" href="{{ page.previous.url | relative_url }}" title="{{
-          page.previous.title | escape }}">{{ page.previous.title | escape | truncatewords: 6 }}</a>
-      {%- else -%}
-      <span></span>
-      {%- endif -%}
-
-      {%- if page.next -%}
-        <a class="next" href="{{ page.next.url | relative_url }}" title="{{ page.next.title | escape }}">{{ page.next.title | escape | truncatewords: 6 }}</a>
-      {%- else -%}
-      <span></span>
-      {%- endif -%}
-    </div>
-    {%- endif -%}
-
-    {%- assign result = hidden | where_exp: "item", "item == 'related_posts'" -%}
-    {%- if result.size == 0 -%}
-    <div class="post-related">
-      <div>Related Articles</div>
-      <ul>
-        {% assign posts = site[page.collection] | sample:4 %}
-        {%- for post in posts -%}
-        <li><a class="post-link" href="{{post.url | relative_url}}" title="{{ page.next.title | escape }}">{{ post.title | escape | truncatewords: 12 }}</a></li>
-        {%- endfor -%}
-      </ul>
-    </div>
-    {%- endif -%}
-
-    {%- assign result = hidden | where_exp: "item", "item == 'comments'" -%}
-    {%- if result.size == 0 -%}
-    <div class="post-comments">
-      {%- if page.comments != false -%}
-
-      {%- if site.disqus.shortname -%}
-      {%- include extensions/comments/disqus.html -%}
-      {%- endif -%}
-
-      {%- if site.gitment.username -%}
-      {%- include extensions/comments/gitment.html -%}
-      {%- endif -%}
-
-      {%- endif -%}
-    </div>
-    {%- endif -%}
-
-  </section>
-</div>
+{% assign addons = site.hydejack.post_addons %}
+{% unless addons %}{% assign addons = "about,newsletter,related,random" | split:"," %}{% endunless %}
+{% for addon in addons %}
+  {% case addon %}
+  {% when 'about' %}
+     {% include about.html %}
+  {% when 'related' %}
+    {% include related-posts.html post=post %}
+  {% else %}
+  {% endcase %}
+{% endfor %}

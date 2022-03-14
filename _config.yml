@@ -1,213 +1,271 @@
-# Welcome to Jekyll!
+# Config
+# ========================================================================================
+
+# IMPORTANT: Set the URL of your site.
+# Set to https://<username>.github.io when hosting on GitHub Pages
+# (unless you are using a custom domain).
+url:                   https://domain.tld
+
+# IMPORTANT: Set The "base URL" of your site.
 #
-# About Theme
+# When hosting your site in a subdirectory of a server, set to /<name of directory>
+# (with leading /, but without the < >)
+# Use the empty string '' otherwise.
 #
-# Yet another theme for elegant writers with modern flat style and beautiful
-# night/dark mode.
-#
-# Website: https://github.com/jeffreytse/jekyll-theme-yat
-#
-# You can do anything you want, including projects for your clients, as long
-# as you mention an attribution back (credit links in footer or project).
-# See the LICENCE file.
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you
-# use 'bundle exec jekyll serve'. If you change this file, please restart
-# the server process.
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+# When using GitHub Pages, set to '' when hosting a user- or organization page,
+# i.e. when the name of the repository looks like <username>.github.io.
+# Otherwise, set to /<name of repository> (with leading /, but without the < >).
+baseurl:               ''
 
-title: I'm L-Hyun
-email: dkh1001@outlookk.kr
-author: L-Hyun
+# Language of your content in 2-letter code, e.g.: en, de.
+# You may also provide a location, e.g.: en-us, de_AT.
+lang:                  en
 
-# Copyright setting
-# You can use any html code, currently below placeholders are available:
-# * current year: {currentYear}
-# * author: {author} (Value is the same as site.author)
-# * copyright: (c) - ©
-# * copyleft: (cleft)
-# * sound recording copyright: (p) - ℗
-#
-# For example:
-#   "Copyright (c) 2017-{currentYear} <a href="https://example.com">{author}</a>"
-#   "Copyright © 2017-2021 Foobar"
-#
-copyright: "Unpublished Work (cleft) 2017-{currentYear} {author}"
+# The title of your blog. Used in the sidebar and the browser tab.
+title:                 Hydejack
 
-description: >- # this means to ignore newlines until "baseurl:"
-  L-Hyun's CS Blog
-  Background Photo by <a href="https://unsplash.com/@yuhao?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Pang Yuhao</a> on <a href="https://unsplash.com/backgrounds/cool/awesome?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  
+# A short description (~150 chars) of the page used for the meta description tag.
+# Can use markdown, but no more than one paragraph (enforced by `>`)
+description:           >
+  A Jekyll theme with JavaScript powers. "Best Theme by a Mile".
+  Combines the best of static sites and modern web apps.
+  Open `_config.yml` to edit this text.
 
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. https://example.com
-favicon: "" # the favicon for your site
+# A shorter description for the sidebar.
+tagline:               >
+  A Jekyll theme with JavaScript powers.
+  Open `_config.yml` to edit this text.
 
-# Yat date format
-# refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
-yat:
-  date_format: "%b %d, %Y"
+# A list of keywords for your blog
+keywords:              []
 
-# If you want more debug log, you can set true
-# debug: false
+# Used by jekyll-seo-tag...
+logo:                  /assets/icons/icon.png
 
-# If you don't want transparent header, you can set false
-# header_transparent: true
+# This should be the same author as first entry in `_data/authors.yml`.
+# Duplication is necessary due to the `jekyll-feed`, `jekyll-seo-tag` plugin.
+author:
+  name:                <firstname> <lastname>
+  email:               <mail@domain.tld>
+  # Used by `jekyll-seo-tag`:
+  # twitter:             <username>
 
-# If you want to change the content width, you can set to another value
-# content_width: "920px"
+# This text will appear in a `<small>` tag in the footer of every page.
+copyright:             © 2017. All rights reserved.
 
-# Google analytics
-# google_analytics: [Tracking ID]
+# Add links to the footer.
+# Typically you'll want to link to your impress, cookies or privacy policy, etc.
+# legal:
+#   - title:             Impress
+#     href:              /impress/
+#   - title:             Cookies Policy
+#     href:              /cookies-policy/
 
-# If you want to generate website sitemap, you can set true
-# sitemap: false
+# Format of the permalinks
+permalink:             pretty
 
-# If you want to change site language, you can set lang option
-# lang: "en"  # default lang is en
+# Pagination configuration (used by the `blog` layout)
+paginate:              5
+paginate_path:         /page-:num/
 
-# Translate languges
-# langs refer to https://cloud.google.com/translate/docs/languages
-# translate_langs:
-#   - lang: en
-#     img: https://cdn.countryflags.com/thumbs/united-states-of-america/flag-400.png
-#     text: English
-#
-#   - lang: fr
-#     img: https://cdn.countryflags.com/thumbs/france/flag-400.png
-#     text: French
-#
-#   - lang: zh-CN
-#     img: https://cdn.countryflags.com/thumbs/china/flag-400.png
-#     text: Chinese(Simple)
-#
-#   - lang: ja
-#     img: https://cdn.countryflags.com/thumbs/japan/flag-400.png
-#     text: Japanese
-#
-#   - lang: ko
-#     img: https://cdn.countryflags.com/thumbs/south-korea/flag-400.png
-#     text: Korean
-#
-#   - lang: ru
-#     img: https://cdn.countryflags.com/thumbs/russia/flag-400.png
-#     text: Russian
 
-# You can choose a theme color
-# Default theme colors as below:
-# coolblack: #090a0b
-# spacegrey: #353535
-# snowwhite: #ffffff
-#
-# theme_color: snowwhite
-#
-# Custom color as below:
-# theme_color: "#882250"
+# Customizaton
+# ========================================================================================
 
-# You can choose a brand color
-# Default brand colors as below:
-# orangered: #ff5100
-# greatgold: #f2cb05
-# greenblue: #389092
-#
-# brand_color: orangered
-#
-# Custom color as below:
-# brand_color: "#1a8e42"
+# Sidebar image and theme color of the site.
+accent_image:          /assets/img/sidebar-bg.jpg
+accent_color:          '#4fb1ba'
 
-# Night/Dark mode
-# Default mode is "auto", "auto" is for auto nightshift
-# (19:00 - 07:00), "manual" is for manual toggle, and
-# "on/off" is for default on/off.
-#
-# Whatever the user's choice is, it will supersede the
-# default setting of the site and be kept during the
-# visit (session). Only the dark mode setting is"manual",
-# it will be always kept on every visit (i.e. no matter
-# the browser is closed or not)
-#
-# night_mode: "auto"
+# The string encoding which fonts to fetch from Google Fonts.
+# See: <https://qwtel.com/hydejack/docs/configuration/>
+google_fonts:          Roboto+Slab:700|Noto+Sans:400,400i,700,700i
 
-# Code badge setting
-# You can enable or disable the code badge and so on
-# code_badge:
-#   enabled: "true"
-#   color: "#fff"
-#   background_color: "#ff4e00"
-#   text_transform: "uppercase"  # ("uppercase", "lowercase", "capitalize")
+# The text font. Expects a string that is a valid CSS font-family value.
+font:                  Noto Sans, Helvetica, Arial, sans-serif
 
-# If you want to link only specific pages in your header, uncomment
-# this and add the path to the pages in order as they should show up
-# header_pages:
-#   - index.html
-#   - archives.html
-#   - categories.html
-#   - tags.html
-#   - about.md
+# The font used for headings. Expects a string that is a valid CSS font-family value.
+font_heading:          Roboto Slab, Helvetica, Arial, sans-serif
 
-# Page default value
-# defaults:
-#   home:
-#     heading: "Your awesome heading"
-#     subheading: "Your awesome subheading"
-#     banner: "Your image url"
+# 3rd Party Integrations
+# ----------------------------------------------------------------------------------------
 
-defaults:
-  home:
-    heading: "Hi, I'm L-Hyun"
-    subheading: "안녕하세요, L-Hyun입니다"
+# Set your Google Analytics id to receive `pageview` events.
+# To remove Google Anaylics from your page, remove the line below.
+# google_analytics:      UA-XXXXXXXX-X
 
-# Banner default settings
-# These banner settings are for global banner default, but you can also
-# config it by the front matter for one specific post
-banner:
-  video: null             # Video banner source
-  loop: true              # Video loop
-  volume: 0               # Video volume (100% is 1.0)
-  image: "https://images.unsplash.com/photo-1560613717-c793db79055e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2831&q=80"             # Image banner source
-  opacity: 1.0            # Banner opacity (100% is 1.0)
-  start_at: 0             # Video start time
-  background: "rgba(0, 0, 0, 0.8)"  # Banner background (Could be a image)
-  height: "640px"         # Banner default height
-  min_height: null        # Banner minimum height
-  heading_style: null     # Custom heading style (e.g. "font-weight: bold; text-decoration: underline")
-  subheading_style: null  # Custom subheading style (e.g. color: gold)
+# Setting a disqus shortname will enable the comment section on
+# pages with `comments: true` in the front matter.
+# disqus:                <disqus_shortname>
 
-# Excerpt size setting
-# excerpt_size: 350
+# Setting a tinyletter username will enable the newsletter subscription box.
+# tinyletter:            <tinyletter_username>
 
-# Pagination setting
-# paginate: 5
+# Hydejack Settings
+# ----------------------------------------------------------------------------------------
+# These settings are specific to Hydejack.
 
-# Disqus comments
-# disqus:
-#   shortname: "Your Disqus username"
+hydejack:
+  # Configure the order of complementary content on blog posts
+  post_addons:         [about, newsletter, related]
 
-# Gitment comments
-# gitment:
-#   username: "Your GitHub username"
-#   repo: "The repo to store comments"
-#   client_id: "Your client ID"
-#   client_secret: "Your client secret"
-#   redirect_uri: "Your redirect url"   # If you use a custom domain name
+  # Configure the order of complementary content on project pages
+  project_addons:      [about, newsletter, other]
 
-# Build settings
-# highlighter: none
-#markdown: kramdown
-#kmarkdown:
-#  input: GFM
+  # If you do not use Google Fonts, set to `true`.
+  no_google_fonts:     false
+
+  # Set to `true` if you don't want to show an icon indicating external links
+  no_mark_external:    false
+
+  # Set to `true` if third party plugins fail to work with dynamically loaded pages
+  no_push_state:       false
+
+  # Set to `true` if you want to disable the drawer
+  no_drawer:           false
+
+  # Set to `true` if you do not want parts of the css inlined in <head/>
+  # This *may* be benefitial when serving the site over HTTP/2.
+  no_inline_css:       false
+
+  # Code blocks and tables "break" the layout by spanning the full available width.
+  # Set this to true if you want them to be the same width as other content.
+  no_break_layout:     false
+
+  # Set to `true` if you do not want to expose your resume and projects
+  # in machine-readable formats.
+  no_structured_data:  false
+
+  # You can set this to `true` if you don't want to set the `theme-color` meta tag,
+  # This only affects the meta tag, not the color specified in the app manifest.
+  no_theme_color:      false
+
+  # Set to `true` when building with the `--lsi` option
+  use_lsi:             false
+
+  # When using Google Analytics, set to `true` to display a cookie notice banner.
+  # When enabled, no user-related data will be stored until the user gives consent.
+  cookies_banner:      false
+
+
+# Collections
+# ========================================================================================
+
+collections:
+  featured_categories:
+    permalink:         /category/:name/
+    output:            true
+
+  featured_tags:
+    permalink:         /tag/:name/
+    output:            true
+
+  projects:
+    permalink:         /projects/:path/
+    output:            true
+
+
+# File inclusion/exclusion
+# ========================================================================================
+
+exclude:
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - package.json
+  - package-lock.json
+include:
+  - LICENSE.md
+
+
+# Plugins and Plugin Configuration
+# ========================================================================================
 
 plugins:
+  # - jekyll-avatar
+  # - jekyll-default-layout
   - jekyll-feed
+  # - jekyll-gist
+  # - jekyll-optional-front-matter
+  - jekyll-paginate
+  # - jekyll-readme-index
+  # - jekyll-redirect-from
+  - jekyll-relative-links
+  # - jekyll-remote-theme
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-paginate
-  - jekyll-spaceship
+  # - jekyll-titles-from-headings
+
+# Theme
+# ---------------------------------------------------------------------------------------
+
+# theme: jekyll-theme-hydejack
+# remote_theme: qwtel/hydejack@gem
+
+# SEO Tag
+# ---------------------------------------------------------------------------------------
+
+# Where you proof that you own this site (used by jekyll-seo-tag)
+# google_site_verification: <verification-id>
+# -- or --
+# webmaster_verifications:
+#   google:              <verification-id>
+#   bing:                <verification-id>
+#   alexa:               <verification-id>
+#   yandex:              <verification-id>
+
+# Used for Twitter cards
+# twitter:
+#   username:            <shortname>
+
+# Used for Facebook open graph
+# facebook:
+#   app_id:              <id>
+#   publisher:           <id>
+#   admins:              <id>
+
+# Used on index and about sites
+# social:
+#   name:                <firstname> <lastname>
+#   links:
+#     - https://twitter.com/<username>
+#     - https://github.com/<username>
+
+
+# Other Plugins
+# ---------------------------------------------------------------------------------------
+
+optional_front_matter:
+  remove_originals:    true
+
+readme_index:
+  remove_originals:    true
+
+relative_links:
+  collections:         true
+
+titles_from_headings:
+  strip_title:         true
+  collections:         true
+
+kramdown:
+  footnote_backlink:   '&#x21a9;&#xfe0e;'
+  math_engine:         mathjax
+  math_engine_opts:
+    preview:           true
+    preview_as_code:   true
+
+compress_html:
+  comments:            ["<!-- ", " -->"]
+  clippings:           all
+  endings:             all
+  ignore:
+    envs:              [development]
+
+sass:
+  style:               compressed
+
+# If you are upgrading form v5 (or earlier), uncomment the lines below,
+# so that the location of the feed XML stays the same.
+# feed:
+#   path:                atom.xml

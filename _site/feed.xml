@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-03-11T11:34:46+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">I’m L-Hyun</title><subtitle>L-Hyun&apos;s CS Blog Background Photo by &lt;a href=&quot;https://unsplash.com/@yuhao?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText&quot;&gt;Pang Yuhao&lt;/a&gt; on &lt;a href=&quot;https://unsplash.com/backgrounds/cool/awesome?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText&quot;&gt;Unsplash&lt;/a&gt;</subtitle><author><name>L-Hyun</name></author><entry><title type="html">네트워크 실습 - 1</title><link href="http://localhost:4000/network/2022/03/10/Network-Training_1.html" rel="alternate" type="text/html" title="네트워크 실습 - 1" /><published>2022-03-10T00:00:00+09:00</published><updated>2022-03-10T00:00:00+09:00</updated><id>http://localhost:4000/network/2022/03/10/Network-Training_1</id><content type="html" xml:base="http://localhost:4000/network/2022/03/10/Network-Training_1.html"><![CDATA[<style type="text/css">
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2022-03-14T12:14:31+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hydejack</title><subtitle>A Jekyll theme with JavaScript powers. &quot;Best Theme by a Mile&quot;. Combines the best of static sites and modern web apps. Open `_config.yml` to edit this text.
+</subtitle><author><name>&lt;firstname&gt; &lt;lastname&gt;</name><email>&lt;mail@domain.tld&gt;</email></author><entry><title type="html">네트워크 실습 - 1</title><link href="http://localhost:4000/network/2022/03/10/Network-Training_1/" rel="alternate" type="text/html" title="네트워크 실습 - 1" /><published>2022-03-10T00:00:00+09:00</published><updated>2022-03-10T00:00:00+09:00</updated><id>http://localhost:4000/network/2022/03/10/Network-Training_1</id><content type="html" xml:base="http://localhost:4000/network/2022/03/10/Network-Training_1/"><![CDATA[<style type="text/css">
   @font-face {
     font-family: 'Cafe24SsurroundAir';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
@@ -110,7 +111,7 @@ int connect(int sockfd, struct sockaddr *serv_addr, socklen_t addrlen)
 //연결 성공 시 1 반환, 실패 시 0 반환
 ```
 
-</div>]]></content><author><name>L-Hyun</name></author><category term="Network" /><category term="CS" /><category term="Networkj" /><category term="네트워크" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">알고리즘 - 3</title><link href="http://localhost:4000/algorithm/2022/03/09/Algorithms_3.html" rel="alternate" type="text/html" title="알고리즘 - 3" /><published>2022-03-09T00:00:00+09:00</published><updated>2022-03-09T00:00:00+09:00</updated><id>http://localhost:4000/algorithm/2022/03/09/Algorithms_3</id><content type="html" xml:base="http://localhost:4000/algorithm/2022/03/09/Algorithms_3.html"><![CDATA[<style type="text/css">
+</div>]]></content><author><name>&lt;firstname&gt; &lt;lastname&gt;</name><email>&lt;mail@domain.tld&gt;</email></author><category term="Network" /><category term="CS" /><category term="Networkj" /><category term="네트워크" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">알고리즘 - 3</title><link href="http://localhost:4000/algorithm/2022/03/09/Algorithms_3/" rel="alternate" type="text/html" title="알고리즘 - 3" /><published>2022-03-09T00:00:00+09:00</published><updated>2022-03-09T00:00:00+09:00</updated><id>http://localhost:4000/algorithm/2022/03/09/Algorithms_3</id><content type="html" xml:base="http://localhost:4000/algorithm/2022/03/09/Algorithms_3/"><![CDATA[<style type="text/css">
   @font-face {
     font-family: 'Cafe24SsurroundAir';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
@@ -311,110 +312,7 @@ $W(n) == F(n)$이므로 알고리즘은 Optimal
 
 <ul>
   <li>$o(g), \omega(g)$ = 같은 경우 제외</li>
-</ul>]]></content><author><name>L-Hyun</name></author><category term="Algorithm" /><category term="CS" /><category term="Algorithmm" /><category term="알고리즘" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">네트워크 - 2</title><link href="http://localhost:4000/network/2022/03/08/Network_2.html" rel="alternate" type="text/html" title="네트워크 - 2" /><published>2022-03-08T00:00:00+09:00</published><updated>2022-03-08T00:00:00+09:00</updated><id>http://localhost:4000/network/2022/03/08/Network_2</id><content type="html" xml:base="http://localhost:4000/network/2022/03/08/Network_2.html"><![CDATA[<h3 id="address">Address</h3>
-
-<p>DataLink - Physical(mac주소)
-Network - Logical(IP주소)
-Transport - Port</p>
-
-<h3 id="physical-address">Physical Address</h3>
-
-<ul>
-  <li>MAC주소 사용(48비트, 장비 자체의 고유번호)</li>
-  <li>프레임에 붙어 있는 destination을 확인해서 본인 것만 받음</li>
-  <li>스위치가 연결된 장비들의 주소를 가진 테이블을 보고 보내주기도 함</li>
-  <li>전송되는 과정에서 계속 변경됨(라우터를 만날 때마다)</li>
-</ul>
-
-<h5 id="장비">장비</h5>
-
-<ol>
-  <li>리피터, 신호 증폭</li>
-  <li>허브, 리피터처럼 신호를 증폭하지만 연결된 모든 곳으로 보냄</li>
-  <li>브릿지, 리피터 + 필터링(목적지에 맞는 곳으로만 보냄)</li>
-  <li>스위치 - 허브 + 필터링</li>
-</ol>
-
-<h3 id="logical-address">Logical Address</h3>
-
-<ul>
-  <li>IP주소 사용</li>
-  <li>전송되는 과정에서 변경되지 않음</li>
-</ul>
-
-<h3 id="port-address">Port Address</h3>
-
-<ul>
-  <li>목적지 컴퓨터까지 온 후 목적 프로그램 식별</li>
-  <li>컴퓨터가 프로그램마다 부여하는 번호</li>
-  <li>전송되는 동안 변하지 않음</li>
-</ul>]]></content><author><name>L-Hyun</name></author><category term="Network" /><category term="CS" /><category term="Networkj" /><category term="네트워크" /><summary type="html"><![CDATA[Address]]></summary></entry><entry><title type="html">네트워크 - 3</title><link href="http://localhost:4000/network/2022/03/08/Network-3.html" rel="alternate" type="text/html" title="네트워크 - 3" /><published>2022-03-08T00:00:00+09:00</published><updated>2022-03-08T00:00:00+09:00</updated><id>http://localhost:4000/network/2022/03/08/Network-3</id><content type="html" xml:base="http://localhost:4000/network/2022/03/08/Network-3.html"><![CDATA[<h2 id="pre">Pre</h2>
-
-<h3 id="circuit-switching-network">Circuit Switching Network</h3>
-
-<ul>
-  <li>중앙제어 전달 방식</li>
-  <li>전송하기 전에 이미 경로가 정해짐</li>
-</ul>
-
-<h3 id="packet-switching-network">Packet Switching Network</h3>
-
-<ul>
-  <li>목적지 주소 전달 방식</li>
-  <li>전송하는 과정에서 경로가 정해짐</li>
-</ul>
-
-<h3 id="packet">Packet</h3>
-
-<ul>
-  <li>대개 연결에서 쓰이는 데이터는 500Byte</li>
-  <li>헤더는 각 레이어마다 20Byte, 포트 번호는 4Byte (보내는 쪽, 받는 쪽 각각 2바이트)</li>
-  <li>IP주소는 8Byte (각 4바이트)</li>
-</ul>
-
-<h3 id="why-mac-address-in-data-link">Why Mac Address In Data Link?</h3>
-
-<ul>
-  <li>개발될 당시에는 Network 레이어에는 다른 주소들이 있었음</li>
-  <li>이미 로컬에서는 MAC을 쓰기로 합의된 상태</li>
-  <li>Network에서 IP 이외의 것들이 사장되었기에 지금 보기에는 문제가 없어보임</li>
-  <li>BUT, 예전에는 문제가 있었다…</li>
-</ul>
-
-<h3 id="intermediate-node">Intermediate Node</h3>
-
-<ul>
-  <li>중간 라우터는 패킷 전체 내용을 보지 않음</li>
-  <li>IP주소를 가지는 Network 레이어의 헤더까지만 보고 다음 노드로 전송</li>
-</ul>
-
-<h2 id="tcp">TCP</h2>
-
-<h3 id="well-known-port">Well Known Port</h3>
-
-<p><img src="https://t1.daumcdn.net/cfile/tistory/247E473356FB590B30?download" /></p>
-
-<h3 id="stream-delivery">Stream Delivery</h3>
-
-<ul>
-  <li>보내기 위한 데이터를 Buffer에 저장</li>
-  <li>패킷마다 번호를 붙여 관리 - 랜덤하게 시작 번호 지정</li>
-  <li>버퍼는 Empty, Sent, Not Sent로 구분해서 패킷 관리</li>
-  <li>각 커넥션에서 보내면서 받았는 지 확인</li>
-  <li>시작 패킷을 제외하고는 시퀀스 넘버를 따름
-    <ul>
-      <li>시작이 10001이고 그 패킷의 크기가 1000이면 11001이 다음 패킷의 번호가 됨 그 다음은 12001…</li>
-    </ul>
-  </li>
-  <li>패킷은 세그먼트라고 함</li>
-</ul>
-
-<h3 id="segment">Segment</h3>
-
-<ul>
-  <li>20 ~ 60 Byte 헤더를 가짐</li>
-  <li>헤더의 Sequence Number == 패킷 번호</li>
-</ul>]]></content><author><name>L-Hyun</name></author><category term="Network" /><category term="CS" /><category term="Networkj" /><category term="네트워크" /><summary type="html"><![CDATA[Pre]]></summary></entry><entry><title type="html">데이터베이스 - 2</title><link href="http://localhost:4000/db/2022/03/08/DB_2.html" rel="alternate" type="text/html" title="데이터베이스 - 2" /><published>2022-03-08T00:00:00+09:00</published><updated>2022-03-08T00:00:00+09:00</updated><id>http://localhost:4000/db/2022/03/08/DB_2</id><content type="html" xml:base="http://localhost:4000/db/2022/03/08/DB_2.html"><![CDATA[<h3 id="관계형-모델">관계형 모델</h3>
+</ul>]]></content><author><name>&lt;firstname&gt; &lt;lastname&gt;</name><email>&lt;mail@domain.tld&gt;</email></author><category term="Algorithm" /><category term="CS" /><category term="Algorithmm" /><category term="알고리즘" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">데이터베이스 - 2</title><link href="http://localhost:4000/db/2022/03/08/DB_2/" rel="alternate" type="text/html" title="데이터베이스 - 2" /><published>2022-03-08T00:00:00+09:00</published><updated>2022-03-08T00:00:00+09:00</updated><id>http://localhost:4000/db/2022/03/08/DB_2</id><content type="html" xml:base="http://localhost:4000/db/2022/03/08/DB_2/"><![CDATA[<h3 id="관계형-모델">관계형 모델</h3>
 
 <ul>
   <li>attributes(columns) - 스키마의 이름</li>
@@ -458,7 +356,7 @@ instructor = Realtion Schema</p>
   <li>superKey = primary key를 포함한 집합</li>
   <li>candidateKey = primary key만을 포함한 집합</li>
   <li>foreignKey = 다른 테이블에도 반드시 존재하는 속성</li>
-</ul>]]></content><author><name>L-Hyun</name></author><category term="DB" /><category term="CS" /><category term="Database" /><category term="데이터베이스" /><summary type="html"><![CDATA[관계형 모델]]></summary></entry><entry><title type="html">컴퓨터 구조 - 2</title><link href="http://localhost:4000/structure/2022/03/08/Computer-Structure_2.html" rel="alternate" type="text/html" title="컴퓨터 구조 - 2" /><published>2022-03-08T00:00:00+09:00</published><updated>2022-03-08T00:00:00+09:00</updated><id>http://localhost:4000/structure/2022/03/08/Computer-Structure_2</id><content type="html" xml:base="http://localhost:4000/structure/2022/03/08/Computer-Structure_2.html"><![CDATA[<h3 id="response-time-and-throughput">Response Time and Throughput</h3>
+</ul>]]></content><author><name>&lt;firstname&gt; &lt;lastname&gt;</name><email>&lt;mail@domain.tld&gt;</email></author><category term="DB" /><category term="CS" /><category term="Database" /><category term="데이터베이스" /><summary type="html"><![CDATA[관계형 모델]]></summary></entry><entry><title type="html">컴퓨터 구조 - 2</title><link href="http://localhost:4000/structure/2022/03/08/Computer-Structure_2/" rel="alternate" type="text/html" title="컴퓨터 구조 - 2" /><published>2022-03-08T00:00:00+09:00</published><updated>2022-03-08T00:00:00+09:00</updated><id>http://localhost:4000/structure/2022/03/08/Computer-Structure_2</id><content type="html" xml:base="http://localhost:4000/structure/2022/03/08/Computer-Structure_2/"><![CDATA[<h3 id="response-time-and-throughput">Response Time and Throughput</h3>
 
 <ul>
   <li>Response Time</li>
@@ -578,7 +476,268 @@ $1.1*0.95 = 1.045$</p>
 <ul>
   <li>CPU Time 계산</li>
   <li>전력 문제로 주파수를 높일 수 없어 멀티 코어 아키텍쳐가 나옴</li>
-</ul>]]></content><author><name>L-Hyun</name></author><category term="Structure" /><category term="CS" /><category term="Computer Structure" /><category term="컴퓨터 구조론" /><summary type="html"><![CDATA[Response Time and Throughput]]></summary></entry><entry><title type="html">운영체제 - 2</title><link href="http://localhost:4000/os/2022/03/07/OS_2.html" rel="alternate" type="text/html" title="운영체제 - 2" /><published>2022-03-07T00:00:00+09:00</published><updated>2022-03-07T00:00:00+09:00</updated><id>http://localhost:4000/os/2022/03/07/OS_2</id><content type="html" xml:base="http://localhost:4000/os/2022/03/07/OS_2.html"><![CDATA[<h3 id="os의-구조">OS의 구조</h3>
+</ul>]]></content><author><name>&lt;firstname&gt; &lt;lastname&gt;</name><email>&lt;mail@domain.tld&gt;</email></author><category term="Structure" /><category term="CS" /><category term="Computer Structure" /><category term="컴퓨터 구조론" /><summary type="html"><![CDATA[Response Time and Throughput]]></summary></entry><entry><title type="html">네트워크 - 2</title><link href="http://localhost:4000/network/2022/03/08/Network_2/" rel="alternate" type="text/html" title="네트워크 - 2" /><published>2022-03-08T00:00:00+09:00</published><updated>2022-03-08T00:00:00+09:00</updated><id>http://localhost:4000/network/2022/03/08/Network_2</id><content type="html" xml:base="http://localhost:4000/network/2022/03/08/Network_2/"><![CDATA[<h3 id="address">Address</h3>
+
+<p>DataLink - Physical(mac주소)
+Network - Logical(IP주소)
+Transport - Port</p>
+
+<h3 id="physical-address">Physical Address</h3>
+
+<ul>
+  <li>MAC주소 사용(48비트, 장비 자체의 고유번호)</li>
+  <li>프레임에 붙어 있는 destination을 확인해서 본인 것만 받음</li>
+  <li>스위치가 연결된 장비들의 주소를 가진 테이블을 보고 보내주기도 함</li>
+  <li>전송되는 과정에서 계속 변경됨(라우터를 만날 때마다)</li>
+</ul>
+
+<h5 id="장비">장비</h5>
+
+<ol>
+  <li>리피터, 신호 증폭</li>
+  <li>허브, 리피터처럼 신호를 증폭하지만 연결된 모든 곳으로 보냄</li>
+  <li>브릿지, 리피터 + 필터링(목적지에 맞는 곳으로만 보냄)</li>
+  <li>스위치 - 허브 + 필터링</li>
+</ol>
+
+<h3 id="logical-address">Logical Address</h3>
+
+<ul>
+  <li>IP주소 사용</li>
+  <li>전송되는 과정에서 변경되지 않음</li>
+</ul>
+
+<h3 id="port-address">Port Address</h3>
+
+<ul>
+  <li>목적지 컴퓨터까지 온 후 목적 프로그램 식별</li>
+  <li>컴퓨터가 프로그램마다 부여하는 번호</li>
+  <li>전송되는 동안 변하지 않음</li>
+</ul>]]></content><author><name>&lt;firstname&gt; &lt;lastname&gt;</name><email>&lt;mail@domain.tld&gt;</email></author><category term="Network" /><category term="CS" /><category term="Networkj" /><category term="네트워크" /><summary type="html"><![CDATA[Address]]></summary></entry><entry><title type="html">네트워크 - 3</title><link href="http://localhost:4000/network/2022/03/08/Network-3/" rel="alternate" type="text/html" title="네트워크 - 3" /><published>2022-03-08T00:00:00+09:00</published><updated>2022-03-08T00:00:00+09:00</updated><id>http://localhost:4000/network/2022/03/08/Network-3</id><content type="html" xml:base="http://localhost:4000/network/2022/03/08/Network-3/"><![CDATA[<h2 id="pre">Pre</h2>
+
+<h3 id="circuit-switching-network">Circuit Switching Network</h3>
+
+<ul>
+  <li>중앙제어 전달 방식</li>
+  <li>전송하기 전에 이미 경로가 정해짐</li>
+</ul>
+
+<h3 id="packet-switching-network">Packet Switching Network</h3>
+
+<ul>
+  <li>목적지 주소 전달 방식</li>
+  <li>전송하는 과정에서 경로가 정해짐</li>
+</ul>
+
+<h3 id="packet">Packet</h3>
+
+<ul>
+  <li>대개 연결에서 쓰이는 데이터는 500Byte</li>
+  <li>헤더는 각 레이어마다 20Byte, 포트 번호는 4Byte (보내는 쪽, 받는 쪽 각각 2바이트)</li>
+  <li>IP주소는 8Byte (각 4바이트)</li>
+</ul>
+
+<h3 id="why-mac-address-in-data-link">Why Mac Address In Data Link?</h3>
+
+<ul>
+  <li>개발될 당시에는 Network 레이어에는 다른 주소들이 있었음</li>
+  <li>이미 로컬에서는 MAC을 쓰기로 합의된 상태</li>
+  <li>Network에서 IP 이외의 것들이 사장되었기에 지금 보기에는 문제가 없어보임</li>
+  <li>BUT, 예전에는 문제가 있었다…</li>
+</ul>
+
+<h3 id="intermediate-node">Intermediate Node</h3>
+
+<ul>
+  <li>중간 라우터는 패킷 전체 내용을 보지 않음</li>
+  <li>IP주소를 가지는 Network 레이어의 헤더까지만 보고 다음 노드로 전송</li>
+</ul>
+
+<h2 id="tcp">TCP</h2>
+
+<h3 id="well-known-port">Well Known Port</h3>
+
+<p><img src="https://t1.daumcdn.net/cfile/tistory/247E473356FB590B30?download" /></p>
+
+<h3 id="stream-delivery">Stream Delivery</h3>
+
+<ul>
+  <li>보내기 위한 데이터를 Buffer에 저장</li>
+  <li>패킷마다 번호를 붙여 관리 - 랜덤하게 시작 번호 지정</li>
+  <li>버퍼는 Empty, Sent, Not Sent로 구분해서 패킷 관리</li>
+  <li>각 커넥션에서 보내면서 받았는 지 확인</li>
+  <li>시작 패킷을 제외하고는 시퀀스 넘버를 따름
+    <ul>
+      <li>시작이 10001이고 그 패킷의 크기가 1000이면 11001이 다음 패킷의 번호가 됨 그 다음은 12001…</li>
+    </ul>
+  </li>
+  <li>패킷은 세그먼트라고 함</li>
+</ul>
+
+<h3 id="segment">Segment</h3>
+
+<ul>
+  <li>20 ~ 60 Byte 헤더를 가짐</li>
+  <li>헤더의 Sequence Number == 패킷 번호</li>
+</ul>]]></content><author><name>&lt;firstname&gt; &lt;lastname&gt;</name><email>&lt;mail@domain.tld&gt;</email></author><category term="Network" /><category term="CS" /><category term="Networkj" /><category term="네트워크" /><summary type="html"><![CDATA[Pre]]></summary></entry><entry><title type="html">알고리즘 - 2</title><link href="http://localhost:4000/algorithm/2022/03/07/Algorithm_2/" rel="alternate" type="text/html" title="알고리즘 - 2" /><published>2022-03-07T00:00:00+09:00</published><updated>2022-03-07T00:00:00+09:00</updated><id>http://localhost:4000/algorithm/2022/03/07/Algorithm_2</id><content type="html" xml:base="http://localhost:4000/algorithm/2022/03/07/Algorithm_2/"><![CDATA[<style type="text/css">
+  @font-face {
+    font-family: 'Cafe24SsurroundAir';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  .article {
+    font-family: 'Cafe24SsurroundAir';
+  }
+  .contentsItems { color: black; }
+  .contentsItems:hover {
+    color: black;
+    text-decoration: underline;
+  }
+  .title {
+    font-size: 30px;
+    border-bottom: 3px solid #6667ab;
+    border-left: 20px solid #6667ab;
+    padding-left: 5px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+  }
+  .subtitle {
+    margin-top: 20px;
+	  font-size: 25px;
+	  color: #5e5e7d;
+  }
+  .subsub {
+    font-size: 17px;
+    color: #13356b;
+  }
+  .section {
+    padding-left: 15px;
+  }
+  .define{
+    font-weight: bold;
+  }
+  .red{
+    display: inline;
+    color: #a12d27;
+  }
+  .disabled {
+    display: inline;
+    color: #777777;
+  }
+</style>
+
+<div class="title">Contents</div>
+
+<ul>
+  <li>
+    <div class="disabled">Introdcution</div>
+  </li>
+  <li>
+    <div class="disabled">Mathematical Background</div>
+  </li>
+  <li>
+    <div href="#Analyzing" class="contentsItems">Analyzing Algorithms and Problems</div>
+  </li>
+  <li>
+    <div class="disabled">Classifying Functions by Their Asymptotic Growth Rates</div>
+  </li>
+  <li>
+    <div class="disabled">Searching an Ordered Array</div>
+  </li>
+</ul>
+
+<div id="Analyzing" class="title">Analyzing Algorithms and Problems</div>
+
+<ul>
+  <li>Improve, 알고리즘 개선 가능</li>
+  <li>Choose Best Algorithm for Problem, 최적 알고리즘 선택 가능</li>
+</ul>
+
+<div class="section"><div class="subsub">Analyzing parts</div></div>
+
+<ul>
+  <li>Correctness</li>
+  <li>Time &amp; Space Complexity</li>
+  <li>Optimality, Simplicity</li>
+</ul>
+
+<div class="subtitle">Correctness</div>
+
+<ol>
+  <li>If Preconditions(input) is Satisfied</li>
+  <li>Then Postconditions(output) will be True</li>
+  <li>When Alogorithm Terminated</li>
+</ol>
+
+<div class="subtitle">Amout of Work Done</div>
+<div class="section">
+  <div class="define">Time Complexity</div>
+  <div class="subsub">Measure of Work</div>
+  - Efficiency of Algorithm, 알고리즘의 효율성
+  - 주변환경에 독립적
+  - Input의 크기에 따라 변화
+
+  <div class="subsub">Basic Operation</div>
+  - Fundamental Operation of Problem
+  - 전체 연산에 비례하는 연산 == 가장 많이 사용하는 연산 중 하나
+
+  <div class="subsub">인풋의 형태(범위, 정렬여부 등)에 영향을 받음</div>
+</div>
+
+<div class="subtitle">Worst-Case Complexity</div>
+
+<ul>
+  <li>크기가 n인 input들의 집합 $D_n$</li>
+  <li>$D_n$ 중 하나인 I에 대해서 알고리즘의 일의 양 $t(I)$</li>
+  <li>$W(n) = max(t(i)\,for\,i\,in\,D(n))$
+    <ul>
+      <li>Input에 따라 가장 많은 일을 하는 경우</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="subtitle">Average Complexity</div>
+
+<ul>
+  <li>인풋 $I$가 나올 확률 $Pr(I)$</li>
+  <li>$A(n) = sum(Pr(I)*t(i)\,for\,i\,in\,D(n))$</li>
+  <li>$t(I)$는 알고리즘 분석으로 측정할 수 있지만</li>
+  <li>$Pr(I)$는 계산으로 알아내기 어려움 == &lt;div class="red"&gt;일반적으로 불가능&lt;/div&gt;</li>
+  <li>일반적으로 $Pr(I)$는 통계적으로 측정 or 모든 발생확률이 동일하다고 가정</li>
+</ul>
+
+<div class="section">
+  <div class="subsub">ex. Search In Unordered Array</div>
+
+&gt; N개의 요소를 가지고 정렬되지 않은 배열 E
+&gt; 특정한 값 K를 가진 인덱스를 찾고 있으면 인덱스 반환
+&gt; 없으면 -1 반환
+
+```c
+int seqSearch(int[] E, int n, int K){
+  int ans, idx;
+  ans = -1; // 실패 가정
+  for (idx = 0; idx &lt; n; idx++){
+    if (E[idx] == K){
+      ans = idx; // 성공
+      break; // 종료
+    }
+  }
+  return ans;
+}
+```
+
+$A(n) = Pr(succ)A_{succ}(n) + Pr(fail)A_{fail}(n)$
+$A_{succ}(n) = \displaystyle\sum_{i=0}^{n - 1}{Pr(I_i|succ)*t(I_i)} = \frac{1}{n} \sum_{i=0}^{n-1}(i + 1)$
+$= \displaystyle \frac{1}{n}\sum_{i=1}^{n}(i) = \frac{n + 1}{2}$
+
+$A_{fail}(n) = Pr(I|fail)*t(I_i) = 1*n = n$
+_탐색 실패는 1가지 경우 밖에 없음, $Pr(I|fail) = 1$_
+
+$\displaystyle A(n) = q\frac{n+1}{2} + (1-q)n$
+
+</div>]]></content><author><name>&lt;firstname&gt; &lt;lastname&gt;</name><email>&lt;mail@domain.tld&gt;</email></author><category term="Algorithm" /><category term="CS" /><category term="Algorithmm" /><category term="알고리즘" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">운영체제 - 2</title><link href="http://localhost:4000/os/2022/03/07/OS_2/" rel="alternate" type="text/html" title="운영체제 - 2" /><published>2022-03-07T00:00:00+09:00</published><updated>2022-03-07T00:00:00+09:00</updated><id>http://localhost:4000/os/2022/03/07/OS_2</id><content type="html" xml:base="http://localhost:4000/os/2022/03/07/OS_2/"><![CDATA[<h3 id="os의-구조">OS의 구조</h3>
 
 <ul>
   <li>User Interfaces
@@ -767,165 +926,7 @@ $1.1*0.95 = 1.045$</p>
   <li>보안성</li>
 </ul>
 
-<p>#####</p>]]></content><author><name>L-Hyun</name></author><category term="OS" /><category term="CS" /><category term="OS" /><category term="운영체제" /><summary type="html"><![CDATA[OS의 구조]]></summary></entry><entry><title type="html">알고리즘 - 2</title><link href="http://localhost:4000/algorithm/2022/03/07/Algorithm_2.html" rel="alternate" type="text/html" title="알고리즘 - 2" /><published>2022-03-07T00:00:00+09:00</published><updated>2022-03-07T00:00:00+09:00</updated><id>http://localhost:4000/algorithm/2022/03/07/Algorithm_2</id><content type="html" xml:base="http://localhost:4000/algorithm/2022/03/07/Algorithm_2.html"><![CDATA[<style type="text/css">
-  @font-face {
-    font-family: 'Cafe24SsurroundAir';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-  }
-  .article {
-    font-family: 'Cafe24SsurroundAir';
-  }
-  .contentsItems { color: black; }
-  .contentsItems:hover {
-    color: black;
-    text-decoration: underline;
-  }
-  .title {
-    font-size: 30px;
-    border-bottom: 3px solid #6667ab;
-    border-left: 20px solid #6667ab;
-    padding-left: 5px;
-    margin-bottom: 10px;
-    margin-top: 30px;
-  }
-  .subtitle {
-    margin-top: 20px;
-	  font-size: 25px;
-	  color: #5e5e7d;
-  }
-  .subsub {
-    font-size: 17px;
-    color: #13356b;
-  }
-  .section {
-    padding-left: 15px;
-  }
-  .define{
-    font-weight: bold;
-  }
-  .red{
-    display: inline;
-    color: #a12d27;
-  }
-  .disabled {
-    display: inline;
-    color: #777777;
-  }
-</style>
-
-<div class="title">Contents</div>
-
-<ul>
-  <li>
-    <div class="disabled">Introdcution</div>
-  </li>
-  <li>
-    <div class="disabled">Mathematical Background</div>
-  </li>
-  <li>
-    <div href="#Analyzing" class="contentsItems">Analyzing Algorithms and Problems</div>
-  </li>
-  <li>
-    <div class="disabled">Classifying Functions by Their Asymptotic Growth Rates</div>
-  </li>
-  <li>
-    <div class="disabled">Searching an Ordered Array</div>
-  </li>
-</ul>
-
-<div id="Analyzing" class="title">Analyzing Algorithms and Problems</div>
-
-<ul>
-  <li>Improve, 알고리즘 개선 가능</li>
-  <li>Choose Best Algorithm for Problem, 최적 알고리즘 선택 가능</li>
-</ul>
-
-<div class="section"><div class="subsub">Analyzing parts</div></div>
-
-<ul>
-  <li>Correctness</li>
-  <li>Time &amp; Space Complexity</li>
-  <li>Optimality, Simplicity</li>
-</ul>
-
-<div class="subtitle">Correctness</div>
-
-<ol>
-  <li>If Preconditions(input) is Satisfied</li>
-  <li>Then Postconditions(output) will be True</li>
-  <li>When Alogorithm Terminated</li>
-</ol>
-
-<div class="subtitle">Amout of Work Done</div>
-<div class="section">
-  <div class="define">Time Complexity</div>
-  <div class="subsub">Measure of Work</div>
-  - Efficiency of Algorithm, 알고리즘의 효율성
-  - 주변환경에 독립적
-  - Input의 크기에 따라 변화
-
-  <div class="subsub">Basic Operation</div>
-  - Fundamental Operation of Problem
-  - 전체 연산에 비례하는 연산 == 가장 많이 사용하는 연산 중 하나
-
-  <div class="subsub">인풋의 형태(범위, 정렬여부 등)에 영향을 받음</div>
-</div>
-
-<div class="subtitle">Worst-Case Complexity</div>
-
-<ul>
-  <li>크기가 n인 input들의 집합 $D_n$</li>
-  <li>$D_n$ 중 하나인 I에 대해서 알고리즘의 일의 양 $t(I)$</li>
-  <li>$W(n) = max(t(i)\,for\,i\,in\,D(n))$
-    <ul>
-      <li>Input에 따라 가장 많은 일을 하는 경우</li>
-    </ul>
-  </li>
-</ul>
-
-<div class="subtitle">Average Complexity</div>
-
-<ul>
-  <li>인풋 $I$가 나올 확률 $Pr(I)$</li>
-  <li>$A(n) = sum(Pr(I)*t(i)\,for\,i\,in\,D(n))$</li>
-  <li>$t(I)$는 알고리즘 분석으로 측정할 수 있지만</li>
-  <li>$Pr(I)$는 계산으로 알아내기 어려움 == &lt;div class="red"&gt;일반적으로 불가능&lt;/div&gt;</li>
-  <li>일반적으로 $Pr(I)$는 통계적으로 측정 or 모든 발생확률이 동일하다고 가정</li>
-</ul>
-
-<div class="section">
-  <div class="subsub">ex. Search In Unordered Array</div>
-
-&gt; N개의 요소를 가지고 정렬되지 않은 배열 E
-&gt; 특정한 값 K를 가진 인덱스를 찾고 있으면 인덱스 반환
-&gt; 없으면 -1 반환
-
-```c
-int seqSearch(int[] E, int n, int K){
-  int ans, idx;
-  ans = -1; // 실패 가정
-  for (idx = 0; idx &lt; n; idx++){
-    if (E[idx] == K){
-      ans = idx; // 성공
-      break; // 종료
-    }
-  }
-  return ans;
-}
-```
-
-$A(n) = Pr(succ)A_{succ}(n) + Pr(fail)A_{fail}(n)$
-$A_{succ}(n) = \displaystyle\sum_{i=0}^{n - 1}{Pr(I_i|succ)*t(I_i)} = \frac{1}{n} \sum_{i=0}^{n-1}(i + 1)$
-$= \displaystyle \frac{1}{n}\sum_{i=1}^{n}(i) = \frac{n + 1}{2}$
-
-$A_{fail}(n) = Pr(I|fail)*t(I_i) = 1*n = n$
-_탐색 실패는 1가지 경우 밖에 없음, $Pr(I|fail) = 1$_
-
-$\displaystyle A(n) = q\frac{n+1}{2} + (1-q)n$
-
-</div>]]></content><author><name>L-Hyun</name></author><category term="Algorithm" /><category term="CS" /><category term="Algorithmm" /><category term="알고리즘" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">컴퓨터 구조 - 1</title><link href="http://localhost:4000/structure/2022/03/04/Computer-Structure_1.html" rel="alternate" type="text/html" title="컴퓨터 구조 - 1" /><published>2022-03-04T00:00:00+09:00</published><updated>2022-03-04T00:00:00+09:00</updated><id>http://localhost:4000/structure/2022/03/04/Computer-Structure_1</id><content type="html" xml:base="http://localhost:4000/structure/2022/03/04/Computer-Structure_1.html"><![CDATA[<h3 id="컴퓨터-혁명">컴퓨터 혁명</h3>
+<p>#####</p>]]></content><author><name>&lt;firstname&gt; &lt;lastname&gt;</name><email>&lt;mail@domain.tld&gt;</email></author><category term="OS" /><category term="CS" /><category term="OS" /><category term="운영체제" /><summary type="html"><![CDATA[OS의 구조]]></summary></entry><entry><title type="html">컴퓨터 구조 - 1</title><link href="http://localhost:4000/structure/2022/03/04/Computer-Structure_1/" rel="alternate" type="text/html" title="컴퓨터 구조 - 1" /><published>2022-03-04T00:00:00+09:00</published><updated>2022-03-04T00:00:00+09:00</updated><id>http://localhost:4000/structure/2022/03/04/Computer-Structure_1</id><content type="html" xml:base="http://localhost:4000/structure/2022/03/04/Computer-Structure_1/"><![CDATA[<h3 id="컴퓨터-혁명">컴퓨터 혁명</h3>
 
 <ul>
   <li>현재 대부분의 분야에 컴퓨터가 사용됨</li>
@@ -1039,7 +1040,7 @@ $\displaystyle A(n) = q\frac{n+1}{2} + (1-q)n$
 <ul>
   <li>메인 메모리 - 휘발성</li>
   <li>보조 메모리 - 비휘발성</li>
-</ul>]]></content><author><name>L-Hyun</name></author><category term="Structure" /><category term="CS" /><category term="Computer Structure" /><category term="컴퓨터 구조론" /><summary type="html"><![CDATA[컴퓨터 혁명]]></summary></entry><entry><title type="html">네트워크 - 1</title><link href="http://localhost:4000/network/2022/03/03/Network_1.html" rel="alternate" type="text/html" title="네트워크 - 1" /><published>2022-03-03T00:00:00+09:00</published><updated>2022-03-03T00:00:00+09:00</updated><id>http://localhost:4000/network/2022/03/03/Network_1</id><content type="html" xml:base="http://localhost:4000/network/2022/03/03/Network_1.html"><![CDATA[<h3 id="인터넷">인터넷</h3>
+</ul>]]></content><author><name>&lt;firstname&gt; &lt;lastname&gt;</name><email>&lt;mail@domain.tld&gt;</email></author><category term="Structure" /><category term="CS" /><category term="Computer Structure" /><category term="컴퓨터 구조론" /><summary type="html"><![CDATA[컴퓨터 혁명]]></summary></entry><entry><title type="html">네트워크 - 1</title><link href="http://localhost:4000/network/2022/03/03/Network_1/" rel="alternate" type="text/html" title="네트워크 - 1" /><published>2022-03-03T00:00:00+09:00</published><updated>2022-03-03T00:00:00+09:00</updated><id>http://localhost:4000/network/2022/03/03/Network_1</id><content type="html" xml:base="http://localhost:4000/network/2022/03/03/Network_1/"><![CDATA[<h3 id="인터넷">인터넷</h3>
 
 <p><em>컴퓨터로 연결하여 <span style="color:red">TCP/IP</span> 프로토콜을 통해 정부를 주고 받는 컴퓨터 네트워크</em></p>
 
@@ -1129,4 +1130,4 @@ $\displaystyle A(n) = q\frac{n+1}{2} + (1-q)n$
 
 <h4 id="application">Application</h4>
 
-<p><em>메시지라는 데이터 단위 사용</em></p>]]></content><author><name>L-Hyun</name></author><category term="Network" /><category term="CS" /><category term="Networkj" /><category term="네트워크" /><summary type="html"><![CDATA[인터넷]]></summary></entry></feed>
+<p><em>메시지라는 데이터 단위 사용</em></p>]]></content><author><name>&lt;firstname&gt; &lt;lastname&gt;</name><email>&lt;mail@domain.tld&gt;</email></author><category term="Network" /><category term="CS" /><category term="Networkj" /><category term="네트워크" /><summary type="html"><![CDATA[인터넷]]></summary></entry></feed>
