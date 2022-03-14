@@ -1,89 +1,103 @@
 ---
 layout: about
-title: About
+image: /assets/img/blog/hydejack-9.jpg
 description: >
-  **Hydejack** is a Jekyll theme with JavaScript powers, combining the best of static sites and modern web apps.
-  It features a suite of JavaScript that makes the page feel like an app, without sacrificing backwards-compatibility,
-  page-load speed or SEO.
-menu: true
-order: 4
+  A boutique Jekyll theme for hackers, nerds, and academics,
+  with a focus on personal sites that are meant to impress.
+hide_description: true
+redirect_from:
+  - /download/
 ---
 
-**Hydejack** is the complete package for professionals on the web.
-It features a blog suitable for both prose and technical documentation,
-a showcase for your projects, and a resume that is well-integrated with the design.
+# About
 
-> Your presence on the web --- A [blog], a [portfolio] and a [resume].
+<!--author-->
+
+## Hydejack
+
+A boutique Jekyll theme for hackers, nerds, and academics.  
 {:.lead}
 
+1. this list will be replaced by the toc
+{:toc .large-only}
+
+![Screenshot](assets/img/blog/hydejack-9.jpg){:.lead width="1920" height="1080" loading="lazy"}
+
+Hydejack's cover page on a variety of screen sizes.
+{:.figcaption}
+
+
+**Hydejack** is a boutique Jekyll theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress. 
+
+It includes a blog that is suitable for both prose and technical documentation, a portfolio to showcase your projects, and a resume template that looks amazing on the web and in print.
+
+> Your complete presence on the web — A [blog], [portfolio], and [resume].
+{:.lead}
+
+
+## A Personal Site That Won't Disappear
+
+**Hydejack** is 100% built on Open Source software, and is Open Source itself, save for parts of the PRO version. The PRO version is a one-time payment that gives you the right to use it forever.
+
+Hydejack is all static sites. _HTML_. All you need is a web server --- any web server --- to have a professional web presence that lasts a lifetime.
+
 ## Download
-There are two versions of **Hydejack**: The *free version* includes basic blogging functionality,
-as did previous versions of the theme.
-The *PRO version* includes additional features for professionals:
-A [portfolio], a [resume] layout and a [welcome] page to feature your favorite projects and posts.
 
-This table details what is and isn't included in each respective version.
+{% include table.md %}
 
-|                                     | Free                                   | PRO                                          |
-|:------------------------------------|:--------------------------------------:|:--------------------------------------------:|
-| Blog                                | &#x2714;                               | &#x2714;                                     |
-| [Features][feat]                    | &#x2714;                               | &#x2714;                                     |
-| [Portfolio] Layout                  |                                        | &#x2714;                                     |
-| [Resume] Layout                     |                                        | &#x2714;                                     |
-| [Welcome] Layout                    |                                        | &#x2714;                                     |
-| [Newsletter Box][news]              |                                        | &#x2714;                                     |
-| [Custom Forms][forms]               |                                        | &#x2714;                                     |
-| No Hydejack Branding                |                                        | &#x2714;                                     |
-| License                             | [GPL-3.0][license]                     | [PRO]                                        |
-| Source                              | [GitHub][src]                          | Included                                     |
-| Support[^1]                         | No                                     | No                                           |
-| Price                               | Free                                   | $29                                          |
-|                                     | [**Download**][kit]                    | [**Buy Now - $29**][buy] [^2]                |
-{:.stretch-table}
 
-[^1]: You MAY open an issue on GitHub, but no response and/or fix is guaranteed.
-      You understand that using Jekyll requires technical know-how, and is NOT comparable to Wordpress in terms of usability.
-      Please use the free version to confirm that Hydejack works for you.
-      For more, see the [PRO] license.
+## A Free Blogging Theme
+**Hydejack** started out as a free blogging theme for Jekyll — and continues to be so.
 
-## Features
-Both versions include these features:
+<!--posts-->
 
-* Full in-app page loading, powered by [hy-push-state]{:.external}
-* A customizable sidebar that turns into a drawer menu on mobile, powered by [hy-drawer]{:.external}
-* Advanced FLIP animations, inspired by Material Design
-* Good [Google PageSpeed Score][gpss][^4]
-* Higher *perceived speed* thanks to content pre-fetching
-* [Syntax highlighting](#syntax-highlighting), powered by [Rouge]
-* [LaTeX math blocks](#latex-math-blocks), powered by [KaTeX]
-* Change the wording of built-in strings and possibly translate in other languages
-* Support for categories and tags
-* Built-in icons for many social networks
-* Simple and semantic HTML — can be viewed even with text-based browsers
-* Author section below each article and support for multiple authors
-* Progressive enhancement — sacrifice features, not content
-* Google Analytics and Google Fonts support
-* Disqus comments
-* Print layout — Used to render Hydejack's [PDF documentation][pdf]
-* Blog layout via `jekyll-paginate` (optional)
-* SEO meta tags via `jekyll-seo-tag` (optional)
-* Github avatars via `jekyll-avatar` (optional)
-* Gist support via `jekyll-gist` (optional)
 
-[^4]: Actual page load speed depends on your hosting provider, resolution of embedded images and usage of 3rd party plugins.  
+## An Impressive Portfolio
+A portfolio that's guaranteed to be impressive — no matter what you put into it.
 
-### Syntax Highlighting
-Syntax highlighting powered by [Rouge].
+<!--projects-->
 
-~~~ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-~~~
 
-### LaTeX Math Blocks
-Write formulas in familiar LaTeX syntax. Powered by [KaTeX].
+## A Printable Resume
+Get a resume that's consistent across the board — whether it's on the web, mobile, print, or [PDF](assets/Resume.pdf).
+
+[![Resume PDF](assets/img/blog/resume.png){:.lead width="884" height="632" loading="lazy"}][resume]{:.no-hover.no-mark}
+
+Front and center page of a print resume generated by Hydejack.
+{:.figcaption}
+
+
+## Just Markdown
+Write all content with Markdown. __Hydejack__ gives you [additional CSS classes](docs/writing.md) to stylize your content, without losing compatibility with other Jekyll themes.
+
+
+## Just Markup
+**Hydejack** boasts a plethora of modern JavaScript, but make no mistake: It's still a _plain old web page_ at its core. It works without JavaScript and you can even view it in a text-based browser like `w3m`:
+
+![w3m Screenshot](assets/img/blog/w3m.png){:.tail width="1920" height="1260" loading="lazy"}
+
+The Hydejack blog, as seen by the text browser `w3m`.
+{:.figcaption}
+
+
+## Syntax Highlighting
+**Hydejack** features syntax highlighting, powered by [Rouge].
+
+```html
+<!-- file: `_includes/my-body.html` -->
+<script type="module">
+  document.querySelector("hy-push-state").addEventListener("hy-push-state-load", () => {
+    const supportsCodeHighlights = false; // TBD!!
+  });
+</script>
+```
+
+Code blocks can have a filename and a caption.
+{:.figcaption}
+
+
+## Beautiful Math
+They say math is beautiful — and with **Hydejack**'s [math support][math] it's guaranteed to also look beautiful:
 
 $$
 \begin{aligned}
@@ -103,57 +117,61 @@ $$
 \end{aligned}
 $$
 
-### Newsletter Subscription Box*
-The *PRO version* has built-in support for [Tinyletter] subscription boxes.
+Hydejack uses KaTeX to efficiently render math.
+{:.figcaption}
 
-If you are using a different newsletter service, like MailChimp,
-you can build a custom newsletter subscription box using [custom forms][forms].
 
-## Versions
-### Free Version
-The *free version* features the design and tech of **Hydejack**, but only supports basic blogging.
+## Build an Audience
+The PRO version has built-in support for customizable [Tinyletter] newsletter subscription boxes.
 
-[**Download**][kit]
+If you are using a different service like MailChimp, you can build a custom newsletter subscription box using [Custom Forms][forms].
 
-### PRO Version
-The *PRO version* aims to be the complete package for professionals on the web.
-It includes layouts for your [portfolio],
-your [resume] (with support for [JSON Resume](https://jsonresume.org/)),
-a [welcome] page to introduce yourself to visitors,
-built-in support for [Tinyletter], and from element styles so you can build arbitrary contact forms.
 
-[**Buy Now - $29**][buy] [^2]
+## Features
 
-[^2]: Transactions secured by [Stripe](https://stripe.com). Downloads handled by [Simple Goods](https://simplegoods.co/).  
+{% include features.md %}
 
-[blog]: https://qwtel.com/hydejack/blog/
-[portfolio]: https://qwtel.com/hydejack/variations/
-[resume]: https://qwtel.com/hydejack/resume/
-[download]: https://qwtel.com/download/
-[welcome]: https://qwtel.com/hydejack/
-[forms]: https://qwtel.com/hydejack/forms-by-example/
 
-[feat]: #features
-[news]: #newsletter-subscription-box
-[syntax]: #syntax-highlighting
-[latex]: #latex-math-blocks
+## Comparison
 
-[license]: LICENSE.md
+{% include table.md %}
+
+
+## Get It Now
+
+Use the the form below to purchase Hydejack PRO:
+
+<div class="gumroad-product-embed" data-gumroad-product-id="nuOluY"><a href="https://gumroad.com/l/nuOluY">Loading…</a></div>
+
+
+[blog]: /
+[portfolio]: https://hydejack.com/examples/
+[resume]: https://hydejack.com/resume/
+[download]: https://hydejack.com/download/
+[welcome]: https://hydejack.com/
+[forms]: https://hydejack.com/forms-by-example/
+
+[features]: #features
+[news]: #build-an-audience
+[syntax]: syntax-highlighting
+[latex]: #beautiful-math
+[dark]: https://hydejack.com/blog/hydejack/2018-09-01-introducing-dark-mode/
+[search]: https://hydejack.com/#_search-input
+[grid]: https://hydejack.com/blog/hydejack/
+
+[lic]: LICENSE.md
 [pro]: licenses/PRO.md
-[docs]: docs/7.5.0/index.md
+[docs]: docs/README.md
+[ofln]: docs/advanced.md#enabling-offline-support
+[math]: docs/writing.md#adding-math
 
-[kit]: https://github.com/qwtel/hydejack-starter-kit/archive/v7.5.0.zip
-[src]: https://github.com/qwtel/hydejack
+[kit]: https://github.com/hydecorp/hydejack-starter-kit/releases
+[src]: https://github.com/hydecorp/hydejack
 [gem]: https://rubygems.org/gems/jekyll-theme-hydejack
-[buy]: https://app.simplegoods.co/i/AQTTVBOE
+[buy]: https://gum.co/nuOluY
 
-[gpss]: https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fqwtel.com%2Fhydejack%2F
-[wiki]: https://github.com/qwtel/hydejack/blob/master/docs/7.5.0/index.md
-[pdf]: https://github.com/qwtel/hydejack/releases/download/v7.5.0/Documentation._.Hydejack.pdf
-[hy-push-state]: https://qwtel.com/hy-push-state/
-[hy-drawer]: https://qwtel.com/hy-drawer/
+[gpss]: https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fhydejack.com%2Fdocs%2F
 [rouge]: http://rouge.jneen.net
 [katex]: https://khan.github.io/KaTeX/
+[mathjax]: https://www.mathjax.org/
 [tinyletter]: https://tinyletter.com/
-
-*[FLIP]: First-Last-Invert-Play. A coding technique to achieve performant page transition animations.
