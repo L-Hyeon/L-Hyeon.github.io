@@ -59,19 +59,19 @@ author:
 # Add links to the sidebar.
 menu:
   - title: Log
-    url: /Posts/Log/
+    url: /Log/
   - title: Algorithm
-    url: /Posts/Algorithm/
+    url: /Algorithm/
   - title: Computer Structure
-    url: /Posts/Computer Structure/
+    url: /Computer_Structure/
   - title: DB
-    url: /Posts/DB/
+    url: /DB/
   - title: Network
     url: /Posts/Network/
   - title: OS
-    url: /Posts/OS/
+    url: /OS/
   - title: Problem Solving
-    url: /Posts/PS/
+    url: /PS/
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
@@ -380,11 +380,10 @@ plugins:
 #   admins:              <id>
 
 # Used on index and about sites
-# social:
-#   name:                <firstname> <lastname>
-#   links:
-#     - https://twitter.com/<username>
-#     - https://github.com/<username>
+social:
+  name:                L-Hyun
+  links:
+    - https://github.com/L-Hyun
 
 
 # Plugin Configs
