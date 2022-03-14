@@ -158,7 +158,7 @@ defaults:
   - scope:
       type: posts
     values:
-      comments: true
+      comments: false
       applause_button: true
       sitemap: true
 
