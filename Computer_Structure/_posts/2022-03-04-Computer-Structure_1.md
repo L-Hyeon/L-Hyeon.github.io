@@ -1,9 +1,11 @@
 ---
 layout: post
-title: 컴퓨터 구조 - 1
+title: 컴퓨터 구조론 - 1
 categories: Structure
 tags: [CS, Computer Structure, 컴퓨터 구조론]
 ---
+
+# 컴퓨터 구조론 - 1
 
 ### 컴퓨터 혁명
 

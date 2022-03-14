@@ -1,9 +1,11 @@
 ---
 layout: post
-title: 컴퓨터 구조 - 2
+title: 컴퓨터 구조론 - 2
 categories: Structure
 tags: [CS, Computer Structure, 컴퓨터 구조론]
 ---
+
+# 컴퓨터 구조론 - 2
 
 ### Response Time and Throughput
 
