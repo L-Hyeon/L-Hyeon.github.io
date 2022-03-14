@@ -22,22 +22,19 @@ baseurl:               ''
 lang:                  en
 
 # The title of your blog. Used in the sidebar and the browser tab.
-title:                 Hydejack
+title:                 L-Hyun
 
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description:           >
-  A Jekyll theme with JavaScript powers. "Best Theme by a Mile".
-  Combines the best of static sites and modern web apps.
-  Open `_config.yml` to edit this text.
+  L-Hyun's CS Blog
 
 # A shorter description for the sidebar.
 tagline:               >
-  A Jekyll theme with JavaScript powers.
-  Open `_config.yml` to edit this text.
+  L-Hyun, A Developer.
 
 # A list of keywords for your blog
-keywords:              []
+keywords:              [Developer, ComputerScience, CS, 개발자, 개발, 컴공, 프론트엔드, 백엔드, 풀스택]
 
 # Used by jekyll-seo-tag...
 logo:                  /assets/icons/icon.png
@@ -45,13 +42,30 @@ logo:                  /assets/icons/icon.png
 # This should be the same author as first entry in `_data/authors.yml`.
 # Duplication is necessary due to the `jekyll-feed`, `jekyll-seo-tag` plugin.
 author:
-  name:                <firstname> <lastname>
-  email:               <mail@domain.tld>
+  name:                L-Hyun
+  email:               dkh1001@outlook.kr
   # Used by `jekyll-seo-tag`:
   # twitter:             <username>
 
+menu:
+  - title: Log
+    url: /Posts/Log/
+  - title: Algorithm
+    url: /Posts/Algorithm/
+  - title: Computer Structure
+    url: /Posts/Computer Structure/
+  - title: DB
+    url: /Posts/DB/
+  - title: Network
+    url: /Posts/Network/
+  - title: OS
+    url: /Posts/OS/
+  - title: Problem Solving
+    url: /Posts/PS/
+  
+
 # This text will appear in a `<small>` tag in the footer of every page.
-copyright:             © 2017. All rights reserved.
+copyright:             © 2022. All rights reserved.
 
 # Add links to the footer.
 # Typically you'll want to link to your impress, cookies or privacy policy, etc.
@@ -65,7 +79,7 @@ copyright:             © 2017. All rights reserved.
 permalink:             pretty
 
 # Pagination configuration (used by the `blog` layout)
-paginate:              5
+paginate:              10
 paginate_path:         /page-:num/
 
 
@@ -74,17 +88,21 @@ paginate_path:         /page-:num/
 
 # Sidebar image and theme color of the site.
 accent_image:          /assets/img/sidebar-bg.jpg
-accent_color:          '#4fb1ba'
+accent_color:          '#66aba9'
+theme_color:  rgb(102, 103, 171)
 
 # The string encoding which fonts to fetch from Google Fonts.
 # See: <https://qwtel.com/hydejack/docs/configuration/>
-google_fonts:          Roboto+Slab:700|Noto+Sans:400,400i,700,700i
+google_fonts:          Nanum+Gothic+Coding:400|Gugi:400|Roboto+Slab:700|Noto+Sans:400,400i,700,700i
 
 # The text font. Expects a string that is a valid CSS font-family value.
-font:                  Noto Sans, Helvetica, Arial, sans-serif
+font:                  Nanum Gothic Coding, Noto Sans, Helvetica, Arial, sans-serif
 
 # The font used for headings. Expects a string that is a valid CSS font-family value.
-font_heading:          Roboto Slab, Helvetica, Arial, sans-serif
+font_heading:          Gugi, Roboto Slab, Helvetica, Arial, sans-serif
+
+font_code:  Fira Code, Menlo, Monaco, Consolas, monospace
+
 
 # 3rd Party Integrations
 # ----------------------------------------------------------------------------------------
