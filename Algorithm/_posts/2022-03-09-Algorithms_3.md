@@ -33,7 +33,7 @@ _모든 문제가 고유한 복잡도를 가지고 있음_
 
 ##### How To Show an Algorithm is Optimal
 
-알고리즘 A의 Worst-Case Complexity $W_A(n)$, 문제의 Complexity $F(n)$
+알고리즘 A의 Worst-Case Complexity $$W_A(n)$$, 문제의 Complexity $$F(n)$$
 
 - if W_A(n) == F(n)
   알고리즘 A is **Optimal**
@@ -45,10 +45,10 @@ _모든 문제가 고유한 복잡도를 가지고 있음_
 ##### ex. Matrix Multiplication
 
 - 두 행렬의 곱셈
-- 하나의 원소를 계산하기 위해 곱셈 n번, 덧셈 n-1번 필요 == $O(n)$ time
-  결과 행렬은 nxn이고, $n^2$개의 원소를 가지기 때문에 $O(n^3)$ Time
-  == Upper Bound = $O(n^3)$ Time
-- 현재 Upper Bound = $O(n^{2.3728596})$
+- 하나의 원소를 계산하기 위해 곱셈 n번, 덧셈 n-1번 필요 == $$O(n)$$ time
+  결과 행렬은 nxn이고, $$n^2$$개의 원소를 가지기 때문에 $$O(n^3)$$ Time
+  == Upper Bound = $$O(n^3)$$ Time
+- 현재 Upper Bound = $$O(n^{2.3728596})$$
 
 ##### ex. Devise A
 
@@ -72,7 +72,7 @@ _모든 문제가 고유한 복잡도를 가지고 있음_
 
 - Worst-Case
 
-  - n-1번의 비교를 해야 함 == $W(n) = n - 1$
+  - n-1번의 비교를 해야 함 == $$W(n) = n - 1$$
 
 - Problem Complexity
 
@@ -85,10 +85,10 @@ _모든 문제가 고유한 복잡도를 가지고 있음_
     3. 한 원소가 최대값이 아님을 알기 위해서는 최소 1번은 다른 원소와 비교를 해야 함
     4. n-1개의 원소들은 각각 1번씩은 다른 원소와 비교해야 최대값이 아님을 알게 될 수 있음
     5. 최소 n-1번의 기본연산(비교)가 필요함
-    6. $F(n)=n-1$
+    6. $$F(n)=n-1$$
 
 - 결론
-  - $W(n) == F(n)$이므로 알고리즘은 Optimal
+  - $$W(n) == F(n)$$이므로 알고리즘은 Optimal
 
 ### Classifying Functions by Their Asymptotic Growth Rates
 
@@ -98,28 +98,28 @@ _계수와 상수를 제외한 함수들을 비교하고 분류_
 
 - Big Omega
 
-  - $\Omega(g)$
+  - $$\Omega(g)$$
   - 적어도 함수 g보다는 증가율이 **같거나 빠른** 함수들의 집합
 
 - Big Theta
 
-  - $\theta(g)$
+  - $$\theta(g)$$
   - 적어도 함수 g보다는 증가율이 **같은** 함수들의 집합
 
 - Big Oh
 
-  - $O(g)$
+  - $$O(g)$$
   - 적어도 함수 g보다는 증가율이 **같거나 느린** 함수들의 집합
 
 ##### Big X sets
 
-양수에 대한 함수 $f, g$
-상수 $c$, 자연수 $n_0$
+양수에 대한 함수 $$f, g$$
+상수 $$c$$, 자연수 $$n_0$$
 
-- $O(n)=f(n)\leq c \times g(n)\,for\,n \geq n_0$ == Upper Bound
-- $\Omega(n)=f(n)\geq c \times g(n)\,for \,n \geq n_0$ == Lower Bound
-- $\theta(n)=O(g) \cap \omega(n)$
+- $$O(n)=f(n)\leq c \times g(n)\,for\,n \geq n_0$$ == Upper Bound
+- $$\Omega(n)=f(n)\geq c \times g(n)\,for \,n \geq n_0$$ == Lower Bound
+- $$\theta(n)=O(g) \cap \omega(n)$$
 
 ##### Little x sets
 
-- $o(g), \omega(g)$ = 같은 경우 제외
+- $$o(g), \omega(g)$$ = 같은 경우 제외
