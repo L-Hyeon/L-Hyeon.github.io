@@ -63,7 +63,7 @@ menu:
   - title: Algorithm
     url: /algorithm/
   - title: Structure
-    url: /structure/
+    url: /Computer_Structure/structure/
   - title: DB
     url: /db/
   - title: Network
