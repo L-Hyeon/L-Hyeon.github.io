@@ -49,7 +49,7 @@ tags: [CS, Computer Structure]
 
 ##### R format
 
-<img src="https://github.com/L-Hyun/L-Hyun.github.io/blob/main/assets/CS/structure_4.png?raw=true" />
+<img src="https://github.com/L-Hyun/L-Hyun.github.io/blob/main/assets/CS/4-1.png?raw=true" />
 
 - **rd = rs1 (연산) rs2**
 - opcode: Operation code
@@ -62,7 +62,7 @@ tags: [CS, Computer Structure]
 ##### I Format
 
 - **rd <- rs1...immediate**
-  <img src="https://github.com/L-Hyun/L-Hyun.github.io/blob/main/assets/CS/structure_4-2.png?raw=true" />
+  <img src="https://github.com/L-Hyun/L-Hyun.github.io/blob/main/assets/CS/4-2.png?raw=true" />
 - Immediate arithmetic, Load insstructions
 - rs1: Source/Base Register
 - Immediate: Constant or Offset added to base
@@ -70,7 +70,7 @@ tags: [CS, Computer Structure]
 ##### S Format
 
 - **rs2 -> rs1...imediate**
-  <img src="https://github.com/L-Hyun/L-Hyun.github.io/blob/main/assets/CS/structure_4-3.png?raw=true" />
+  <img src="https://github.com/L-Hyun/L-Hyun.github.io/blob/main/assets/CS/4-3.png?raw=true" />
 - Store
 - rs1: Base address
 - rs2: Source Operand
