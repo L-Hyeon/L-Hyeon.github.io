@@ -61,19 +61,19 @@ menu:
   - title: Log
     url: /Log/
   - title: Algorithm
-    url: /Algorithm/
+    url: /Algorithm
   - title: Computer Structure
-    url: /Computer_Structure/
+    url: /Computer_Structure
   - title: DB
-    url: /DB/
+    url: /DB
   - title: Network
-    url: /Posts/Network/
+    url: /Network/
   - title: OS
-    url: /OS/
+    url: /OS
   - title: Problem Solving
-    url: /PS/
+    url: /PS
   - title: About
-    url: /about/
+    url: /about
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
