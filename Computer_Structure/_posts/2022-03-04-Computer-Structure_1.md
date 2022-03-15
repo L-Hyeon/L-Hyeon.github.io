@@ -2,7 +2,7 @@
 layout: post
 title: 컴퓨터 구조론 - 1
 categories: Structure
-tags: [CS, Computer Structure, 컴퓨터 구조론]
+tags: [CS, Computer Structure]
 ---
 
 # 컴퓨터 구조론 - 1

@@ -2,7 +2,7 @@
 layout: post
 title: 네트워크 실습 - 1
 categories: Network
-tags: [CS, Network, 네트워크]
+tags: [CS, Network]
 ---
 
 # 네트워크 실습 - 1
