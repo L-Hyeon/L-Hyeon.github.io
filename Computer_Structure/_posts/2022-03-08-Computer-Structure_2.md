@@ -3,6 +3,7 @@ layout: post
 title: 컴퓨터 구조론 - 2
 categories: Structure
 tags: [CS, Computer Structure]
+toc: true
 ---
 
 # 컴퓨터 구조론 - 2
@@ -15,10 +16,10 @@ tags: [CS, Computer Structure]
 
 ### Relative Performance
 
-- $$Performance = 1/Execution Time$$
+- $$Performance = 1/Execution Time$$.
 - X is n times faster than Y
-  $$Performance_x / Performance_y$$
-  $$=Time_x/Time_y = n$$
+  - $$Performance_x / Performance_y$$.
+  - $$=Time_x/Time_y = n$$.
 
 ### Measuring Execution Time
 
@@ -36,7 +37,7 @@ tags: [CS, Computer Structure]
 
 ### CPU Time
 
-$$CPU Time = Clock Cycles \times Cycle Time$$
+$$CPU Time = Clock Cycles \times Cycle Time$$.
 
 - 사이클 횟수 줄이기
 - 주파수 늘리기
@@ -60,7 +61,7 @@ $$B\,is\,1.2\,times\,faster\,than\,A$$
 
 ### CPI (cont.)
 
-$$\displaystyle Clock\,Cycles = \sum_{i=1}^{n}CPI_i\times Instruction\,Time_i$$
+$$\displaystyle Clock\,Cycles = \sum_{i=1}^{n}CPI_i\times Instruction\,Time_i$$.
 
 ### Affects Performance
 
@@ -88,7 +89,7 @@ $$1.1*0.95 = 1.045$$
 - BUT, 전력 소모량 역시 계속해서 증가
 - 전력소모량을 염두해 프로세서 수를 늘리는 방식 채용
 
-$$Power = Capacity\,Load\times Voltage^2 \times Frequency$$
+$$Power = Capacity\,Load\times Voltage^2 \times Frequency$$.
 
 ### Reducing Power
 
