@@ -59,19 +59,19 @@ author:
 # Add links to the sidebar.
 menu:
   - title: Log
-    url: /Log/_posts/
+    url: /log/
   - title: Algorithm
-    url: /Algorithm/_posts/
+    url: /algorithm/
   - title: Structure
-    url: /Structure/_posts/
+    url: /structure/
   - title: DB
-    url: /DB/_posts/
+    url: /db/
   - title: Network
-    url: /Network/_posts/
+    url: /network/
   - title: OS
-    url: /OS/_posts/
+    url: /os/
   - title: Problem Solving
-    url: /PS/_posts/
+    url: /ps/
   - title: About
     url: /about
 
