@@ -3,7 +3,6 @@ layout: post
 title: 컴퓨터 구조론 - 2
 categories: Structure
 tags: [CS, Computer Structure]
-toc: true
 ---
 
 # 컴퓨터 구조론 - 2
