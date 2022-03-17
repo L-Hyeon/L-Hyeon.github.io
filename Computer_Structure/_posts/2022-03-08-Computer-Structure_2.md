@@ -7,6 +7,8 @@ tags: [CS, Computer Structure]
 
 # 컴퓨터 구조론 - 2
 
+{:toc}
+
 ### Response Time and Throughput
 
 - Response Time

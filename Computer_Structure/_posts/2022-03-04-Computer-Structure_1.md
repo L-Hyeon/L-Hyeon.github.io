@@ -7,6 +7,8 @@ tags: [CS, Computer Structure]
 
 # 컴퓨터 구조론 - 1
 
+{:toc}
+
 ### 컴퓨터 혁명
 
 - 현재 대부분의 분야에 컴퓨터가 사용됨

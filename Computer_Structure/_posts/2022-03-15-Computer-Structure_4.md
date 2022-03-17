@@ -7,6 +7,8 @@ tags: [CS, Computer Structure]
 
 # 컴퓨터 구조론 - 4
 
+{:toc}
+
 ### Number in Computer
 
 ##### Unsigned Binary Integers
