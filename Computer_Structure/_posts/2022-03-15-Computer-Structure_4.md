@@ -63,20 +63,45 @@ tags: [CS, Computer Structure]
 
 ##### I Format
 
+<img src="https://github.com/L-Hyun/L-Hyun.github.io/blob/main/assets/CS/4-2.png?raw=true" />
+
 - **rd <- rs1...immediate**
-  <img src="https://github.com/L-Hyun/L-Hyun.github.io/blob/main/assets/CS/4-2.png?raw=true" />
 - Immediate arithmetic, Load insstructions
 - rs1: Source/Base Register
 - Immediate: Constant or Offset added to base
 
+ex. ld x9, 64(x22)
+x9 = rd
+64 = immediate
+x22 = rs1
+
 ##### S Format
 
+<img src="https://github.com/L-Hyun/L-Hyun.github.io/blob/main/assets/CS/4-3.png?raw=true" />
+
 - **rs2 -> rs1...imediate**
-  <img src="https://github.com/L-Hyun/L-Hyun.github.io/blob/main/assets/CS/4-3.png?raw=true" />
 - Store
 - rs1: Base address
 - rs2: Source Operand
 - immediate: Offset added to base address
+
+ex. sd x9, 64(x22)
+x9 = rs2
+64 = immediate
+x22 = rs1
+
+##### Translation to Machine Language
+
+```c
+A[30] = h + A[30] + 1;
+```
+
+```assembly
+ld x9, 240(x10) //A[30] 불러오기, 30*8(32비트)=240
+add x9, x21, x9 //x21 = h
+addi x9, x9, 1 //1=immediate => addi 사용
+sd x9, 240(x10) //A[30]에 저장
+```
 
 ### Stored Program Computers
 
