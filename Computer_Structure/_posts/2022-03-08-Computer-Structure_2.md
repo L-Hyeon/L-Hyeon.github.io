@@ -97,6 +97,14 @@ $$Power = Capacity\,Load\times Voltage^2 \times Frequency$$.
 - 주파수를 약간만 줄여도 파워 소모량에 엄청난 변화
 - 주파수를 조금만 줄이고 코어 수를 늘리자
 
+### Domain-Specific Computing
+
+- 하나의 기능만 수행하는 대신 극한의 효율성 추구
+- 도메인에 정확한 범위에 맞게 병렬 컴퓨팅 설계
+- 필요한 만큼의 연산을 할 수 있음
+- == 맞춤형 연산
+- Ex. TPU, NPU
+
 ### Summary
 
 - CPU Time 계산
