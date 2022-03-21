@@ -25,8 +25,6 @@ tags: [CS, Computer Structure]
 - SRL의 경우 맨왼쪽의 부호 비트 관계없이 비트 이동
 - **Shift Right Arithmetic(SRA)**, 부호비트는 두고 나머지 비트 이동
 
-<img src="https://github.com/L-Hyun/L-Hyun.github.io/blob/main/assets/CS/5-2.png?raw=true" />
-
 ##### Shift Opertaions
 
 <img src="https://github.com/L-Hyun/L-Hyun.github.io/blob/main/assets/CS/5-2.png?raw=true" />
