@@ -118,7 +118,7 @@ google_fonts: Nanum+Gothic+Coding:400|Do+Hyeon:400|Roboto+Slab:700|Noto+Sans:400
 
 # The text font. Expects a string that is a valid CSS font-family value.
 # To change font-weight, see _sass/variables.scss
-font: Nanum Gothic Coding, Noto Sans, Helvetica, Arial, sans-serif
+font: Do Hyeon, Nanum Gothic Coding, Noto Sans, Helvetica, Arial, sans-serif
 
 # The font used for headings. Expects a string that is a valid CSS font-family value.
 # To change font-weight, see _sass/variables.scss
