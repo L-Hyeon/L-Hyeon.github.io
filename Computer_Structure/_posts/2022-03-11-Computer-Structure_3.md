@@ -5,7 +5,7 @@ categories: Structure
 tags: [CS, Computer Structure]
 ---
 
-# 컴퓨터 구조론 - 3
+# 구조론 - 3
 
 {:toc}
 
