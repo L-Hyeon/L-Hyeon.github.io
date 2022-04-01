@@ -1,3 +1,14 @@
+---
+layout: post
+title: 컴퓨터 구조론 - 8
+categories: Structure
+tags: [CS, Computer Structure]
+---
+
+# 구조론 - 8
+
+{:toc}
+
 ### RISC vs CISC
 
 ##### RISC
