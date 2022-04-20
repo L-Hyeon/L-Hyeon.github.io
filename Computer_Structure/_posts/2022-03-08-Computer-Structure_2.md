@@ -20,7 +20,7 @@ tags: [CS, Computer Structure]
 - $$Performance = 1/Execution Time$$.
 - X is n times faster than Y
   - $$Performance_x / Performance_y$$.
-  - $$=Time_x/Time_y = n$$.
+  - $$=Time_y/Time_x = n$$.
 
 ### Measuring Execution Time
 
