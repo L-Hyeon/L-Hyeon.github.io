@@ -13,7 +13,7 @@ tags: [CS, Computer Structure]
 
 ##### Unsigned Binary Integers
 
-- 0 ~ $2^n - 1$
+- 0 ~ $$2^n - 1$$
   $$x = x_{n - 1}2^{n - 1} + x_{n-2}2^{n-2}+ ... + x_02^0$$.
 
 ##### Signed Integer 2s-Complement
