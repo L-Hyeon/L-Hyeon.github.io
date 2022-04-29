@@ -22,4 +22,21 @@ Just Developer.
   - Back-End (with Django)
   - DB (with POSTGRESQL)
 - (주)메이커런스 PM, Full-Stack (2022~)
-  - APP (with Flutter, React Native)
+  - APP (React Native)
+  - Frontend (React)
+  - Backend (Java)
+
+## Language
+
+- Frontend
+  - React
+  - Vue.js
+  - HTML/CSS/JS
+- Backend
+  - Python Django
+  - Node.js
+  - JSP
+- Oth
+  - C++
+  - Java
+  - Verilog(Risc V 설계)
