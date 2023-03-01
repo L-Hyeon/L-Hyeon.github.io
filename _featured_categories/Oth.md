@@ -3,14 +3,14 @@
 layout: list
 
 # The title of the tag's page.
-title: OS
+title: Oth
 
 # The name of the tag, used in a post's front matter (e.g. tags: [<slug>]).
-slug: OS
+slug: Oth
 
 # (Optional) Write a short (~150 characters) description of this featured tag.
 description: >
-  운영체제
+  Other
 
 # (Optional) You can disable grouping posts by date.
 # no_groups: true

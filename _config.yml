@@ -61,16 +61,8 @@ author:
 menu:
   - title: Oth
     url: /oth/
-  - title: Algorithm
-    url: /algorithm/
-  - title: Structure
-    url: /computer-structure/
-  - title: DB
-    url: /db/
-  - title: Network
-    url: /network/
-  - title: OS
-    url: /os/
+  - title: CS
+    url: /cs/
   - title: Problem Solving
     url: /ps/
   - title: React
@@ -89,7 +81,7 @@ legal:
     url: /CHANGELOG/
 
 # This text will appear in a `<small>` tag in the footer of every page.
-copyright: © 2022. All rights reserved.
+copyright: © 2022~. All rights reserved.
 
 # Format of the permalinks
 permalink: /:categories/:year-:month-:day-:title/
