@@ -38,6 +38,7 @@ keywords:
     개발자,
     개발,
     컴공,
+    컴퓨터공학,
     프론트엔드,
     백엔드,
     풀스택,
@@ -72,6 +73,8 @@ menu:
     url: /os/
   - title: Problem Solving
     url: /ps/
+  - title: React
+    url: /react/
   - title: About
     url: /about
 
