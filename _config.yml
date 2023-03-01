@@ -59,8 +59,8 @@ author:
 
 # Add links to the sidebar.
 menu:
-  - title: Log
-    url: /log/
+  - title: Oth
+    url: /oth/
   - title: Algorithm
     url: /algorithm/
   - title: Structure
