@@ -99,5 +99,3 @@ This component will render a <div> element with a <p> element that displays the 
 In conclusion, components, props, and state are the building blocks of a React application. Components are reusable blocks of code, props are used to pass data between components, and state is used to manage the data within a component. By understanding these basic concepts, you'll be well on your way to building your own React applications.
 
 결론적으로 component, props 및 state는 React 응용 프로그램의 구성 요소입니다. component는 재사용 가능한 코드 블록이며, component 간에 데이터를 전달하는 데 props이 사용되며, 상태는 component 내의 데이터를 관리하는 데 사용됩니다. 이러한 기본 개념을 이해함으로써, 독자적인 리액트 애플리케이션을 구축할 수 있습니다.
-
-_Written By ChatGPT_
