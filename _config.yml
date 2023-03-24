@@ -67,6 +67,10 @@ menu:
     url: /ps/
   - title: React
     url: /react/
+  - title: Svelte
+    url: /svelte/
+  - title: Java Spring
+    url: /spring/
   - title: About
     url: /about
 
