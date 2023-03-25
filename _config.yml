@@ -13,37 +13,36 @@ baseurl: ""
 lang: en
 
 # Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
-timezone: Asia/Seoul
+timezone: Asia/Shanghai
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: L-Hyun # the main title
+title: Chirpy # the main title
 
-tagline: Just Developer # it will display as the sub-title
+tagline: A text-focused Jekyll theme # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  Front-End Dev with React, Svelte
-  Back-End Dev with Python Django, Java Spring
+  A minimal, responsive and feature-rich Jekyll theme for technical writing.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: "https://l-hyun.github.io/"
+url: ""
 
 github:
-  username: L-Hyun # change to your github username
+  username: github_username # change to your github username
 
-# twitter:
-#   username: twitter_username # change to your twitter username
+twitter:
+  username: twitter_username # change to your twitter username
 
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: Lee Seok-Hyun
-  email: dkh1001@outlook.kr # change to your email address
+  name: your_full_name
+  email: example@domain.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    #- https://twitter.com/username # change to your twitter homepage
-    - https://github.com/L-Hyun # change to your github homepage
+    - https://twitter.com/username # change to your twitter homepage
+    - https://github.com/username # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
@@ -78,10 +77,10 @@ theme_mode: # [light|dark]
 # will be added to all image (site avatar & posts' images) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-img_cdn: "https://github.com/L-Hyun/L-Hyun.github.io/blob/main/assets"
+img_cdn: "https://chirpy-img.netlify.app"
 
 # the avatar on sidebar, support local or CORS resources
-avatar: "/avatar.png?raw=true"
+avatar: "/commons/avatar.jpg"
 
 # boolean type, the global switch for TOC in posts.
 toc: true
