@@ -5,6 +5,8 @@ categories: Spring
 tags: [Java, Spring]
 ---
 
+<img src="https://images.velog.io/images/hanblueblue/post/52532500-601b-4ee4-a0b1-070f11154ad3/OG-Spring.png" />
+
 # Intro
 
 Java Spring은 웹 어플리케이션을 구축하기 위한 강력하고 유연한 프레임워크입니다. 현대적인 Java 기반 엔터프라이즈 어플리케이션을 위한 포괄적인 프로그래밍 및 구성 모델을 제공합니다. Spring을 사용하면 고속 트래픽 및 복잡한 비즈니스 로직을 처리할 수 있는 확장 가능하고 견고하며 유지 보수가 가능한 어플리케이션을 만들 수 있습니다.

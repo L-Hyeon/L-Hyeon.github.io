@@ -5,6 +5,8 @@ categories: Spring
 tags: [Java, Spring]
 ---
 
+<img src="https://4.bp.blogspot.com/-ou-a_Aa1t7A/W6IhNc3Q0gI/AAAAAAAAD6Y/pwh44arKiuM_NBqB1H7Pz4-7QhUxAgZkACLcBGAs/s1600/spring-boot-logo.png" />
+
 # Spring과 Spring Boot
 
 Spring과 Spring Boot는 둘 다 Java Spring 프레임워크를 기반으로 한 웹 애플리케이션 개발 도구입니다. 그러나 두 도구는 목적과 사용 방법에서 차이가 있습니다.

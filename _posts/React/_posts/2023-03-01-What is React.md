@@ -5,6 +5,8 @@ categories: React
 tags: [React]
 ---
 
+<img src="https://blog.goorm.io/wp-content/uploads/2021/06/y7Artboard-1.png" />
+
 ### What is React?
 
 React는 사용자 인터페이스를 구축하기 위한 자바스크립트 라이브러리이다.  

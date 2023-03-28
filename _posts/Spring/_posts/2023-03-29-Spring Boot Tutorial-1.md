@@ -5,6 +5,8 @@ categories: Spring
 tags: [Java, Spring]
 ---
 
+<img src="https://4.bp.blogspot.com/-ou-a_Aa1t7A/W6IhNc3Q0gI/AAAAAAAAD6Y/pwh44arKiuM_NBqB1H7Pz4-7QhUxAgZkACLcBGAs/s1600/spring-boot-logo.png" />
+
 # Spring Boot 설치하기
 
 Spring Boot를 사용하기 위해서는 우선 Java JDK와 Gradle 또는 Maven이 설치되어 있어야 합니다. 아래의 단계를 따라 Spring Boot를 설치하는 방법에 대해 알아보겠습니다.

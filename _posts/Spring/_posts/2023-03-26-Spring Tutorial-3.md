@@ -5,6 +5,8 @@ categories: Spring
 tags: [Java, Spring]
 ---
 
+<img src="https://images.velog.io/images/hanblueblue/post/52532500-601b-4ee4-a0b1-070f11154ad3/OG-Spring.png" />
+
 # 간단한 Java Spring 예제
 
 이 섹션에서는 Java Spring을 사용하여 간단한 예제를 작성하는 방법을 설명합니다. 이 예제는 Spring의 IoC와 DI 개념을 보여줍니다.

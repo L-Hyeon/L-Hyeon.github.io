@@ -5,6 +5,8 @@ categories: React
 tags: [React]
 ---
 
+<img src="https://scrimba.com/articles/content/images/2022/08/Create-a-new-React-app-with-Vite-main.png" />
+
 # Vite?
 
 > Vite(프랑스어로 "빠르다(Quick)"를 의미합니다.)은 빠르고 간결한 모던 웹 프로젝트 개발 경험에 초점을 맞춰 탄생한 빌드 도구이며, 두 가지 컨셉을 중심으로 하고 있습니다.<br /> - Vite 공식 문서 -

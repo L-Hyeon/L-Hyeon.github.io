@@ -5,6 +5,8 @@ categories: React
 tags: [React]
 ---
 
+<img src="https://blog.goorm.io/wp-content/uploads/2021/06/y7Artboard-1.png" />
+
 ### Understanding the basics of React
 
 React는 사용자 인터페이스를 구축하기 위해 널리 사용되는 자바스크립트 프레임워크이다. 이 글에서는 componets, props 및 state를 포함한 React의 기본 사항에 대해 설명합니다

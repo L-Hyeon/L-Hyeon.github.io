@@ -5,6 +5,8 @@ categories: React
 tags: [React]
 ---
 
+<img src="https://blog.goorm.io/wp-content/uploads/2021/06/y7Artboard-1.png" />
+
 ### React Query란 무엇인가요?
 
 React Query는 React 애플리케이션에서 데이터를 가져오고 처리하기 위한 라이브러리입니다. 이 라이브러리는 서버에서 데이터를 가져오는 프로세스를 단순화하고, 데이터를 캐시하고 업데이트하는 방법을 제공합니다. 또한, React Query는 데이터를 가져오는 동안 로딩 상태와 에러 처리를 지원합니다.

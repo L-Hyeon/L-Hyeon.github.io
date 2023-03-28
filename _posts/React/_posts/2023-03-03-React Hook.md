@@ -5,6 +5,8 @@ categories: React
 tags: [React]
 ---
 
+<img src="https://blog.goorm.io/wp-content/uploads/2021/06/y7Artboard-1.png" />
+
 ### React Hook
 
 React Hook은 기능 컴포넌트가 이전에는 클래스 컴포넌트에서만 사용할 수 있었던 상태 및 기타 기능을 사용할 수 있도록 하는 반응 16.8에 도입된 기능입니다. 이 기사에서는 React Hook의 기본 사항을 다루고 프로젝트에서 사용하는 방법을 보여줄 것입니다.

@@ -5,6 +5,8 @@ categories: Spring
 tags: [Java, Spring]
 ---
 
+<img src="https://images.velog.io/images/hanblueblue/post/52532500-601b-4ee4-a0b1-070f11154ad3/OG-Spring.png" />
+
 # Java Spring 핵심 개념 - IoC와 DI
 
 이 섹션에서는 Spring의 핵심 개념 중 하나인 IoC(Inversion of Control)와 DI(Dependency Injection)에 대해 자세히 살펴보겠습니다.

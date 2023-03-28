@@ -5,6 +5,8 @@ categories: Spring
 tags: [Java, Spring]
 ---
 
+<img src="https://4.bp.blogspot.com/-ou-a_Aa1t7A/W6IhNc3Q0gI/AAAAAAAAD6Y/pwh44arKiuM_NBqB1H7Pz4-7QhUxAgZkACLcBGAs/s1600/spring-boot-logo.png" />
+
 # Spring Boot 아키텍쳐
 
 Spring Boot는 Spring Framework를 기반으로 하며, Spring Framework와 비슷한 아키텍처를 가지고 있습니다. 그러나 Spring Boot는 내장형 서버와 자동 설정 기능 등의 차이점이 있습니다.

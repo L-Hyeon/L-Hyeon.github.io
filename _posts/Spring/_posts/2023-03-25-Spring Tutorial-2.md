@@ -5,6 +5,8 @@ categories: Spring
 tags: [Java, Spring]
 ---
 
+<img src="https://images.velog.io/images/hanblueblue/post/52532500-601b-4ee4-a0b1-070f11154ad3/OG-Spring.png" />
+
 # Java Spring 아키텍처 및 핵심 개념
 
 이 섹션에서는 Java Spring의 아키텍처와 핵심 개념을 살펴볼 것입니다. Spring의 주요 모듈 및 컨테이너에 대해 설명하고, IoC (Inversion of Control) 및 DI (Dependency Injection)에 대한 이해를 돕기 위해 간단한 예제도 제공합니다.

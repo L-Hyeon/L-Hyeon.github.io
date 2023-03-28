@@ -5,6 +5,8 @@ categories: React
 tags: [React]
 ---
 
+<img src="https://blog.goorm.io/wp-content/uploads/2021/06/y7Artboard-1.png" />
+
 ### 대형 프로젝트에서의 리액트
 
 리액트는 대규모 애플리케이션을 구축하기 위해 인기 있는 선택지가 되었지만, 다른 기술과 마찬가지로 장점과 단점이 있다. 이 기사에서는 대규모 애플리케이션에 React를 사용하는 경우의 장단점에 대해 알아보겠습니다.
