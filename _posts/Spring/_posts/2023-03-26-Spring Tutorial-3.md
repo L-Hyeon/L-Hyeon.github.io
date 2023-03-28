@@ -5,7 +5,7 @@ categories: Spring
 tags: [Java, Spring]
 ---
 
-<img src="https://images.velog.io/images/hanblueblue/post/52532500-601b-4ee4-a0b1-070f11154ad3/OG-Spring.png" />
+<img src="assets\img\headers\Spring.png" />
 
 # 간단한 Java Spring 예제
 
