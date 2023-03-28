@@ -5,7 +5,7 @@ categories: Spring
 tags: [Java, Spring]
 ---
 
-<img src="assets\img\headers\Spring Boot.png" />
+<img src="https://github.com/L-Hyun/L-Hyun.github.io/blob/main/assets/img/headers/Spring%20Boot.png?raw=true" />
 
 # Spring과 Spring Boot
 

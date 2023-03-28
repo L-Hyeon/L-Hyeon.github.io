@@ -5,7 +5,7 @@ categories: Spring
 tags: [Java, Spring]
 ---
 
-<img src="assets\img\headers\Spring.png" />
+<img src="https://github.com/L-Hyun/L-Hyun.github.io/blob/main/assets/img/headers/Spring.png?raw=true" />
 
 # 간단한 Java Spring 예제
 

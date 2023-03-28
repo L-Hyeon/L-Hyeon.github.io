@@ -5,7 +5,7 @@ categories: Spring
 tags: [Java, Spring]
 ---
 
-<img src="assets\img\headers\Spring.png" />
+<img src="https://github.com/L-Hyun/L-Hyun.github.io/blob/main/assets/img/headers/Spring.png?raw=true" />
 
 # Java Spring 핵심 개념 - IoC와 DI
 
