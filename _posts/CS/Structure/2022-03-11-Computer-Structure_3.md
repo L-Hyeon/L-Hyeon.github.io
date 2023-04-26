@@ -3,6 +3,7 @@ layout: post
 title: 컴퓨터 구조론 - 3
 categories: Structure
 tags: [CS, Computer Structure]
+math: true
 ---
 
 # 구조론 - 3
@@ -38,7 +39,7 @@ tags: [CS, Computer Structure]
 ### Amdahl's Law
 
 - 컴퓨터 성능 향상에는 한계가 있다
-- $$T_{improved} = \frac{T_{affected}}{improvement factor} + T_{unaffected}$$.
+- $T_{improved} = \frac{T_{affected}}{improvement factor} + T_{unaffected}$.
 - 성능 향상을 시킬 수 없는 부분이 있기 때문에 한계 존재
 
 ### RISC-V Instruction Set

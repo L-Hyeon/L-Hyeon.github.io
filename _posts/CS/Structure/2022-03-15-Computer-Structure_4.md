@@ -3,6 +3,7 @@ layout: post
 title: 컴퓨터 구조론 - 4
 categories: Structure
 tags: [CS, Computer Structure]
+math: true
 ---
 
 # 구조론 - 4
@@ -13,14 +14,14 @@ tags: [CS, Computer Structure]
 
 ##### Unsigned Binary Integers
 
-- 0 ~ $$2^n - 1$$
-  $$x = x_{n - 1}2^{n - 1} + x_{n-2}2^{n-2}+ ... + x_02^0$$.
+- 0 ~ $2^n - 1$
+  $x = x_{n - 1}2^{n - 1} + x_{n-2}2^{n-2}+ ... + x_02^0$.
 
 ##### Signed Integer 2s-Complement
 
 - 2의 보수로 표현 (0과 1을 뒤집은 후 + 1)
-- $$-2^{n-1}$$ ~ $$2^{n - 1}-1$$.
-  $$x = -x_{n - 1}2^{n - 1} + x_{n-2}2^{n-2}+ ... + x_02^0$$.
+- $-2^{n-1}$ ~ $2^{n - 1}-1$.
+  $x = -x_{n - 1}2^{n - 1} + x_{n-2}2^{n-2}+ ... + x_02^0$.
 
 ##### Addition
 

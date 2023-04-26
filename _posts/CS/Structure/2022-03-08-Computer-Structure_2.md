@@ -3,6 +3,7 @@ layout: post
 title: 컴퓨터 구조론 - 2
 categories: Structure
 tags: [CS, Computer Structure]
+math: true
 ---
 
 # 구조론 - 2
@@ -17,10 +18,10 @@ tags: [CS, Computer Structure]
 
 ### Relative Performance
 
-- $$Performance = 1/Execution Time$$.
+- $Performance = 1/Execution Time$.
 - X is n times faster than Y
-  - $$Performance_x / Performance_y$$.
-  - $$=Time_y/Time_x = n$$.
+  - $Performance_x / Performance_y$.
+  - $=Time_y/Time_x = n$.
 
 ### Measuring Execution Time
 
@@ -38,15 +39,15 @@ tags: [CS, Computer Structure]
 
 ### CPU Time
 
-$$CPU Time = Clock Cycles \times Cycle Time$$.
+$CPU Time = Clock Cycles \times Cycle Time$.
 
 - 사이클 횟수 줄이기
 - 주파수 늘리기
 
 ### Cycle Per Instruction
 
-_$$CPI = Cycle / Instruction\,Count$$_
-_$$CPU\,Time = Instruction\,Count \times CPI \times Cycle Time$$_
+_$CPI = Cycle / Instruction\,Count$_
+_$CPU\,Time = Instruction\,Count \times CPI \times Cycle Time$_
 
 - 프로그램에 따라 Instruction Count 달라짐
 
@@ -55,14 +56,14 @@ _$$CPU\,Time = Instruction\,Count \times CPI \times Cycle Time$$_
 Instuction Count I
 A, Cycle Time = 250ps, CPI = 2.0
 B, Cycle Time = 500ps, CPI = 1.2
-$$Time_A = I\times250ps\times2.0 = 500ps\times I$$
-$$Time_B = I\times500ps\times1.2 = 600ps\times I$$
-$$Time_B/Time_A = 600ps/500ps = 1.2$$
-$$B\,is\,1.2\,times\,faster\,than\,A$$
+$Time_A = I\times250ps\times2.0 = 500ps\times I$
+$Time_B = I\times500ps\times1.2 = 600ps\times I$
+$Time_B/Time_A = 600ps/500ps = 1.2$
+$B\,is\,1.2\,times\,faster\,than\,A$
 
 ### CPI (cont.)
 
-$$\displaystyle Clock\,Cycles = \sum_{i=1}^{n}CPI_i\times Instruction\,Time_i$$.
+$\displaystyle Clock\,Cycles = \sum_{i=1}^{n}CPI_i\times Instruction\,Time_i$.
 
 ### Affects Performance
 
@@ -73,16 +74,16 @@ $$\displaystyle Clock\,Cycles = \sum_{i=1}^{n}CPI_i\times Instruction\,Time_i$$.
 
 ### 연습문제
 
-$$IC = 2.389*10^{12}$$
-$$Execution Time = 750s$$
+$IC = 2.389*10^{12}$
+$Execution Time = 750s$
 
 a) cycle time = 0.333ns이면 CPI?
 CPI = cycles/IC
-$$750s/0.333ns/2.389*10^{12} = 0.943$$
+$750s/0.333ns/2.389*10^{12} = 0.943$
 
 b) IC 10% 증가, CPI 5% 감소 time?
-$$time = CPI*IC*Cycle$$
-$$1.1*0.95 = 1.045$$
+$time = CPI*IC*Cycle$
+$1.1*0.95 = 1.045$
 
 ### Processor Trend
 
@@ -90,7 +91,7 @@ $$1.1*0.95 = 1.045$$
 - BUT, 전력 소모량 역시 계속해서 증가
 - 전력소모량을 염두해 프로세서 수를 늘리는 방식 채용
 
-$$Power = Capacity\,Load\times Voltage^2 \times Frequency$$.
+$Power = Capacity\,Load\times Voltage^2 \times Frequency$.
 
 ### Reducing Power
 
