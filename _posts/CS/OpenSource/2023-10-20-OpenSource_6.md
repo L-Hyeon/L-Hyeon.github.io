@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 5. 스타일 가이드
+title: 6. 코드리뷰
 categories: Open Source
 tags: [CS, Open Source]
 ---
@@ -8,7 +8,6 @@ tags: [CS, Open Source]
 ## 코드리뷰?
 
 > 코드를 작성자 이외의 사람이 검수하는 것
-
 {: .prompt-tip }
 
 - 최선의 코드를 위한 공동의 노력

@@ -8,7 +8,6 @@ tags: [CS, Open Source]
 ## Docker?
 
 > 개발, 실행, 공유를 위한 개방형 플랫폼
-
 {: .prompt-tip }
 
 - 격리된 환경인 컨테이너에서 앱을 패키징, 실행

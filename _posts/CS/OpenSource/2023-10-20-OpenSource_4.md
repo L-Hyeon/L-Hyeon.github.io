@@ -8,7 +8,6 @@ tags: [CS, Open Source]
 ## SW?
 
 > 프로그램 + 개발 과정에서 생성되는 모든 산출물
-
 {: .prompt-tip }
 
 ##### 시스템 소프트웨어
