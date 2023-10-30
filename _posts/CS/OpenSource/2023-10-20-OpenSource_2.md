@@ -1,14 +1,14 @@
 ---
 layout: post
 title: 2. GIT
-categories: Open Source
-tags: [CS, Open Source]
+categories: OpenSource
+tags: [CS, OpenSource]
 ---
 
 ## Git?
 
 > 오픈소스 분산 버전 관리 시스템
-{: .prompt-tip }
+> {: .prompt-tip }
 
 ### 구조
 

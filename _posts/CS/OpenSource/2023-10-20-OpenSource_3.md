@@ -1,14 +1,14 @@
 ---
 layout: post
 title: 3. Docker
-categories: Open Source
-tags: [CS, Open Source]
+categories: OpenSource
+tags: [CS, OpenSource]
 ---
 
 ## Docker?
 
 > 개발, 실행, 공유를 위한 개방형 플랫폼
-{: .prompt-tip }
+> {: .prompt-tip }
 
 - 격리된 환경인 컨테이너에서 앱을 패키징, 실행
 - 호스트 환경에 종속적이지 않고 실행

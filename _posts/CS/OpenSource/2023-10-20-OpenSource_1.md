@@ -1,14 +1,14 @@
 ---
 layout: post
 title: 1. 오픈소스 SW
-categories: Open Source
-tags: [CS, Open Source]
+categories: OpenSource
+tags: [CS, OpenSource]
 ---
 
 ## 오픈소스 SW?
 
 > 코드와 함께 배포되어 수정, 재배포가 가능한 SW
-{: .prompt-tip }
+> {: .prompt-tip }
 
 ## 라이센스
 

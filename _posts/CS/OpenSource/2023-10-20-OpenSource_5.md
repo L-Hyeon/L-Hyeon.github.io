@@ -1,14 +1,14 @@
 ---
 layout: post
 title: 5. 스타일 가이드
-categories: Open Source
-tags: [CS, Open Source]
+categories: OpenSource
+tags: [CS, OpenSource]
 ---
 
 ## 스타일 가이드?
 
 > 코드를 어떻게 작성할지에 대한 전반적 내용을 담은 문서
-{: .prompt-tip }
+> {: .prompt-tip }
 
 - 높은 가독성
 - 적절한 주석
