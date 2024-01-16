@@ -18,7 +18,7 @@ timezone: Asia/Seoul
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: L-Hyun # the main title
+title: L-Hyeon # the main title
 
 tagline: Just Developer # it will display as the sub-title
 
@@ -27,10 +27,10 @@ description: >- # used by seo meta and the atom feed
   Back-End Dev with Python Django, Java Spring
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: "https://l-hyun.github.io/"
+url: "https://l-hyeon.github.io/"
 
 github:
-  username: L-Hyun # change to your github username
+  username: L-Hyeon # change to your github username
 
 # twitter:
 #   username: twitter_username # change to your twitter username
@@ -38,15 +38,15 @@ github:
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: Lee Seok-Hyun
+  name: Lee Seok-Hyeon
   email: dkh1001@outlook.kr # change to your email address
   links:
     # The first element serves as the copyright owner's link
     #- https://twitter.com/username # change to your twitter homepage
-    - https://github.com/L-Hyun # change to your github homepage
+    - https://github.com/L-Hyeon # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
-    # - https://www.linkedin.com/in/username
+    - https://www.linkedin.com/in/seok-hyeon-lee-0705b317b
 
 google_site_verification: # fill in to your verification string
 
@@ -78,7 +78,7 @@ theme_mode: # [light|dark]
 # will be added to all image (site avatar & posts' images) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-img_cdn: "https://github.com/L-Hyun/L-Hyun.github.io/blob/main/assets"
+img_cdn: "https://github.com/L-Hyeon/L-Hyeon.github.io/tree/main/assets"
 
 # the avatar on sidebar, support local or CORS resources
 avatar: "/avatar.png?raw=true"

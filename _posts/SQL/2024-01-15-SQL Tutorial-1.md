@@ -4,7 +4,8 @@ title: 1. DBMS, SQL
 categories: SQL
 tags: [DB, SQL]
 ---
-# DBMS와 SQL
+
+
 ## DBMS
 
 ### Database

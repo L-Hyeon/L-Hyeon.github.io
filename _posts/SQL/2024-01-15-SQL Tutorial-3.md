@@ -1,11 +1,11 @@
 ---
 layout: post
-title: 3. WHERE
+title: 3. WHERE, ORDER BY
 categories: SQL
 tags: [DB, SQL]
 ---
 
-# WHERE
+## WHERE
 - Select에 조건을 추가
 
 ```sql
@@ -47,7 +47,7 @@ WHERE expression
 - 해당 조건에 반대되는 경우
 - IN, BETWEEN, IS NULL, LIKE 등과 사용됨
 
-### ORDER BY
+## ORDER BY
 - 검색된 행들을 정렬
 - Default로 ASC(오름차순) 정렬
   - DESC(내림차순)
