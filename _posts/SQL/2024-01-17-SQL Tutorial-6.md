@@ -78,8 +78,17 @@ FROM table1 LEFT OUTER JOIN table2 ON table1.pk = table2.pk
   - table2.col2는 NULL 값으로 들어감
 
 ##### Oracle Ex
+- (+)가 붙은 쪽이 NULL 가능
+- 양쪽에 (+)를 붙일 수는 없음
+
 ```sql
 SELECT pk table1.col1, table2.col2
 FROM table1, table2
 WHERE table1.pk(+) = table2.pk
 ```
+
+### Cartesian Product
+- CROSS JOIN
+- JOIN 조건이 생략된 경우
+- 모든 행이 JOIN
+  - table1의 행 개수 * table2의 행 개수 만큼의 결과가 나옴
